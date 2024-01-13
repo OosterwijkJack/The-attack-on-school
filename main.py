@@ -8,10 +8,10 @@ import os
 
 from dataclasses import dataclass
 
-
-login_url = r"https://sisssrsb.ednet.ns.ca/subs/home.html" # subsitute portal
-main_url = r"https://sisssrsb.ednet.ns.ca"
-logout_url = r"https://sisssrsb.ednet.ns.ca/~loff"
+# removed actual links just in case outsiders view my respitory
+login_url = r"lobin" # subsitute portal
+main_url = r"main"
+logout_url = r"logoff"
 
 
 @dataclass
