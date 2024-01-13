@@ -10,7 +10,7 @@ The code is pretty clear so if you want to know exactly how it was done have a r
 
 Actually running the program and my regrets:
 Program is almost perfect unfortunately I am an impulsive thinker and didn't think twice when setting up a proxy
-essentially im retarded and could of literally downloaded proton vpn to get away with it but I wanted to be fancy and use a stupid little free
+I could have just downloaded proton vpn to get away with it but I wanted to be fancy and use a stupid little free
 proxy which aren't even safe in the first place and are slower also they almost never work.
 
 PROTON VPN !
