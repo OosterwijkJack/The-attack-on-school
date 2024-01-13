@@ -1,0 +1,4629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Substitute for Stewart, Andrew</title>
+
+<style>
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak { display: none !important; }
+</style>
+<style id="psDialogHideTillReady">
+.dialog, .dialogC, .dialogM, .dialogR, .dialogF, .dialogDiv, .dialogDivC, .dialogDivM, .replaceNext { visibility: hidden;}
+</style>
+<link media="screen" rel="stylesheet" href="https://psimages.ednet.ns.ca/psimages23_3/images/css/customization.css"/>
+
+<!-- ServerInstanceId: 854 -->
+<script type='text/javascript'>if(!_messages)var _messages = {};_messages["psx.js.admin_javascript.validate_date.month_1"] = "Month ";_messages["psx.js.admin_javascript.validate_date._doesnt_have_31_days"] = " doesn't have 31 days.";_messages["psx.js.admin_javascript.validate_date._doesnt_have_"] = " doesn't have ";_messages["psx.js.admin_javascript.validate_date.month_must_be_between_1_and_12"] = "Month must be between 1 and 12.";_messages["psx.js.admin_javascript.validate_date.warning_invalid_date"] = "Warning: Invalid Date";_messages["psx.js.admin_javascript.validate_date.date_format_must_be"] = "Date format must be ({0}).";_messages["psx.js.admin_javascript.validate_date.day_must_be_between_1_and_31"] = "Day must be between 1 and 31.";_messages["psx.js.admin_javascript.validate_date._days"] = " days.";_messages["psx.js.admin_javascript.validate_date.february_"] = "February ";if (typeof pss_text != 'function') { function pss_text(key, params, returnKeyIfNotFound) { if (_messages[key] === undefined) { if (returnKeyIfNotFound !== undefined && returnKeyIfNotFound === true) {return key;} else {return 'String key was not found!'; }}if(params == null || params.length == 0) {return _messages[key]; }else { msg = _messages[key]; for ( i = 0; i < params.length; i++) {token = "{"+i+"}"; msg = msg.replace(token, params[i]); }return msg;} } }</script>
+<script type='text/javascript'>if(!_messages)var _messages = {};_messages["psx.common.daynamesmin_tue"] = "Tu";_messages["psx.common.daynamesmin_thu"] = "Th";_messages["psx.common.daynamesmin_sun"] = "Su";_messages["psx.common.daynamesmin_sat"] = "Sa";_messages["psx.common.daynamesshort_fri"] = "Fri";_messages["psx.common.mydata_button_title"] = "MyData Button";_messages["psx.common.staff_search"] = "Staff Search";_messages["psx.common.legend"] = "Legend ";_messages["psx.common.psweblink"] = "PowerSchool.com";_messages["psx.common.daynamesmin_wed"] = "We";_messages["psx.common.term"] = "Term:";_messages["psx.common.daynamesshort_mon"] = "Mon";_messages["psx.common.daynames_fri"] = "Friday";_messages["psx.common.main_menu"] = "Main Menu";_messages["psx.common.daynamesletter_fri"] = "F";_messages["psx.common.school"] = "School:";_messages["psx.common.monthnames_sep"] = "September";_messages["psx.common.daynames_sun"] = "Sunday";_messages["psx.common.daynames_sat"] = "Saturday";_messages["psx.common.daynamesletter_sat"] = "S";_messages["psx.common.monthnames_oct"] = "October";_messages["psx.common.daynamesletter_sun"] = "S";_messages["psx.common.monthnames_nov"] = "November";_messages["psx.common.scheduling_year"] = "Scheduling Year";_messages["psx.common.monthnames_mar"] = "March";_messages["psx.common.monthnames_may"] = "May";_messages["psx.common.capital_email"] = "Email";_messages["psx.common.daynames_mon"] = "Monday";_messages["psx.common.welcome"] = "Welcome,";_messages["psx.common.data_dictionary"] = "Data Dictionary";_messages["psx.common.monthnames_jul"] = "July";_messages["psx.common.monthnames_jun"] = "June";_messages["psx.common.daynamesmin_fri"] = "Fr";_messages["psx.common.daynamesletter_mon"] = "M";_messages["psx.common.monthnames_jan"] = "January";_messages["psx.common.system_help_title"] = "System Help";_messages["psx.common.state_reporting_help_title"] = "State Reporting Help";_messages["psx.common.daynamesmin_mon"] = "Mo";_messages["psx.common.district"] = "District Office";_messages["psx.common.seconds"] = "{0} Seconds";_messages["psx.common.monthnames_feb"] = "February";_messages["psx.common.daynames_wed"] = "Wednesday";_messages["psx.common.monthnames_dec"] = "December";_messages["psx.common.daynamesletter_tue"] = "T";_messages["psx.common.daynamesletter_thu"] = "H";_messages["psx.common.daynamesletter_wed"] = "W";_messages["psx.common.daynames_tue"] = "Tuesday";_messages["psx.common.monthnames_aug"] = "August";_messages["psx.common.monthnames_apr"] = "April";_messages["psx.common.daynames_thu"] = "Thursday";_messages["psx.common.privacy_policy"] = "Privacy Policy";_messages["psx.common.system_help"] = "System Help";_messages["psx.common.school_title"] = "Change School";_messages["psx.common.data_dictionary_title"] = "Data Dictionary";_messages["psx.common.monthnamesshort_dec"] = "Dec";_messages["psx.common.daynamesshort_tue"] = "Tue";_messages["psx.common.daynamesshort_thu"] = "Thu";_messages["psx.common.term_title"] = "Change Term";_messages["psx.common.daynamesshort_sun"] = "Sun";_messages["psx.common.daynamesshort_sat"] = "Sat";_messages["psx.common.monthnamesshort_feb"] = "Feb";_messages["psx.common.refresh_interval"] = "Refresh Interval";_messages["psx.common.powerschool"] = "PowerSchool";_messages["psx.common.student_search"] = "Student Search";_messages["psx.common.daynamesshort_wed"] = "Wed";_messages["psx.common.monthnamesshort_aug"] = "Aug";_messages["psx.common.monthnamesshort_apr"] = "Apr";_messages["psx.common.help_title"] = "Help";_messages["psx.common.provincial_reporting_help_title"] = "Provincial Reporting Help";_messages["psx.common.district_abbreviation"] = "District";_messages["psx.common.sign_out"] = "Sign Out";_messages["psx.common.open_navigation"] = "Open Navigation";_messages["psx.common.email"] = "email";_messages["psx.common.monthnamesshort_sep"] = "Sep";_messages["psx.common.sign_in_title"] = "Sign In";_messages["psx.common.monthnamesshort_mar"] = "Mar";_messages["psx.common.monthnamesshort_may"] = "May";_messages["psx.common.whats_new_title"] = "What's New";_messages["psx.common.monthnamesshort_oct"] = "Oct";_messages["psx.common.loading"] = "Loading...";_messages["psx.common.monthnamesshort_nov"] = "Nov";_messages["psx.common.general.problem"] = "Unable to process the request.  Please contact your system administrator to review logs.";_messages["psx.common.print_title"] = "Print this page";_messages["psx.common.monthnamesshort_jul"] = "Jul";_messages["psx.common.monthnamesshort_jun"] = "Jun";_messages["psx.common.monthnamesshort_jan"] = "Jan";_messages["psx.common.changes_recorded"] = "The changes have been recorded.";_messages["psx.common.daily_bulletin"] = "View Daily Bulletin";_messages["psx.common.sign_out_title"] = "Sign Out";_messages["psx.common.state_reporting_help"] = "State Reporting Help";_messages["psx.common.powerschool_sis"] = "PowerSchool SIS";_messages["psx.common.settings"] = "Settings";_messages["psx.common.provincial_reporting_help"] = "Provincial Reporting Help";_messages["psx.common.sign_in"] = "Sign In";_messages["psx.common.manage_profile"] = "Manage Profile";_messages["psx.common.skip_to_main_content"] = "Skip to main content";_messages["psx.common.minute"] = "{0} Minute";_messages["psx.common.copyright"] = "Copyright &copy; 2005-2023 PowerSchool Group LLC and/or its affiliate(s). All rights reserved.<br/>All trademarks are either owned or licensed by PowerSchool Group LLC and/or its affiliates.";_messages["psx.common.close"] = "Close";_messages["psx.common.stop_refresh"] = "Stop Refresh";_messages["psx.common.help"] = "Help";_messages["psx.common.translate_page_title"] = "Localize Page";_messages["psx.common.whats_new"] = "What's New";_messages["psx.common.guardian_daily_bulletin"] = "View School Bulletin";_messages["psx.common.minutes"] = "{0} Minutes";if (typeof pss_text != 'function') { function pss_text(key, params, returnKeyIfNotFound) { if (_messages[key] === undefined) { if (returnKeyIfNotFound !== undefined && returnKeyIfNotFound === true) {return key;} else {return 'String key was not found!'; }}if(params == null || params.length == 0) {return _messages[key]; }else { msg = _messages[key]; for ( i = 0; i < params.length; i++) {token = "{"+i+"}"; msg = msg.replace(token, params[i]); }return msg;} } }</script>
+<script type='text/javascript'>if(!_messages)var _messages = {};_messages["psx.js.scripts.psbehaviors.closetext"] = "Done";_messages["psx.js.scripts.psbehaviors.off"] = "Off";_messages["psx.js.scripts.psbehaviors.prevtext"] = "Prev";_messages["psx.js.scripts.psbehaviors.currenttext"] = "Today";_messages["psx.js.scripts.psbehaviors.add_issue_comment"] = "Add Issue Comment";_messages["psx.js.scripts.psbehaviors.yes"] = "Yes";_messages["psx.js.scripts.psbehaviors.about_n_characters_left"] = "Approximately {0} characters left";_messages["psx.js.scripts.psbehaviors.on"] = "On";_messages["psx.js.scripts.psbehaviors.or"] = "or";_messages["psx.js.scripts.psbehaviors.no"] = "No";_messages["psx.js.scripts.psbehaviors.noaccess"] = "No Field Access";_messages["psx.js.scripts.psbehaviors.time_entry"] = "Time Entry";_messages["psx.js.scripts.psbehaviors.hide_header"] = "Hide Header";_messages["psx.js.scripts.psbehaviors.added"] = "Added";_messages["psx.js.scripts.psbehaviors.change_date"] = "Change Date";_messages["psx.js.scripts.psbehaviors.hide_main_menu"] = "Hide Main Menu";_messages["psx.js.scripts.psbehaviors.wizprevious"] = "Previous";_messages["psx.js.scripts.psbehaviors.recording_start"] = "Start Recording";_messages["psx.js.scripts.psbehaviors.recording_stop"] = "Finish Recording";_messages["psx.js.scripts.psbehaviors.confirm_delete"] = "Confirm Delete";_messages["psx.js.scripts.psbehaviors.icons"] = "Icons";_messages["psx.js.scripts.psbehaviors.cancel"] = "Cancel";_messages["psx.js.scripts.psbehaviors.time_entry_x"] = "Time Entry ({0})";_messages["psx.js.scripts.psbehaviors.recording_cancel"] = "Cancel Recording";_messages["psx.js.scripts.psbehaviors.show_header"] = "Show Header";_messages["psx.js.scripts.psbehaviors.interval_thirty"] = "30 minute interval";_messages["psx.js.scripts.psbehaviors.restore_selections_school_and_term"] = "Restore Selection(s), School and Term";_messages["psx.js.scripts.psbehaviors.interval_hour"] = "hour only interval";_messages["psx.js.scripts.psbehaviors.time_icon"] = "Time Entry Icon";_messages["psx.js.scripts.psbehaviors.deleted"] = "Deleted";_messages["psx.js.scripts.psbehaviors.date_entry"] = "Date Entry";_messages["psx.js.scripts.psbehaviors.nexttext"] = "Next";_messages["psx.js.scripts.psbehaviors.show_main_menu"] = "Show Main Menu";_messages["psx.js.scripts.psbehaviors.report_an_issue"] = "Report an Issue";_messages["psx.js.scripts.psbehaviors.legend"] = "Legend";_messages["psx.js.scripts.psbehaviors.selected"] = "Selected";_messages["psx.js.scripts.psbehaviors.no_match_found"] = "No match found";_messages["psx.js.scripts.psbehaviors.reload_last_page"] = "Reload Last Page";_messages["psx.js.scripts.psbehaviors.would_you_like_to_reload_the_last_page_you_were_viewing"] = "Your session timed out due to inactivity. Would you like to restore your previous session and reload the last page you were viewing?";_messages["psx.js.scripts.psbehaviors.n_characters_left"] = "{0} characters left";_messages["psx.js.scripts.psbehaviors.main_navigation"] = "Main Navigation";_messages["psx.js.scripts.psbehaviors.deleted_xx"] = "Deleted: {0}";_messages["psx.js.scripts.psbehaviors.wizstep"] = "Step";_messages["psx.js.scripts.psbehaviors.confirmbanner.schoolstaff_removed"] = "The previously selected staff member was successfully removed from this school.";_messages["psx.js.scripts.psbehaviors.required"] = "Required Field";_messages["psx.js.scripts.psbehaviors.delete"] = "Delete";_messages["psx.js.scripts.psbehaviors.confirm"] = "Confirm ";_messages["psx.js.scripts.psbehaviors.added_xx"] = "Added: {0}";_messages["psx.js.scripts.psbehaviors.wiznext"] = "Next";_messages["psx.js.scripts.psbehaviors.interval_five"] = "5 minute interval";_messages["psx.js.scripts.psbehaviors.asterisk"] = "An asterisk indicates that classes for the term are hidden from parents/students in the PowerSchool Student and Parent portal and PowerSchool Mobile app.";_messages["psx.js.scripts.psbehaviors.calendar_icon"] = "Date Entry Icon";_messages["psx.js.scripts.psbehaviors.enrollment_alert"] = "The student you are attempting to enroll has an existing record in the district. Click OK, then proceed to transfer the student to your school if necessary.";_messages["psx.js.scripts.psbehaviors.would_you_like_to_restore_your_selections_school_and_term"] = "Your session timed out due to inactivity. Would you like to restore your previous session and return to the last used school, term, student and/or teacher selection?";_messages["psx.js.scripts.psbehaviors.interval_fifteen"] = "15 minute interval";_messages["psx.js.scripts.psbehaviors.indicator"] = "Possible duplicate student";_messages["psx.js.scripts.psbehaviors.send_report"] = "Report Issue";if (typeof pss_text != 'function') { function pss_text(key, params, returnKeyIfNotFound) { if (_messages[key] === undefined) { if (returnKeyIfNotFound !== undefined && returnKeyIfNotFound === true) {return key;} else {return 'String key was not found!'; }}if(params == null || params.length == 0) {return _messages[key]; }else { msg = _messages[key]; for ( i = 0; i < params.length; i++) {token = "{"+i+"}"; msg = msg.replace(token, params[i]); }return msg;} } }</script>
+
+<script>localStorage.setItem('pds-app-switcher-iframe-switch', 'production-ca');</script>
+<script type="text/javascript">
+	var HTMLImports = {
+		IMPORT_LINK_TYPE: 'prev',
+		flags: {}
+	};
+	Object.defineProperties(HTMLImports, {'IMPORT_LINK_TYPE': { get: function() {return 'prev';}}});
+</script>
+
+<!-- * * * * * * * * * * PDS Setup * * * * * * * * * * -->
+
+
+	<!-- CSS Files -->
+	<link rel="stylesheet" type="text/css" href="https://assets.powerschool.com/pds/31.0.0/css/tippy.css"/>
+	<link rel="stylesheet" type="text/css" href="https://assets.powerschool.com/pds/31.0.0/css/ckeditor-style-overrides.css"/>
+	<link rel="stylesheet" type="text/css" href="https://assets.powerschool.com/pds/31.0.0/css/pds-scope.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://assets.powerschool.com/pds/31.0.0/css/individual-styles/pds-base-non-breaking.min.css"/>
+
+	<link rel="stylesheet" type="text/css" href="https://assets.powerschool.com/pds/31.0.0/css/polymer-component-styles/pds-app-nav-styles.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://assets.powerschool.com/pds/31.0.0/css/polymer-component-styles/pds-app-switcher-styles.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://assets.powerschool.com/pds/31.0.0/css/polymer-component-styles/pds-help-menu-styles.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://assets.powerschool.com/pds/31.0.0/css/polymer-component-styles/pds-img-styles.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://assets.powerschool.com/pds/31.0.0/css/polymer-component-styles/pds-overlay-dropdown-styles.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://assets.powerschool.com/pds/31.0.0/css/polymer-component-styles/pds-user-menu-styles.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://assets.powerschool.com/pds/31.0.0/css/polymer-component-styles/pds-user-avatar-styles.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://assets.powerschool.com/pds/31.0.0/css/polymer-component-styles/pds-checkbox-widget-styles.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://assets.powerschool.com/pds/31.0.0/css/polymer-component-styles/pds-global-search-styles.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://assets.powerschool.com/pds/31.0.0/css/polymer-component-styles/pds-dialog-styles.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://assets.powerschool.com/pds/31.0.0/css/polymer-component-styles/pds-multi-select-widget-styles.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://assets.powerschool.com/pds/31.0.0/css/polymer-component-styles/pds-text-widget-styles.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://assets.powerschool.com/pds/31.0.0/css/polymer-component-styles/pds-tooltip-styles.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://assets.powerschool.com/pds/31.0.0/css/polymer-component-styles/pds-messages-widget-styles.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://assets.powerschool.com/pds/31.0.0/css/polymer-component-styles/pds-pop-over-styles.min.css"/>
+
+	<!-- JS Files -->
+	<script src="https://assets.powerschool.com/pds/31.0.0/js/powerschool-design-system-toolkit-bundled.min.js"></script>
+
+	<!-- HTML Files -->
+	<link rel="prev" href="https://assets.powerschool.com/pds/31.0.0/html/individual-polymer-components/pds-icon.html"/>
+	<link rel="prev" href="https://assets.powerschool.com/pds/31.0.0/html/individual-polymer-components/pds-app-nav.html">
+	<link rel="prev" href="https://assets.powerschool.com/pds/31.0.0/html/individual-polymer-components/pds-app-switcher.html"/>
+	<link rel="prev" href="https://assets.powerschool.com/pds/31.0.0/html/individual-polymer-components/pds-help-menu.html"/>
+	<link rel="prev" href="https://assets.powerschool.com/pds/31.0.0/html/individual-polymer-components/pds-img.html"/>
+	<link rel="prev" href="https://assets.powerschool.com/pds/31.0.0/html/individual-polymer-components/pds-overlay-dropdown.html"/>
+	<link rel="prev" href="https://assets.powerschool.com/pds/31.0.0/html/individual-polymer-components/pds-user-avatar.html"/>
+	<link rel="prev" href="https://assets.powerschool.com/pds/31.0.0/html/individual-polymer-components/pds-user-menu.html"/>
+	<link rel="prev" href="https://assets.powerschool.com/pds/31.0.0/html/individual-polymer-components/pds-checkbox-widget.html"/>
+	<link rel="prev" href="https://assets.powerschool.com/pds/31.0.0/html/individual-polymer-components/pds-global-search.html"/>
+	<link rel="prev" href="https://assets.powerschool.com/pds/31.0.0/html/individual-polymer-components/pds-dialog.html"/>
+	<link rel="prev" href="https://assets.powerschool.com/pds/31.0.0/html/individual-polymer-components/pds-multi-select-widget.html"/>
+	<link rel="prev" href="https://assets.powerschool.com/pds/31.0.0/html/individual-polymer-components/pds-dynamic-select.html"/>
+	<link rel="prev" href="https://assets.powerschool.com/pds/31.0.0/html/individual-polymer-components/pds-text-widget.html"/>
+	<link rel="prev" href="https://assets.powerschool.com/pds/31.0.0/html/individual-polymer-components/pds-tooltip.html"/>
+	<link rel="prev" href="https://assets.powerschool.com/pds/31.0.0/html/individual-polymer-components/pds-messages-widget.html"/>
+	<link rel="prev" href="https://assets.powerschool.com/pds/31.0.0/html/individual-polymer-components/pds-pop-over.html"/>
+	<link rel="prev" href="https://assets.powerschool.com/pds/31.0.0/html/individual-polymer-components/pds-file-picker-widget.html"/>
+	<link rel="prev" href="https://assets.powerschool.com/pds/31.0.0/html/individual-polymer-components/pds-confirm-dialog.html"/>
+
+
+
+
+
+<script>
+
+	if (window.powerSchoolDesignSystemToolkit == null) {
+		let linkElements = document.querySelectorAll("link[href^='https://assets.powerschool.com'");
+		for (let i = 0; i < linkElements.length; i++) {
+			let element = linkElements[i];
+			if (element.href.indexOf('31.0.0') > -1) {
+				element.href = element.href.replace('https://assets.powerschool.com/pds/31.0.0', 'https://psimages.ednet.ns.ca/psimages23_3/scripts/pds');
+			} else {
+				element.href = element.href.replace('https://assets.powerschool.com/pds', 'https://psimages.ednet.ns.ca/psimages23_3/scripts/pds/css');
+			}
+		}
+		document.write('<script src="https://psimages.ednet.ns.ca/psimages23_3/scripts/pds/js/powerschool-design-system-toolkit-bundled.min.js">\x3C/script>')
+	}
+	document.addEventListener('pdsMessageKeysInitEvent', (event) => {
+		event.detail.add({
+			'global|Close': 'Close',
+			'pds|app nav|Close Navigation Menu': 'Close Navigation Menu',
+			'pds|app nav|Open Navigation Menu': 'Open Navigation Menu',
+			'pds|app nav|Toggle User Menu': 'Toggle User Menu',
+			'pds|app switcher|Open user menu': 'Open user menu',
+			'pds|common|Required': 'required',
+			'pds|dialog|Escape Message': 'Escape Message',
+			'pds|file picker widget|Choose...': 'Choose...',
+			'pds|global-search|No Results Found': 'No Results Found',
+			'pds|global-search|Search': 'Search',
+			'pds|global-search|Try your search again.': 'Try your search again.',
+			'pds|messaging|Dismiss Message': 'Dismiss Message',
+			'pds|multi select|Select': 'Select',
+			'pds|popover|Backwards From First Element': 'Backwards From First Element',
+			'pds|popover|Forwards From Last Element': 'Forwards From Last Element',
+			'pds|search|Search': 'Search',
+			'pds|user-menu|User Menu Options': 'User Menu Options',
+		});
+	});
+
+</script>
+<!-- * * * * * * * * * * End PDS Setup * * * * * * * * * * -->
+
+<script src="https://psimages.ednet.ns.ca/psimages23_3/scripts/angular/runtime.f7b14dd2056633c9.js" type="module" crossorigin="anonymous"></script><script src="https://psimages.ednet.ns.ca/psimages23_3/scripts/angular/polyfills.e45730ed7cd4d02f.js" type="module" crossorigin="anonymous"></script><script src="https://psimages.ednet.ns.ca/psimages23_3/scripts/angular/scripts.d1e578ae79d13307.js" ></script><script src="https://psimages.ednet.ns.ca/psimages23_3/scripts/angular/main.6a92b7d211cd7592.js" type="module" crossorigin="anonymous"></script>
+
+
+	<script src="https://psimages.ednet.ns.ca/psimages23_3/scripts/jquery-3.6.1/jquery-3.6.1.min.js"></script>
+	<script src="https://psimages.ednet.ns.ca/psimages23_3/scripts/jquery-3.6.1/jquery-migrate-3.4.0.min.js"></script>
+	<script src="https://psimages.ednet.ns.ca/psimages23_3/scripts/jquery-migrate-ps.js"></script>
+	<script src="https://psimages.ednet.ns.ca/psimages23_3/scripts/jquery-ui-1.13.2.custom.min.js"></script>
+    <script src="https://psimages.ednet.ns.ca/psimages23_3/scripts/requirejs/require.js"></script>
+
+
+<script type="text/javascript" >
+  var feedbackEnabled = false;
+  var recordingActivated = false;
+</script>
+<script src="https://psimages.ednet.ns.ca/psimages23_3/scripts/psDialog.js"></script>
+<script type="text/javascript">
+/**
+ * Need to configure require js before psbehaviors.
+ */
+require.config({
+        waitSeconds: 0,
+    	baseUrl: "https://psimages.ednet.ns.ca/psimages23_3/scripts/",
+    	paths: {
+    		'handlebars':                'handlebars/require-handlebars.1.0.0.rc3',
+    		'json2':                     'handlebars/json2',
+    		'hbs':                       'hbs/0.4.0/hbs',
+    		'underscore':                'underscore/underscore-'+'min'+'-1.8.3',
+    		'backbone':                  'backbone/backbone-'+'min'+'-0.9.10',
+    		'jquery.cookie':             'jquery.cookie',
+    		'psDateValidate':            'psDateValidate',
+    		'psDateWidget':              'psDateWidget',
+    		'psDirtyStateController':    'psDirtyStateController',
+    		'psFormValidate':            'psFormValidate',
+    		'psNumWidget':               'psNumWidget',
+    		'psReloader/psReloader-min': 'psReloader/psReloader-min',
+    		'psRequired':                'psRequired',
+    		'psTextWidget':              'psTextWidget',
+    		'psValidationFunctions':     'psValidationFunctions',
+            'angular':                   'lib/angular/angular.min',
+            'angular-cookies':           'lib/angular/angular-cookies.min',
+            'angular-route':             'lib/angular/angular-route.min',
+            'angular-sanitize':          'lib/angular/angular-sanitize.min',
+            'angular-translate':         'lib/angular/angular-translate.min',
+            'angular-messages':          'lib/angular/angular-messages.min',
+            'angular-aria':              'lib/angular/angular-aria.min',
+            'angular-resource':      	 'lib/angular/angular-resource.min',
+            'encoding':               	 'lib/textencoder/encoding',
+            'filesaver':                 'lib/filesaver/FileSaver.min'
+        },
+
+        hbs: {
+            disableI18n: true
+        },
+
+        shim: {
+            'underscore': {
+                exports: '_'
+            },
+            'backbone': {
+                exports: 'Backbone',
+                deps: ['underscore']
+            },
+            'angular': {
+                exports: 'angular'
+            },
+            'angular-translate':{
+                deps: ['angular']
+            },
+            'angular-sanitize':{
+                deps: ['angular']
+            },
+            'angular-route':{
+                deps: ['angular']
+            },
+            'angular-cookies':{
+                deps: ['angular']
+            },
+            'angular-messages':{
+                deps: ['angular']
+            },
+            'angular-aria':{
+                deps: ['angular']
+            },
+            'angular-resource': {
+                deps: ['angular']
+            }
+        },
+
+        map: {
+            '*': {
+                'Handlebars': 'handlebars'
+            }
+        },
+        priority: [
+              'angular'
+        ]    });
+define('jquery', function () {
+	return jQuery;
+});
+define('jquery-ui', ['jquery'], function($) {
+	return $.ui;
+});
+</script>
+
+<script src="https://psimages.ednet.ns.ca/psimages23_3/scripts/psbehaviors.js"></script>
+<script src="https://psimages.ednet.ns.ca/psimages23_3/scripts/helpLinksMenu.js"></script>
+<script src="https://psimages.ednet.ns.ca/psimages23_3/scripts/keep-alive.js"></script>
+
+
+<!-- Frame type=none --><meta id="keep-alive-config" content="30"/>
+
+<script type="text/javascript">
+(function() {
+	let getCookie = function(cname) {
+		let name = cname + "=";
+		let decodedCookie = decodeURIComponent(document.cookie);
+		let ca = decodedCookie.split(';');
+		for (let i = 0; i < ca.length; i++) {
+			let c = ca[i];
+			while (c.charAt(0) == ' ') {
+				c = c.substring(1);
+			}
+			if (c.indexOf(name) == 0) {
+				return c.substring(name.length, c.length);
+			}
+		}
+		return "";
+	}
+	window.debugConsole = {
+		log: function(...message) {
+			if (getCookie("js-debug") === "true") {
+				console.log(...message);
+			}
+		},
+		debug: function(...message) {
+			if (getCookie("js-debug") === "true") {
+				console.debug(...message);
+			}
+		},
+		error: function(...message) {
+			if (getCookie("js-debug") === "true") {
+				console.error(...message);
+			}
+		},
+		info: function(...message) {
+			if (getCookie("js-debug") === "true") {
+				console.info(...message);
+			}
+		},
+		warn: function(...message) {
+			if (getCookie("js-debug") === "true") {
+				console.warn(...message);
+			}
+		}
+	}
+})();
+
+/**
+ * Set the page's locale via a request_locale URL parameter. If there is already a URL parameter by
+ * this name, then substitute it with the passed-in locale. NOTE: This function will actually cause the page
+ * to be re-submitted with the new locale, so it really should not be used with pages submitted via POST
+ * requests (if there are any, which I hope there are not).
+ * @param locale the locale to set (e.g. en_US)
+ */
+function setPageLocale (locale) {
+  var c=String (window.location);
+  var rlpos = c.indexOf("request_locale=");
+  var afterPart = "";
+  if (rlpos > 0) {
+    var afterBegin = c.indexOf("&", rlpos);
+    if (afterBegin > 0) {
+      afterPart = c.substring(afterBegin);
+    }
+    c = c.substring(0, rlpos-1);
+  }
+  var s=(c.indexOf('?') > 0 ? '&' : '?');
+  var np = c + s + 'request_locale=' + locale + afterPart;
+  window.location = np;
+}
+
+function get_locale() {
+  return "en_US";
+}
+
+function checkForPTMURL() {
+	if ($j && $j.cookie && $j.cookie('PTM_URL')!=null
+		&& window.location!=$j.cookie('PTM_URL')
+		&& !window.location.href.match("/teachers/pw.html") ) {
+			var path = $j.cookie('PTM_URL');
+			$j.cookie('PTM_URL',null, { path: '/', expires: -1 });
+			window.location.replace(path);
+	}
+}
+
+
+if(typeof pss_text!='function'){
+function pss_text(key, params, returnKeyIfNotFound) {
+	if (_messages[key] === undefined)
+	{
+		if (returnKeyIfNotFound !== undefined && returnKeyIfNotFound === true) {
+			return key;
+		} else {
+			return "String key was not found!";
+		}
+	}
+	if(params == null || params.length == 0)
+	{
+  		return _messages[key];
+	}
+	else
+	{
+		msg = _messages[key];
+		for ( i = 0; i < params.length; i++)
+		{
+			token = "{"+i+"}";
+			msg = msg.replace(token, params[i]);
+		}
+		return msg;
+	}
+}
+}
+
+function get_localized_date(d, fmt) {
+   if (fmt === "mmdd") return ("" + ( (d.getMonth()+1) < 10 ? '0' + (d.getMonth() + 1) : (d.getMonth() + 1 ) ) + "/" + (d.getDate() < 10 ? '0' + d.getDate() : d.getDate() ) + "");
+   return ("" + ( (d.getMonth()+1) < 10 ? '0' + (d.getMonth() + 1) : (d.getMonth() + 1 ) ) + "/" + (d.getDate() < 10 ? '0' + d.getDate() : d.getDate() ) + "/" + d.getFullYear() + "");
+}
+
+
+// Format is a formatting object
+// number is number object
+function formatNumber(format, number)
+{
+	var ds = format.ds; // decimal separator
+	var result = "";
+
+	if (isNaN(number) == true)
+	{
+		return number
+	}
+	else
+	{
+		result = number.toString();
+		result = result.replace(".",ds);
+		return result;
+	}
+}
+
+function localizeNumber(number)
+{
+	return formatNumber(get_numeric_format(), number);
+}
+
+function deLocalizeNumber(number) {
+	return removeNumberFormat(get_numeric_format(), number);
+}
+
+function removeNumberFormat(format, number) {
+	// IE does not like instantiating RegExp objects with empty values, so we have to
+	// check for valid values in the grouping separator before using it in a RegExp.
+	var gsNotBlank = (format.gs == "." || format.gs == "," || format.gs == " ");
+	number = number.toString();
+	// We also want to check that only valid characters are present.
+	var regexString = "^" + format.regex + "$";
+	var validNumber = new RegExp(regexString, "g");
+	if (number != "" && number.match(validNumber) != null) {
+		if (gsNotBlank) {
+			var gs = new RegExp("\\"+format.gs, "g");
+			number = number.replace(gs, "")
+		}
+		var ds = new RegExp("\\"+format.ds, "g"); //The decimal separator is not expected to be empty
+		number = parseFloat(number.replace(ds, "."));
+	} else {
+		return null;
+	}
+	return (isNaN(number)) ? null : number;
+}
+
+function localizeCurrency(number)
+{
+	return formatNumber(get_currency_format(), number);
+}
+
+<!-- This function return a json object with numeric formatting info -->
+function get_numeric_format() {
+   return  { format: '#,##0.#########', 
+ size: '3', 
+ gs: ',', 
+ ds: '.', 
+ regex: '([-]?(([0-9]{1,3}(,[0-9]{3})*(\\.[0-9]+)?|\\.[0-9]+)|([0-9]*(\\.[0-9]+)?)))' }; 
+;
+}
+
+<!-- This function return a json object with currency formating info -->
+function get_currency_format() {
+   return  { format: '#,##0.00', 
+ size: '3', 
+ gs: ',', 
+ ds: '.', 
+ regex: '([-]?(([0-9]{1,3}(,[0-9]{3})*(\\.[0-9]+)?|\\.[0-9]+)|([0-9]*(\\.[0-9]+)?)))' }; 
+;
+}
+
+<!-- This function return date format in machine readable form -->
+function get_short_date_format() {
+   return "M/d/yy";
+}
+<!-- This function return date format in machine readable form -->
+function get_date_format() {
+   return "MM/dd/yyyy";
+}
+
+<!-- This function return date format in human readable form -->
+function get_date_text(){
+  	return "MM/DD/YYYY";
+}
+<!-- This function return date format in human readable form -->
+function get_short_date_text(){
+	return "MM/DD/YY";
+}
+
+<!-- This function return time format in machine readable form without seconds-->
+function get_HHMMTime_format() {
+   return "hh:mm a";
+}
+
+<!-- This function return time format in machine readable form with seconds-->
+function get_HHMMSSTime_format() {
+   return "hh:mm:ss a";
+}
+
+<!-- This function return ante/post meridian in machine readable form -->
+function get_AMPM(ampm) {
+	if(ampm == "am")
+   		return "AM";
+   	else
+   		return "PM";
+}
+
+if(!_messages) var _messages = {};
+/**
+ * Get texts from the server based on a prefix.
+ * @param prefix the prefix to use
+ * @param onlyIfNotPresent (optional) if passed, check to see if message is present yet; only fetch the
+ *   texts from the server if this key is not present
+ */
+function pss_get_texts(prefix, onlyIfNotPresent) {
+  if (onlyIfNotPresent && _messages[onlyIfNotPresent]) return;
+
+  jQuery.ajax ({async: false,
+    url:'/getMessages.action',
+    data:{prefix: prefix, locale: get_locale()},
+    dataType:'json',
+    success: function (msgs) {
+      jQuery.each(msgs, function (key, value) {
+        _messages[key] = value;
+      });
+    }
+  });
+}
+
+function alertwindow (directory, alerttype, frn) {
+	w = window.open("/"+directory+"/alerts/"+alerttype+"alert.html?frn="+frn, "alert", "toolbar=no,location=no,directories=no,status=no,scrollbars=yes,resizable=yes,width=350,height=250");
+}
+
+function helpwindow (url) {
+	w = window.open(url, "help", "toolbar=no,location=no,directories=no,status=no,scrollbars=yes,resizable=yes,width=570,height=500");
+}
+
+function helptext (text) {
+	window.status = text;
+	return true;
+}
+
+function openSpecialWeighting(opener) {
+var path = "";
+if (opener == "admin"){
+		path = "/admin/students/specialweighting.html";
+	}else if (opener == "parent"){
+		path = "/guardian/specialweighting.html";
+	}else if (opener == "teacher"){
+		path = "/teachers/studentpages/specialweighting.html";
+	}
+	window.open(path, 'Weighting', 'width=500,height=425,menu=no,toolbar=no,location=no,scrollbars=yes');
+
+}
+
+function openScaleTranslation() {
+	var path="/admin/stdconversiontable/scaletranslation.html";
+	window.open(path, 'Scale_Translation', 'width=500,height=425,menu=no,toolbar=no,location=no,scrollbars=yes,resizable=1');
+}
+
+function alertcommentwindow(studentid, sectionid, asmtid) {
+	window.open("scorecomment.html?ac=scorecomment&studentid=" + studentid + "&sectionid=" + sectionid + "&asmtid=" + asmtid, "Score", "toolbar=no,location=no,directories=no,status=no,scrollbars=yes,resizable=yes,width=480,height=480");
+}
+
+function feedbackwindow () {
+	window.showModalDialog('/getFeedback.action','send_feedback','dialogWidth:640px; dialogHeight:500px; scroll:no;');
+}
+
+function $(id) {
+	return document.getElementById(id);
+}
+
+//line breaks are 2 chracters on the backend (\r\n)
+//IE treats them as 2 already but FF and Safari treat them
+//as one (\n only). This will ensure all browsers are counting line
+//breaks as 2
+// This function is duplicated in muliple locations. Updating one requires
+// updating all of them. They are located under
+// web_root/wildcards/commonscripts.txt
+// web_root/scripts/commonscripts.js
+// sis/web/srv/views/psxdecorators/commonscripts.ftl
+function realLength(str) {
+	if (!str)
+		return 0;
+
+	//replace \r with empty string (this will only be matched on IE)
+	var temp = str.replace(/\r/g, "");
+
+	//find all occurances of newlines (\n)
+	var lns = temp.match(/\n/g);
+
+	if (lns)
+		//if we had any newlines, do this hokie pokie to consistently count them as two
+		return temp.length + lns.length;
+	else
+		//else no newlines, we can just use the strings actual length
+		return str.length;
+}
+
+
+// trim function that truncates off the end of stringCopy until the string is less than
+// maxlimit. Treats any new line (\n or \r\n) as two characters when trimmed
+// off the end.
+// stringCount should be calcuated by the function realLength. The value is either the
+// length of stringCopy in chracters if isUnicode == false, or the length in bytes
+// if isUnicode == true.
+// This function is duplicated in muliple locations. Updating one requires
+// updating all of them. They are located under
+// web_root/wildcards/commonscripts.txt
+// web_root/scripts/commonscripts.js
+// sis/web/srv/views/psxdecorators/commonscripts.ftl
+function trimToSize (stringCopy, stringCount, maxlimit, isUnicode) {
+
+	var last_char;
+	var secondToLast_char;
+	var curval = stringCopy;
+	var unicodeEscaped;
+	var unicodeCharLength;
+	for (; stringCount > maxlimit; ) {
+		//get the last char in the string
+		last_char = curval.charAt(curval.length-1);
+		if (last_char == '\n') {
+			//check if the second to last is a \r and yank that too
+			secondToLast_char = curval.charAt(curval.length-2);
+
+			if (secondToLast_char == '\r') {
+				curval = curval.substring(0, curval.length-2);
+			}
+			else {
+				curval = curval.substring(0, curval.length-1);
+			}
+			//line breaks need to be handled as 2 characters
+			stringCount = stringCount - 2;
+		}
+		else {
+			//character, pull it
+			//figure out how many units to decriment the count by
+			if (isUnicode) {
+				unicodeEscaped = unescape( encodeURIComponent( last_char ) );
+				unicodeCharLength = unicodeEscaped.length;
+				stringCount = stringCount - unicodeCharLength;
+			}
+			else {
+				stringCount = stringCount - 1;
+			}
+
+
+			curval = curval.substring(0, curval.length-1);
+		}
+
+	}
+	// All done, field data is cut down to size. Save it.
+	return curval;
+
+
+}
+
+// This function is duplicated in muliple locations. Updating one requires
+// updating all of them. They are located under
+// web_root/wildcards/commonscripts.txt
+// web_root/scripts/commonscripts.js
+// sis/web/srv/views/psxdecorators/commonscripts.ftl
+function maxlength( field, maxlimit, leftCountSpan ) {
+	var ret = true;
+	var scrollDown = false;
+	var characterCount = realLength(field.value);
+	var stringCopy;
+	var isUnicode;
+	var hasChanged = false;
+
+	// Check max field length. Now modified to also take Oracle 4000B limit into account.
+    if ( characterCount > maxlimit ) {
+      	stringCopy = field.value;
+      	isUnicode = false;
+      	field.value = trimToSize (stringCopy, characterCount, maxlimit, isUnicode);
+
+		characterCount = realLength(field.value); //update the charCount since we've altered the string
+        scrollDown = true;
+        ret = false;
+        hasChanged = true;
+    }
+
+    var utf8 = unescape( encodeURIComponent( field.value ) );
+    var unicodeCharacterCount = realLength(utf8);
+    if (unicodeCharacterCount > 4000) {
+      stringCopy = field.value;
+      isUnicode = true;
+      var maxBytes = 4000;
+      field.value = trimToSize(stringCopy, unicodeCharacterCount, maxBytes, isUnicode);
+
+      characterCount = realLength(field.value); //update the charCount since we've altered the string
+      utf8 = unescape( encodeURIComponent( field.value ) );
+      unicodeCharacterCount = realLength(utf8); //update the unicodeCharCount since we've altered the string
+      ret = false;
+      scrollDown = true;
+      hasChanged = true;
+    }
+
+    if (scrollDown) {
+        field.scrollTop = field.scrollHeight;
+    }
+
+    // Find # left if caller wants to know
+	if (leftCountSpan) {
+	    var left1 = maxlimit - characterCount;
+		var left2 = 4000 - unicodeCharacterCount;
+		var left = (left1 < left2 ? left1 : left2);
+
+		$j("#"+leftCountSpan).html(left);
+    }
+
+    if(hasChanged) {
+        $j(field).trigger('change');
+    }
+    return ret;
+}
+
+function noNumbers(e) {
+    var keynum, keychar, numcheck;
+    if(window.event) keynum = e.keyCode; // IE
+    else if(e.which) keynum = e.which; // Netscape/Firefox/Opera
+    keychar = String.fromCharCode(keynum);
+    numcheck = /\d/;
+    return !numcheck.test(keychar);
+}
+
+function onlyNumbers(e) {
+    return !noNumbers(e);
+}
+
+function decodeText(text) {
+	return $j("<div/>").html(text).text();
+}
+
+var changeHistoryPayload = null;
+/**
+ * Creates the change history payload object if it doesn't already exist. Otherwise, it updates the existing object's context.
+ */
+function createOrUpdateChangeHistoryPayload(context) {
+	if (changeHistoryPayload !== null) {
+		changeHistoryPayload.context = context;
+	} else {
+	    changeHistoryPayload = {
+	        context: context,
+	        columns: []
+	    };
+	    $j(document).ready( function() {
+	        subscribeDialog("change_history");
+	    });
+	}
+}
+
+/**
+ * Adds or replaces a key column on a payload object. If the table name and column match one that is already present,
+ * the existing value is replaced.
+ */
+function setChangeHistoryColumn(tableName, columnName, value) {
+	if (changeHistoryPayload !== null && tableName && columnName) {
+		var list = changeHistoryPayload.columns;
+		if (list && Array.isArray(list)) {
+			var doAdd = true;
+			for (var i = 0; i < list.length; i++) {
+				var next = list[i];
+				if (next.table_name.toUpperCase() === tableName.toUpperCase() && next.column_name.toUpperCase() == columnName.toUpperCase()) {
+					next.column_value = value;
+					doAdd = false;
+					break;
+				}
+			}
+			if (doAdd) {
+				list.push({
+					table_name: tableName,
+					column_name: columnName,
+					column_value: value
+				});
+			}
+		}
+	}
+}
+
+/**
+ * Adds or replaces a set of options to be used to set a key column value. The column must first be created using setChangeHistoryColumn. Note that the column value will be made null.
+ * tableName: The table name of the corresponding key column.
+ * columnName: The column name of the corresponding key column.
+ * label: The label to display in the UI for the select list. Localization should be done before passing in.
+ * options: Array of options to display. Each object should have a name (for display) and value (for posting).
+ * copyToColumns: Option array of arrays on which the selected value should be copied. Each array should have a column_name and column_value that corresponds to another key column.
+ */
+function addChangeHistoryColumnOptions(tableName, columnName, label, options, copyToColumns) {
+	if (changeHistoryPayload !== null && tableName && columnName && options) {
+		var list = changeHistoryPayload.columns;
+		if (list && Array.isArray(list)) {
+			for (var i = 0; i < list.length; i++) {
+				var next = list[i];
+				if (next.table_name.toUpperCase() === tableName.toUpperCase() && next.column_name.toUpperCase() == columnName.toUpperCase()) {
+					next.column_value = null;
+					next.column_option_label = label || columnName;
+					next.column_options = options;
+					next.copy_to_columns = copyToColumns;
+					break;
+				}
+			}
+		}
+	}
+}
+
+</script>
+
+<script type="application/x-javascript">
+addEventListener("load", function() {
+	setTimeout(function() {
+		hideURLbar();
+		adjustFrameStyles();
+	}, 0);
+	enableScreenReader();
+}, false);
+
+function adjustFrameStyles() {
+	var containerFrame = document.querySelector('#container-frame');
+	if (containerFrame && containerFrame.classList.contains('pds')) {
+		var containerFrameMenu = document.querySelector('#container-frame-menu');
+		if (containerFrameMenu) {
+			document.body.classList.add('noScroll', 'backgroundAdjusted');
+			var contentMain = document.querySelector('#content-main');
+			if (contentMain) {
+				contentMain.classList.add('autoScroll');
+			}
+		}
+	}
+}
+
+function hideURLbar() {
+	window.scrollTo(0,1);
+	var appNav = document.querySelector('pds-app-nav');
+	if (appNav) {
+		document.getElementById('content-main').scrollTop = 0;
+	}
+}
+//code block to enable screen reader when any action error occurs
+function enableScreenReader(){
+require(['underscore'], function (_) {
+setTimeout(function(){
+    if(jQuery(".feedback-alert").is(":visible")){
+    jQuery(".feedback-alert li").attr("role","alert");
+    jQuery(".feedback-alert li").attr("aria-live","polite");
+    }
+},0);
+});
+}
+</script>
+
+<!-- iPhone Scripts introduced for parent access -->
+<script type='text/javascript'>if(!_messages)var _messages = {};_messages["psx.js.admin_javascript.validate_date.month_1"] = "Month ";_messages["psx.js.admin_javascript.validate_date._doesnt_have_31_days"] = " doesn't have 31 days.";_messages["psx.js.admin_javascript.validate_date._doesnt_have_"] = " doesn't have ";_messages["psx.js.admin_javascript.validate_date.month_must_be_between_1_and_12"] = "Month must be between 1 and 12.";_messages["psx.js.admin_javascript.validate_date.warning_invalid_date"] = "Warning: Invalid Date";_messages["psx.js.admin_javascript.validate_date.date_format_must_be"] = "Date format must be ({0}).";_messages["psx.js.admin_javascript.validate_date.day_must_be_between_1_and_31"] = "Day must be between 1 and 31.";_messages["psx.js.admin_javascript.validate_date._days"] = " days.";_messages["psx.js.admin_javascript.validate_date.february_"] = "February ";if (typeof pss_text != 'function') { function pss_text(key, params, returnKeyIfNotFound) { if (_messages[key] === undefined) { if (returnKeyIfNotFound !== undefined && returnKeyIfNotFound === true) {return key;} else {return 'String key was not found!'; }}if(params == null || params.length == 0) {return _messages[key]; }else { msg = _messages[key]; for ( i = 0; i < params.length; i++) {token = "{"+i+"}"; msg = msg.replace(token, params[i]); }return msg;} } }</script>
+<script language="JavaScript" type="text/javascript" src="/admin/JavaScript/validate_date.js"></script>
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192" />
+<link rel="icon" type="image/png" href="/android-chrome-512x512.png" sizes="512x512" />
+<link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/favicon-128.png" sizes="128x128" />
+
+<meta name="application-name" content="PowerSchool"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/mstile-310x310.png" />
+<link rel="shortcut icon" href="/favicon.ico" >
+
+
+
+
+
+
+
+
+<script language="javascript">
+
+// override the click function due to core page error
+
+    $j(document).ready(function() {
+        $j('select').on('change', function() {
+            var url = $j(this).val();
+            window.location.href = url;
+        });
+    });
+    
+    // comment out core click function which is causing JS error
+    
+    function formHandler(newLoc){
+    //    var URL = newLoc.options[newLoc.selectedIndex].value;
+    //    window.location.href = URL;
+    }
+</script>
+<!-- mobile detection and redirection script -->
+
+<script language="JavaScript">
+var pref=1;
+</script>
+
+<script language="JavaScript" src="https://psimages.ednet.ns.ca/psimages23_3/scripts/mobile/detectMobileWebkit.js">
+</script>
+
+
+<link href="https://psimages.ednet.ns.ca/psimages23_3/images/css/screen.css" rel="stylesheet" media="screen">
+<link href="https://psimages.ednet.ns.ca/psimages23_3/images/css/print.css" rel="stylesheet" media="print">
+</head>
+
+<body class="psteacher">
+
+<!-- start of shell for entire page -->
+
+<!-- start of shell for entire page  -->
+<div id="container" class="group">
+<!-- start of shell for entire page  -->
+<!-- logo, school, term, logoff, help -->
+<div id="header" class="group">
+	 <ul id="tools">
+	    <li id="userName" title="Substitute for Stewart, Andrew
+ (Last Sign In:&nbsp;11/21/2023 at 02:28 PM timed out. 142.227.143.2)">Welcome, <span>Substitute for Andrew Stewart</span></li>
+        <li><a href="https://docs.powerschool.com/PSHTS/23.3" target="_blank" id="btnHelp" title="Help" accesskey="?">Help</a></li>
+         <li><a href="~loff" id="btnLogout" target="_top" title="Sign Out" accesskey="l">Sign Out</a></li>       
+     </ul>
+    <div id="branding-powerschool">
+    	<a href="/subs/home.html"></a>
+    </div>
+	<div id="currentscope">
+        School:
+            <span id="schoolText">Park View Education Centre</span>
+        Term:
+            <span id="termText">23-24 Semester 1</span>
+    </div>
+	<div id="cust-content-header"></div>
+</div>
+<!--logo, school, term, logoff, help -->
+<div id="usercontext-bar">
+<div id="breadcrumbs" role="navigation">
+<!--Breadcrumbs in page, close in admin-navigation wc-->
+
+</div><!--end BC tag-->
+	<ul id="tools2">
+		<li class="icon-btn-print"><a href="javascript:window.print()"  id="btnPrint" title="Print">&nbsp;</a></li>
+   </ul>
+</div>
+<!-- start of main menu and content -->
+<div id="content" class="group">
+<!-- start gel tabs navigation -->
+<div id="nav-main" role="navigation">
+  <h2>Navigation</h2>
+  <ul>
+	  <li><a href="/subs/home.html" id="navHome" title="Start Page">Start Page</a></li>
+	  <li><a href="/subs/bulletin_popup.html" class="dialogM" id="navBulletin" title="View Daily Bulletin">View Daily Bulletin</a></li>
+  </ul>
+  <div id="cust-leftnav-footer">
+<ul>
+	<li id="liSMMessageSenderAdmin"><a href="/admin/messagesender/msgsndr.html" id="navSMMessageSenderAdmin" title="Message Sender">Message Sender</a></li>
+</ul>
+
+<script>
+	var liMessageSenderAdmin = document.getElementById("liSMMessageSenderAdmin");
+
+	if (liMessageSenderAdmin != null) {
+		var pathname = window.location.pathname; // returns path only        
+		if (pathname.toLowerCase().indexOf("/admin/home.html") == 0) {
+			var ul = document.getElementById("left_nav_functions");        
+			if (ul != null) 
+			 	// Move to "Functions" section
+				ul.appendChild(liMessageSenderAdmin);
+		} else 
+			// Hide
+			liMessageSenderAdmin.style.display = "none";
+	}
+</script></div>
+</div>
+<div id="content-main">
+<!--start of content-main-->
+
+<form name="navigation">
+<!-- Start of shaded content table -->
+<h1>Start Page</h1>
+<div class="box-round">
+
+
+<table id="teacherSectionTable">
+    <tr>
+        <th style="text-align:center">Expression</th>
+        <th>Course Name</th>
+        <th style="text-align:center">Section</th>
+
+    </tr>
+    <tr sectionID="110283">
+        <td align="left">HR(M1-Th2)</td>
+        <td align="left">HOMEROOM ATTENDANCE ONLY AM</td>
+        <td>10Stewart</td>
+        <td align="center" colspan="3"><img src="https://psimages.ednet.ns.ca/psimages23_3/images/img/btn_chair_notinsession.png" alt="Section doesn't meet"></td>
+
+        <!-- comment out the two links NS does not use
+        
+        <td><a href="/subs/seatingchartcontainer.action?sectionId=110283">
+            <img src="https://psimages.ednet.ns.ca/psimages23_3/images/seatingchart/seatingcharticon.png" alt="Seating Chart" width="20" height="27" border="0"></a>
+        </td>
+
+        <td><a href="lunch.html?sectionid=110283&frn=003110399"><img src="https://psimages.ednet.ns.ca/psimages23_3/images/btn_silverware.gif" width="32" height="30" alt="Submit Lunch Accounts" border="0"></a></td>
+    
+        -->
+    </tr><tr sectionID="108700">
+        <td align="left">1(M1,M2),2(Th1,Th2),3(W1,W2),4(T1,T2),5(M1,M2)</td>
+        <td align="left">CANADIAN HISTORY 11</td>
+        <td>1</td>
+        <td align="center" colspan="3"><a href="/subs/classattendance.html?sectionid=108700&frn=003108791&att_period=3&att_date=11/29/2023&Att_Mode_Code=ATT_ModeMeeting&pagetype=meeting&ATT_Source_Code=Teacher&Period_ID=8905" title="Take Attendance"><img src="https://psimages.ednet.ns.ca/psimages23_3/images/img/btn_chair.png" alt="Take Attendance"></a></td>
+
+        <!-- comment out the two links NS does not use
+        
+        <td><a href="/subs/seatingchartcontainer.action?sectionId=108700">
+            <img src="https://psimages.ednet.ns.ca/psimages23_3/images/seatingchart/seatingcharticon.png" alt="Seating Chart" width="20" height="27" border="0"></a>
+        </td>
+
+        <td><a href="lunch.html?sectionid=108700&frn=003108791"><img src="https://psimages.ednet.ns.ca/psimages23_3/images/btn_silverware.gif" width="32" height="30" alt="Submit Lunch Accounts" border="0"></a></td>
+    
+        -->
+    </tr><tr sectionID="108802">
+        <td align="left">1(T1,T2),2(M1,M2),3(Th1,Th2),4(W1,W2),5(T1,T2)</td>
+        <td align="left">ADVANCED GLOBAL GEOGRAPHY 12</td>
+        <td>1</td>
+        <td align="center" colspan="3"><a href="/subs/classattendance.html?sectionid=108802&frn=003108893&att_period=4&att_date=11/29/2023&Att_Mode_Code=ATT_ModeMeeting&pagetype=meeting&ATT_Source_Code=Teacher&Period_ID=8906" title="Take Attendance"><img src="https://psimages.ednet.ns.ca/psimages23_3/images/img/btn_chair.png" alt="Take Attendance"></a></td>
+
+        <!-- comment out the two links NS does not use
+        
+        <td><a href="/subs/seatingchartcontainer.action?sectionId=108802">
+            <img src="https://psimages.ednet.ns.ca/psimages23_3/images/seatingchart/seatingcharticon.png" alt="Seating Chart" width="20" height="27" border="0"></a>
+        </td>
+
+        <td><a href="lunch.html?sectionid=108802&frn=003108893"><img src="https://psimages.ednet.ns.ca/psimages23_3/images/btn_silverware.gif" width="32" height="30" alt="Submit Lunch Accounts" border="0"></a></td>
+    
+        -->
+    </tr><tr sectionID="108799">
+        <td align="left">1(W1,W2),2(T1,T2),3(M1,M2),4(Th1,Th2),5(W1,W2)</td>
+        <td align="left">GEOGRAPHY 11</td>
+        <td>1StewThom</td>
+        <td align="center" colspan="3"><a href="/subs/classattendance.html?sectionid=108799&frn=003108890&att_period=1&att_date=11/29/2023&Att_Mode_Code=ATT_ModeMeeting&pagetype=meeting&ATT_Source_Code=Teacher&Period_ID=8903" title="Take Attendance"><img src="https://psimages.ednet.ns.ca/psimages23_3/images/img/btn_chair.png" alt="Take Attendance"></a><br><select name="att_periodpopup108799_19003468" onChange="javascript:formHandler(this.form.att_periodpopup108799_19003468)" id="att_periodpopup108799_19003468"><option value="/subs/classattendance.html?sectionid=108799&frn=003108890&att_period=1&att_date=11/29/2023&Att_Mode_Code=ATT_ModeMeeting&pagetype=meeting&ATT_Source_Code=Teacher&Period_ID=8903" selected>1</option><option value="/subs/classattendance.html?sectionid=108799&frn=003108890&att_period=5&att_date=11/29/2023&Att_Mode_Code=ATT_ModeMeeting&pagetype=meeting&ATT_Source_Code=Teacher&Period_ID=8907">5</option></select></td>
+
+        <!-- comment out the two links NS does not use
+        
+        <td><a href="/subs/seatingchartcontainer.action?sectionId=108799">
+            <img src="https://psimages.ednet.ns.ca/psimages23_3/images/seatingchart/seatingcharticon.png" alt="Seating Chart" width="20" height="27" border="0"></a>
+        </td>
+
+        <td><a href="lunch.html?sectionid=108799&frn=003108890"><img src="https://psimages.ednet.ns.ca/psimages23_3/images/btn_silverware.gif" width="32" height="30" alt="Submit Lunch Accounts" border="0"></a></td>
+    
+        -->
+    </tr><tr sectionID="108701">
+        <td align="left">1(Th1,Th2),2(W1,W2),3(T1,T2),4(M1,M2),5(Th1,Th2)</td>
+        <td align="left">CANADIAN HISTORY 11</td>
+        <td>2</td>
+        <td align="center" colspan="3"><a href="/subs/classattendance.html?sectionid=108701&frn=003108792&att_period=2&att_date=11/29/2023&Att_Mode_Code=ATT_ModeMeeting&pagetype=meeting&ATT_Source_Code=Teacher&Period_ID=8904" title="Take Attendance"><img src="https://psimages.ednet.ns.ca/psimages23_3/images/img/btn_chair.png" alt="Take Attendance"></a></td>
+
+        <!-- comment out the two links NS does not use
+        
+        <td><a href="/subs/seatingchartcontainer.action?sectionId=108701">
+            <img src="https://psimages.ednet.ns.ca/psimages23_3/images/seatingchart/seatingcharticon.png" alt="Seating Chart" width="20" height="27" border="0"></a>
+        </td>
+
+        <td><a href="lunch.html?sectionid=108701&frn=003108792"><img src="https://psimages.ednet.ns.ca/psimages23_3/images/btn_silverware.gif" width="32" height="30" alt="Submit Lunch Accounts" border="0"></a></td>
+    
+        -->
+    </tr>
+    <tr>
+        <td colspan="4" align="center"><p>Click on the chair to take attendance or the</p><p>silverware to submit lunch counts for each class.</p><p>When you are finished, click the &#39;Sign Out&#39; link above.</p>
+    </tr>
+</table>
+
+</div>
+<!-- End of shaded content table -->
+</form>
+	<div id="cust-content-footer"><script>
+$j(document).ready(function()
+{
+    const sectionTakenATT = [];
+    const periodTakenATT = [];
+    
+    sectionTakenATT.push(105843);
+    periodTakenATT.push(1058438775);
+    
+    sectionTakenATT.push(110235);
+    periodTakenATT.push(1102358834);
+    
+    sectionTakenATT.push(110236);
+    periodTakenATT.push(1102368836);
+    
+    sectionTakenATT.push(110306);
+    periodTakenATT.push(1103068762);
+    
+    sectionTakenATT.push(110309);
+    periodTakenATT.push(1103098763);
+    
+    sectionTakenATT.push(110021);
+    periodTakenATT.push(1100218719);
+    
+    sectionTakenATT.push(104221);
+    periodTakenATT.push(1042218786);
+    
+    sectionTakenATT.push(106889);
+    periodTakenATT.push(1068898660);
+    
+    sectionTakenATT.push(107830);
+    periodTakenATT.push(1078308862);
+    
+    sectionTakenATT.push(103578);
+    periodTakenATT.push(1035788743);
+    
+    sectionTakenATT.push(110594);
+    periodTakenATT.push(1105948963);
+    
+    sectionTakenATT.push(106187);
+    periodTakenATT.push(1061878806);
+    
+    sectionTakenATT.push(110431);
+    periodTakenATT.push(1104319759);
+    
+    sectionTakenATT.push(108643);
+    periodTakenATT.push(1086438817);
+    
+    sectionTakenATT.push(109991);
+    periodTakenATT.push(1099918817);
+    
+    sectionTakenATT.push(110025);
+    periodTakenATT.push(1100258720);
+    
+    sectionTakenATT.push(105948);
+    periodTakenATT.push(1059488775);
+    
+    sectionTakenATT.push(106402);
+    periodTakenATT.push(1064029665);
+    
+    sectionTakenATT.push(109375);
+    periodTakenATT.push(1093758626);
+    
+    sectionTakenATT.push(105947);
+    periodTakenATT.push(1059478776);
+    
+    sectionTakenATT.push(108618);
+    periodTakenATT.push(1086188817);
+    
+    sectionTakenATT.push(111633);
+    periodTakenATT.push(1116338662);
+    
+    sectionTakenATT.push(109256);
+    periodTakenATT.push(1092568625);
+    
+    sectionTakenATT.push(103574);
+    periodTakenATT.push(1035748743);
+    
+    sectionTakenATT.push(107261);
+    periodTakenATT.push(1072618683);
+    
+    sectionTakenATT.push(107261);
+    periodTakenATT.push(1072618684);
+    
+    sectionTakenATT.push(108778);
+    periodTakenATT.push(1087788903);
+    
+    sectionTakenATT.push(108799);
+    periodTakenATT.push(1087998903);
+    
+    sectionTakenATT.push(103573);
+    periodTakenATT.push(1035738743);
+    
+    sectionTakenATT.push(104092);
+    periodTakenATT.push(1040928787);
+    
+    sectionTakenATT.push(110120);
+    periodTakenATT.push(1101208818);
+    
+    sectionTakenATT.push(107756);
+    periodTakenATT.push(1077568744);
+    
+    sectionTakenATT.push(107838);
+    periodTakenATT.push(1078388863);
+    
+    sectionTakenATT.push(110922);
+    periodTakenATT.push(1109228863);
+    
+    sectionTakenATT.push(108610);
+    periodTakenATT.push(1086108818);
+    
+    sectionTakenATT.push(110520);
+    periodTakenATT.push(1105208906);
+    
+    sectionTakenATT.push(110522);
+    periodTakenATT.push(1105228907);
+    
+    sectionTakenATT.push(110973);
+    periodTakenATT.push(1109738961);
+    
+    sectionTakenATT.push(108757);
+    periodTakenATT.push(1087578903);
+    
+    sectionTakenATT.push(111873);
+    periodTakenATT.push(1118738959);
+    
+    sectionTakenATT.push(110977);
+    periodTakenATT.push(1109778959);
+    
+    sectionTakenATT.push(109005);
+    periodTakenATT.push(1090058904);
+    
+    sectionTakenATT.push(109006);
+    periodTakenATT.push(1090068904);
+    
+    sectionTakenATT.push(107275);
+    periodTakenATT.push(1072758687);
+    
+    sectionTakenATT.push(107275);
+    periodTakenATT.push(1072759708);
+    
+    sectionTakenATT.push(108691);
+    periodTakenATT.push(1086918903);
+    
+    sectionTakenATT.push(107249);
+    periodTakenATT.push(1072498681);
+    
+    sectionTakenATT.push(107249);
+    periodTakenATT.push(1072498682);
+    
+    sectionTakenATT.push(105773);
+    periodTakenATT.push(1057738775);
+    
+    sectionTakenATT.push(107303);
+    periodTakenATT.push(1073038685);
+    
+    sectionTakenATT.push(107303);
+    periodTakenATT.push(1073038686);
+    
+    sectionTakenATT.push(107550);
+    periodTakenATT.push(1075508748);
+    
+    sectionTakenATT.push(111475);
+    periodTakenATT.push(1114758687);
+    
+    sectionTakenATT.push(111475);
+    periodTakenATT.push(1114759708);
+    
+    sectionTakenATT.push(107269);
+    periodTakenATT.push(1072699709);
+    
+    sectionTakenATT.push(107269);
+    periodTakenATT.push(1072699710);
+    
+    sectionTakenATT.push(108618);
+    periodTakenATT.push(1086188821);
+    
+    sectionTakenATT.push(108862);
+    periodTakenATT.push(1088628906);
+    
+    sectionTakenATT.push(108701);
+    periodTakenATT.push(1087018904);
+    
+    sectionTakenATT.push(108873);
+    periodTakenATT.push(1088738906);
+    
+    sectionTakenATT.push(108700);
+    periodTakenATT.push(1087008905);
+    
+    sectionTakenATT.push(107243);
+    periodTakenATT.push(1072439712);
+    
+    sectionTakenATT.push(108804);
+    periodTakenATT.push(1088048906);
+    
+    sectionTakenATT.push(108761);
+    periodTakenATT.push(1087618907);
+    
+    sectionTakenATT.push(111774);
+    periodTakenATT.push(1117748907);
+    
+    sectionTakenATT.push(108754);
+    periodTakenATT.push(1087548906);
+    
+    sectionTakenATT.push(106132);
+    periodTakenATT.push(1061328807);
+    
+    sectionTakenATT.push(105882);
+    periodTakenATT.push(1058828775);
+    
+    sectionTakenATT.push(105844);
+    periodTakenATT.push(1058448776);
+    
+    sectionTakenATT.push(110367);
+    periodTakenATT.push(1103678846);
+    
+    sectionTakenATT.push(110316);
+    periodTakenATT.push(1103168846);
+    
+    sectionTakenATT.push(110372);
+    periodTakenATT.push(1103728850);
+    
+    sectionTakenATT.push(109323);
+    periodTakenATT.push(1093238626);
+    
+    sectionTakenATT.push(110368);
+    periodTakenATT.push(1103688850);
+    
+    sectionTakenATT.push(110206);
+    periodTakenATT.push(1102068834);
+    
+    sectionTakenATT.push(107042);
+    periodTakenATT.push(1070428662);
+    
+    sectionTakenATT.push(105514);
+    periodTakenATT.push(1055148667);
+    
+    sectionTakenATT.push(110420);
+    periodTakenATT.push(1104209759);
+    
+    sectionTakenATT.push(110423);
+    periodTakenATT.push(1104239759);
+    
+    sectionTakenATT.push(104089);
+    periodTakenATT.push(1040898786);
+    
+    sectionTakenATT.push(109038);
+    periodTakenATT.push(1090388862);
+    
+    sectionTakenATT.push(106191);
+    periodTakenATT.push(1061918806);
+    
+    sectionTakenATT.push(105940);
+    periodTakenATT.push(1059408775);
+    
+    sectionTakenATT.push(105941);
+    periodTakenATT.push(1059418776);
+    
+    sectionTakenATT.push(108607);
+    periodTakenATT.push(1086078817);
+    
+    sectionTakenATT.push(105646);
+    periodTakenATT.push(1056468667);
+    
+    sectionTakenATT.push(107242);
+    periodTakenATT.push(1072429711);
+    
+    sectionTakenATT.push(108078);
+    periodTakenATT.push(1080788941);
+    
+    sectionTakenATT.push(106974);
+    periodTakenATT.push(1069748660);
+    
+    sectionTakenATT.push(105949);
+    periodTakenATT.push(1059498776);
+    
+    sectionTakenATT.push(103563);
+    periodTakenATT.push(1035638743);
+    
+    sectionTakenATT.push(107521);
+    periodTakenATT.push(1075218744);
+    
+    sectionTakenATT.push(107685);
+    periodTakenATT.push(1076858744);
+    
+    sectionTakenATT.push(107705);
+    periodTakenATT.push(1077058744);
+    
+    sectionTakenATT.push(111269);
+    periodTakenATT.push(1112698744);
+    
+    sectionTakenATT.push(111273);
+    periodTakenATT.push(1112738744);
+    
+    sectionTakenATT.push(106076);
+    periodTakenATT.push(1060768806);
+    
+    sectionTakenATT.push(106185);
+    periodTakenATT.push(1061858806);
+    
+    sectionTakenATT.push(107065);
+    periodTakenATT.push(1070658662);
+    
+    sectionTakenATT.push(107207);
+    periodTakenATT.push(1072079711);
+    
+    sectionTakenATT.push(107907);
+    periodTakenATT.push(1079078862);
+    
+    sectionTakenATT.push(107077);
+    periodTakenATT.push(1070778663);
+    
+    sectionTakenATT.push(107302);
+    periodTakenATT.push(1073028683);
+    
+    sectionTakenATT.push(107302);
+    periodTakenATT.push(1073028684);
+    
+    sectionTakenATT.push(111483);
+    periodTakenATT.push(1114838683);
+    
+    sectionTakenATT.push(109063);
+    periodTakenATT.push(1090638863);
+    
+    sectionTakenATT.push(107620);
+    periodTakenATT.push(1076208744);
+    
+    sectionTakenATT.push(107630);
+    periodTakenATT.push(1076308745);
+    
+    sectionTakenATT.push(108826);
+    periodTakenATT.push(1088268903);
+    
+    sectionTakenATT.push(104214);
+    periodTakenATT.push(1042148787);
+    
+    sectionTakenATT.push(104215);
+    periodTakenATT.push(1042158787);
+    
+    sectionTakenATT.push(110978);
+    periodTakenATT.push(1109788959);
+    
+    sectionTakenATT.push(108062);
+    periodTakenATT.push(1080628943);
+    
+    sectionTakenATT.push(108790);
+    periodTakenATT.push(1087908904);
+    
+    sectionTakenATT.push(107541);
+    periodTakenATT.push(1075418745);
+    
+    sectionTakenATT.push(110302);
+    periodTakenATT.push(1103028903);
+    
+    sectionTakenATT.push(104093);
+    periodTakenATT.push(1040938787);
+    
+    sectionTakenATT.push(104158);
+    periodTakenATT.push(1041588788);
+    
+    sectionTakenATT.push(104093);
+    periodTakenATT.push(1040938788);
+    
+    sectionTakenATT.push(104086);
+    periodTakenATT.push(1040868786);
+    
+    sectionTakenATT.push(104767);
+    periodTakenATT.push(1047678788);
+    
+    sectionTakenATT.push(104067);
+    periodTakenATT.push(1040678789);
+    
+    sectionTakenATT.push(107089);
+    periodTakenATT.push(1070898665);
+    
+    sectionTakenATT.push(107089);
+    periodTakenATT.push(1070898666);
+    
+    sectionTakenATT.push(107278);
+    periodTakenATT.push(1072788683);
+    
+    sectionTakenATT.push(107278);
+    periodTakenATT.push(1072788684);
+    
+    sectionTakenATT.push(107571);
+    periodTakenATT.push(1075718746);
+    
+    sectionTakenATT.push(108881);
+    periodTakenATT.push(1088818904);
+    
+    sectionTakenATT.push(110954);
+    periodTakenATT.push(1109548944);
+    
+    sectionTakenATT.push(108822);
+    periodTakenATT.push(1088228905);
+    
+    sectionTakenATT.push(108642);
+    periodTakenATT.push(1086428820);
+    
+    sectionTakenATT.push(110333);
+    periodTakenATT.push(1103338820);
+    
+    sectionTakenATT.push(110334);
+    periodTakenATT.push(1103348820);
+    
+    sectionTakenATT.push(111774);
+    periodTakenATT.push(1117748903);
+    
+    sectionTakenATT.push(105903);
+    periodTakenATT.push(1059038789);
+    
+    sectionTakenATT.push(104725);
+    periodTakenATT.push(1047258789);
+    
+    sectionTakenATT.push(106964);
+    periodTakenATT.push(1069648661);
+    
+    sectionTakenATT.push(109049);
+    periodTakenATT.push(1090498862);
+    
+    sectionTakenATT.push(107268);
+    periodTakenATT.push(1072688687);
+    
+    sectionTakenATT.push(107268);
+    periodTakenATT.push(1072689708);
+    
+    sectionTakenATT.push(107277);
+    periodTakenATT.push(1072778685);
+    
+    sectionTakenATT.push(107277);
+    periodTakenATT.push(1072778686);
+    
+    sectionTakenATT.push(107270);
+    periodTakenATT.push(1072709709);
+    
+    sectionTakenATT.push(107270);
+    periodTakenATT.push(1072709710);
+    
+    sectionTakenATT.push(107257);
+    periodTakenATT.push(1072578687);
+    
+    sectionTakenATT.push(107257);
+    periodTakenATT.push(1072579708);
+    
+    sectionTakenATT.push(111479);
+    periodTakenATT.push(1114799709);
+    
+    sectionTakenATT.push(111479);
+    periodTakenATT.push(1114799710);
+    
+    sectionTakenATT.push(104090);
+    periodTakenATT.push(1040908789);
+    
+    sectionTakenATT.push(103982);
+    periodTakenATT.push(1039828789);
+    
+    sectionTakenATT.push(110798);
+    periodTakenATT.push(1107988748);
+    
+    sectionTakenATT.push(109341);
+    periodTakenATT.push(1093418626);
+    
+    sectionTakenATT.push(108897);
+    periodTakenATT.push(1088978906);
+    
+    sectionTakenATT.push(108676);
+    periodTakenATT.push(1086768904);
+    
+    sectionTakenATT.push(110567);
+    periodTakenATT.push(1105678906);
+    
+    sectionTakenATT.push(110875);
+    periodTakenATT.push(1108758906);
+    
+    sectionTakenATT.push(110925);
+    periodTakenATT.push(1109258906);
+    
+    sectionTakenATT.push(112070);
+    periodTakenATT.push(1120708906);
+    
+    sectionTakenATT.push(109070);
+    periodTakenATT.push(1090708863);
+    
+    sectionTakenATT.push(109099);
+    periodTakenATT.push(1090998865);
+    
+    sectionTakenATT.push(107299);
+    periodTakenATT.push(1072999709);
+    
+    sectionTakenATT.push(107299);
+    periodTakenATT.push(1072999710);
+    
+    sectionTakenATT.push(109103);
+    periodTakenATT.push(1091038865);
+    
+    sectionTakenATT.push(108813);
+    periodTakenATT.push(1088138907);
+    
+    sectionTakenATT.push(111173);
+    periodTakenATT.push(1111738821);
+    
+    sectionTakenATT.push(109999);
+    periodTakenATT.push(1099998820);
+    
+    sectionTakenATT.push(108747);
+    periodTakenATT.push(1087478907);
+    
+    sectionTakenATT.push(106138);
+    periodTakenATT.push(1061388807);
+    
+    sectionTakenATT.push(108779);
+    periodTakenATT.push(1087798907);
+    
+    sectionTakenATT.push(106944);
+    periodTakenATT.push(1069448661);
+    
+    sectionTakenATT.push(111067);
+    periodTakenATT.push(1110678820);
+    
+    sectionTakenATT.push(108643);
+    periodTakenATT.push(1086438821);
+    
+    sectionTakenATT.push(108668);
+    periodTakenATT.push(1086688907);
+    
+    sectionTakenATT.push(106184);
+    periodTakenATT.push(1061848807);
+    
+    sectionTakenATT.push(110378);
+    periodTakenATT.push(1103788846);
+    
+    sectionTakenATT.push(105524);
+    periodTakenATT.push(1055248667);
+    
+    sectionTakenATT.push(104169);
+    periodTakenATT.push(1041698786);
+    
+    sectionTakenATT.push(106877);
+    periodTakenATT.push(1068778660);
+    
+    sectionTakenATT.push(107260);
+    periodTakenATT.push(1072608681);
+    
+    sectionTakenATT.push(107260);
+    periodTakenATT.push(1072608682);
+    
+    sectionTakenATT.push(110430);
+    periodTakenATT.push(1104309759);
+    
+    sectionTakenATT.push(106134);
+    periodTakenATT.push(1061348806);
+    
+    sectionTakenATT.push(103580);
+    periodTakenATT.push(1035808743);
+    
+    sectionTakenATT.push(106395);
+    periodTakenATT.push(1063959665);
+    
+    sectionTakenATT.push(106186);
+    periodTakenATT.push(1061868806);
+    
+    sectionTakenATT.push(107208);
+    periodTakenATT.push(1072089712);
+    
+    sectionTakenATT.push(109247);
+    periodTakenATT.push(1092478625);
+    
+    sectionTakenATT.push(107674);
+    periodTakenATT.push(1076748744);
+    
+    sectionTakenATT.push(111629);
+    periodTakenATT.push(1116298663);
+    
+    sectionTakenATT.push(109025);
+    periodTakenATT.push(1090258862);
+    
+    sectionTakenATT.push(109361);
+    periodTakenATT.push(1093618626);
+    
+    sectionTakenATT.push(105925);
+    periodTakenATT.push(1059258775);
+    
+    sectionTakenATT.push(111485);
+    periodTakenATT.push(1114858683);
+    
+    sectionTakenATT.push(111485);
+    periodTakenATT.push(1114858684);
+    
+    sectionTakenATT.push(111483);
+    periodTakenATT.push(1114838684);
+    
+    sectionTakenATT.push(107633);
+    periodTakenATT.push(1076338744);
+    
+    sectionTakenATT.push(108675);
+    periodTakenATT.push(1086758903);
+    
+    sectionTakenATT.push(104064);
+    periodTakenATT.push(1040648787);
+    
+    sectionTakenATT.push(108668);
+    periodTakenATT.push(1086688903);
+    
+    sectionTakenATT.push(109067);
+    periodTakenATT.push(1090678863);
+    
+    sectionTakenATT.push(110947);
+    periodTakenATT.push(1109478942);
+    
+    sectionTakenATT.push(107849);
+    periodTakenATT.push(1078498861);
+    
+    sectionTakenATT.push(110465);
+    periodTakenATT.push(1104658905);
+    
+    sectionTakenATT.push(108120);
+    periodTakenATT.push(1081208942);
+    
+    sectionTakenATT.push(108124);
+    periodTakenATT.push(1081248943);
+    
+    sectionTakenATT.push(108109);
+    periodTakenATT.push(1081098943);
+    
+    sectionTakenATT.push(108792);
+    periodTakenATT.push(1087928904);
+    
+    sectionTakenATT.push(108780);
+    periodTakenATT.push(1087808904);
+    
+    sectionTakenATT.push(107802);
+    periodTakenATT.push(1078028711);
+    
+    sectionTakenATT.push(107802);
+    periodTakenATT.push(1078028712);
+    
+    sectionTakenATT.push(107802);
+    periodTakenATT.push(1078028713);
+    
+    sectionTakenATT.push(107802);
+    periodTakenATT.push(1078028714);
+    
+    sectionTakenATT.push(107802);
+    periodTakenATT.push(1078028715);
+    
+    sectionTakenATT.push(107273);
+    periodTakenATT.push(1072738685);
+    
+    sectionTakenATT.push(107273);
+    periodTakenATT.push(1072738686);
+    
+    sectionTakenATT.push(111524);
+    periodTakenATT.push(1115248786);
+    
+    sectionTakenATT.push(111524);
+    periodTakenATT.push(1115248789);
+    
+    sectionTakenATT.push(111476);
+    periodTakenATT.push(1114768685);
+    
+    sectionTakenATT.push(111476);
+    periodTakenATT.push(1114768686);
+    
+    sectionTakenATT.push(103988);
+    periodTakenATT.push(1039888786);
+    
+    sectionTakenATT.push(103988);
+    periodTakenATT.push(1039888787);
+    
+    sectionTakenATT.push(107541);
+    periodTakenATT.push(1075418744);
+    
+    sectionTakenATT.push(107745);
+    periodTakenATT.push(1077458746);
+    
+    sectionTakenATT.push(103988);
+    periodTakenATT.push(1039888788);
+    
+    sectionTakenATT.push(108620);
+    periodTakenATT.push(1086208819);
+    
+    sectionTakenATT.push(107546);
+    periodTakenATT.push(1075468746);
+    
+    sectionTakenATT.push(110303);
+    periodTakenATT.push(1103038746);
+    
+    sectionTakenATT.push(107644);
+    periodTakenATT.push(1076448746);
+    
+    sectionTakenATT.push(107652);
+    periodTakenATT.push(1076528746);
+    
+    sectionTakenATT.push(107562);
+    periodTakenATT.push(1075628746);
+    
+    sectionTakenATT.push(107780);
+    periodTakenATT.push(1077808746);
+    
+    sectionTakenATT.push(111372);
+    periodTakenATT.push(1113728665);
+    
+    sectionTakenATT.push(108806);
+    periodTakenATT.push(1088068904);
+    
+    sectionTakenATT.push(104216);
+    periodTakenATT.push(1042168787);
+    
+    sectionTakenATT.push(107763);
+    periodTakenATT.push(1077638746);
+    
+    sectionTakenATT.push(109088);
+    periodTakenATT.push(1090888864);
+    
+    sectionTakenATT.push(108762);
+    periodTakenATT.push(1087628905);
+    
+    sectionTakenATT.push(108664);
+    periodTakenATT.push(1086648905);
+    
+    sectionTakenATT.push(110131);
+    periodTakenATT.push(1101318818);
+    
+    sectionTakenATT.push(110449);
+    periodTakenATT.push(1104498903);
+    
+    sectionTakenATT.push(106396);
+    periodTakenATT.push(1063969666);
+    
+    sectionTakenATT.push(103957);
+    periodTakenATT.push(1039578789);
+    
+    sectionTakenATT.push(104141);
+    periodTakenATT.push(1041418789);
+    
+    sectionTakenATT.push(104142);
+    periodTakenATT.push(1041428789);
+    
+    sectionTakenATT.push(110626);
+    periodTakenATT.push(1106268819);
+    
+    sectionTakenATT.push(110583);
+    periodTakenATT.push(1105838666);
+    
+    sectionTakenATT.push(107759);
+    periodTakenATT.push(1077598745);
+    
+    sectionTakenATT.push(108871);
+    periodTakenATT.push(1088718905);
+    
+    sectionTakenATT.push(107281);
+    periodTakenATT.push(1072818687);
+    
+    sectionTakenATT.push(107281);
+    periodTakenATT.push(1072819708);
+    
+    sectionTakenATT.push(108843);
+    periodTakenATT.push(1088438905);
+    
+    sectionTakenATT.push(106328);
+    periodTakenATT.push(1063289666);
+    
+    sectionTakenATT.push(106368);
+    periodTakenATT.push(1063689666);
+    
+    sectionTakenATT.push(110123);
+    periodTakenATT.push(1101238821);
+    
+    sectionTakenATT.push(107618);
+    periodTakenATT.push(1076188748);
+    
+    sectionTakenATT.push(108064);
+    periodTakenATT.push(1080648945);
+    
+    sectionTakenATT.push(108611);
+    periodTakenATT.push(1086118821);
+    
+    sectionTakenATT.push(107622);
+    periodTakenATT.push(1076228748);
+    
+    sectionTakenATT.push(109106);
+    periodTakenATT.push(1091068865);
+    
+    sectionTakenATT.push(110445);
+    periodTakenATT.push(1104458907);
+    
+    sectionTakenATT.push(110965);
+    periodTakenATT.push(1109658748);
+    
+    sectionTakenATT.push(108921);
+    periodTakenATT.push(1089218905);
+    
+    sectionTakenATT.push(108878);
+    periodTakenATT.push(1088788907);
+    
+    sectionTakenATT.push(108925);
+    periodTakenATT.push(1089258907);
+    
+    sectionTakenATT.push(109257);
+    periodTakenATT.push(1092578626);
+    
+    sectionTakenATT.push(108858);
+    periodTakenATT.push(1088588907);
+    
+    sectionTakenATT.push(108802);
+    periodTakenATT.push(1088028906);
+    
+    sectionTakenATT.push(108898);
+    periodTakenATT.push(1088988907);
+    
+    sectionTakenATT.push(106137);
+    periodTakenATT.push(1061378807);
+    
+    sectionTakenATT.push(107062);
+    periodTakenATT.push(1070628664);
+    
+    sectionTakenATT.push(110298);
+    periodTakenATT.push(1102988746);
+    
+    sectionTakenATT.push(110580);
+    periodTakenATT.push(1105808746);
+    
+    sectionTakenATT.push(110826);
+    periodTakenATT.push(1108268746);
+    
+    sectionTakenATT.push(110945);
+    periodTakenATT.push(1109458942);
+    
+    sectionTakenATT.push(108653);
+    periodTakenATT.push(1086538819);
+    
+    sectionTakenATT.push(107905);
+    periodTakenATT.push(1079058864);
+    
+    sectionTakenATT.push(108696);
+    periodTakenATT.push(1086968904);
+    
+    sectionTakenATT.push(107519);
+    periodTakenATT.push(1075198745);
+    
+    sectionTakenATT.push(109998);
+    periodTakenATT.push(1099988819);
+    
+    sectionTakenATT.push(108641);
+    periodTakenATT.push(1086418819);
+    
+    sectionTakenATT.push(111377);
+    periodTakenATT.push(1113778821);
+    
+    sectionTakenATT.push(111517);
+    periodTakenATT.push(1115178788);
+    
+    sectionTakenATT.push(111300);
+    periodTakenATT.push(1113008817);
+    
+    sectionTakenATT.push(103989);
+    periodTakenATT.push(1039898788);
+    
+    sectionTakenATT.push(111177);
+    periodTakenATT.push(1111778818);
+    
+    sectionTakenATT.push(110440);
+    periodTakenATT.push(1104408903);
+    
+    sectionTakenATT.push(110441);
+    periodTakenATT.push(1104418904);
+    
+    sectionTakenATT.push(111627);
+    periodTakenATT.push(1116278664);
+    
+    sectionTakenATT.push(107068);
+    periodTakenATT.push(1070688664);
+    
+    sectionTakenATT.push(108761);
+    periodTakenATT.push(1087618903);
+    
+    sectionTakenATT.push(108614);
+    periodTakenATT.push(1086148820);
+    
+    sectionTakenATT.push(110445);
+    periodTakenATT.push(1104458903);
+    
+    sectionTakenATT.push(108663);
+    periodTakenATT.push(1086638905);
+    
+    sectionTakenATT.push(109010);
+    periodTakenATT.push(1090108905);
+    
+    sectionTakenATT.push(109014);
+    periodTakenATT.push(1090148905);
+    
+    sectionTakenATT.push(107731);
+    periodTakenATT.push(1077318746);
+    
+    sectionTakenATT.push(108659);
+    periodTakenATT.push(1086598820);
+    
+    sectionTakenATT.push(107634);
+    periodTakenATT.push(1076348747);
+    
+    sectionTakenATT.push(107581);
+    periodTakenATT.push(1075818747);
+    
+    sectionTakenATT.push(104157);
+    periodTakenATT.push(1041578789);
+    
+    sectionTakenATT.push(104110);
+    periodTakenATT.push(1041108789);
+    
+    sectionTakenATT.push(104105);
+    periodTakenATT.push(1041058789);
+    
+    sectionTakenATT.push(108877);
+    periodTakenATT.push(1088778905);
+    
+    sectionTakenATT.push(108859);
+    periodTakenATT.push(1088598904);
+    
+    sectionTakenATT.push(107276);
+    periodTakenATT.push(1072768683);
+    
+    sectionTakenATT.push(107276);
+    periodTakenATT.push(1072768684);
+    
+    sectionTakenATT.push(107069);
+    periodTakenATT.push(1070698666);
+    
+    sectionTakenATT.push(107061);
+    periodTakenATT.push(1070618665);
+    
+    sectionTakenATT.push(110960);
+    periodTakenATT.push(1109608945);
+    
+    sectionTakenATT.push(106848);
+    periodTakenATT.push(1068488661);
+    
+    sectionTakenATT.push(108680);
+    periodTakenATT.push(1086808903);
+    
+    sectionTakenATT.push(111482);
+    periodTakenATT.push(1114829709);
+    
+    sectionTakenATT.push(111482);
+    periodTakenATT.push(1114829710);
+    
+    sectionTakenATT.push(108914);
+    periodTakenATT.push(1089148906);
+    
+    sectionTakenATT.push(108791);
+    periodTakenATT.push(1087918906);
+    
+    sectionTakenATT.push(108800);
+    periodTakenATT.push(1088008905);
+    
+    sectionTakenATT.push(111720);
+    periodTakenATT.push(1117208863);
+    
+    sectionTakenATT.push(107913);
+    periodTakenATT.push(1079138865);
+    
+    sectionTakenATT.push(107575);
+    periodTakenATT.push(1075758748);
+    
+    sectionTakenATT.push(110446);
+    periodTakenATT.push(1104468907);
+    
+    sectionTakenATT.push(109337);
+    periodTakenATT.push(1093378626);
+    
+    sectionTakenATT.push(108959);
+    periodTakenATT.push(1089598907);
+    
+    sectionTakenATT.push(110589);
+    periodTakenATT.push(1105898971);
+    
+    sectionTakenATT.push(105890);
+    periodTakenATT.push(1058908776);
+    
+    sectionTakenATT.push(110028);
+    periodTakenATT.push(1100288720);
+    
+    sectionTakenATT.push(110772);
+    periodTakenATT.push(1107728601);
+    
+    sectionTakenATT.push(110773);
+    periodTakenATT.push(1107738611);
+    
+    sectionTakenATT.push(105849);
+    periodTakenATT.push(1058498775);
+    
+    sectionTakenATT.push(105850);
+    periodTakenATT.push(1058508776);
+    
+    sectionTakenATT.push(109330);
+    periodTakenATT.push(1093308625);
+    
+    sectionTakenATT.push(109324);
+    periodTakenATT.push(1093248625);
+    
+    sectionTakenATT.push(110369);
+    periodTakenATT.push(1103698846);
+    
+    sectionTakenATT.push(108112);
+    periodTakenATT.push(1081128941);
+    
+    sectionTakenATT.push(111520);
+    periodTakenATT.push(1115208786);
+    
+    sectionTakenATT.push(110942);
+    periodTakenATT.push(1109428941);
+    
+    sectionTakenATT.push(110585);
+    periodTakenATT.push(1105858662);
+    
+    sectionTakenATT.push(106847);
+    periodTakenATT.push(1068478660);
+    
+    sectionTakenATT.push(105550);
+    periodTakenATT.push(1055508667);
+    
+    sectionTakenATT.push(107847);
+    periodTakenATT.push(1078478860);
+    
+    sectionTakenATT.push(107846);
+    periodTakenATT.push(1078468860);
+    
+    sectionTakenATT.push(105526);
+    periodTakenATT.push(1055268667);
+    
+    sectionTakenATT.push(104723);
+    periodTakenATT.push(1047238786);
+    
+    sectionTakenATT.push(107852);
+    periodTakenATT.push(1078528861);
+    
+    sectionTakenATT.push(110718);
+    periodTakenATT.push(1107188925);
+    
+    sectionTakenATT.push(110639);
+    periodTakenATT.push(1106398611);
+    
+    sectionTakenATT.push(110689);
+    periodTakenATT.push(1106898963);
+    
+    sectionTakenATT.push(105780);
+    periodTakenATT.push(1057808776);
+    
+    sectionTakenATT.push(110037);
+    periodTakenATT.push(1100378719);
+    
+    sectionTakenATT.push(109322);
+    periodTakenATT.push(1093228625);
+    
+    sectionTakenATT.push(110963);
+    periodTakenATT.push(1109638941);
+    
+    sectionTakenATT.push(103607);
+    periodTakenATT.push(1036079608);
+    
+    sectionTakenATT.push(107332);
+    periodTakenATT.push(1073328682);
+    
+    sectionTakenATT.push(104204);
+    periodTakenATT.push(1042048786);
+    
+    sectionTakenATT.push(110308);
+    periodTakenATT.push(1103088762);
+    
+    sectionTakenATT.push(110417);
+    periodTakenATT.push(1104179759);
+    
+    sectionTakenATT.push(109150);
+    periodTakenATT.push(1091508862);
+    
+    sectionTakenATT.push(109055);
+    periodTakenATT.push(1090558862);
+    
+    sectionTakenATT.push(110426);
+    periodTakenATT.push(1104269759);
+    
+    sectionTakenATT.push(107059);
+    periodTakenATT.push(1070598662);
+    
+    sectionTakenATT.push(105932);
+    periodTakenATT.push(1059328775);
+    
+    sectionTakenATT.push(107073);
+    periodTakenATT.push(1070738662);
+    
+    sectionTakenATT.push(107759);
+    periodTakenATT.push(1077598744);
+    
+    sectionTakenATT.push(109265);
+    periodTakenATT.push(1092658625);
+    
+    sectionTakenATT.push(107667);
+    periodTakenATT.push(1076678744);
+    
+    sectionTakenATT.push(104104);
+    periodTakenATT.push(1041048787);
+    
+    sectionTakenATT.push(108878);
+    periodTakenATT.push(1088788903);
+    
+    sectionTakenATT.push(108813);
+    periodTakenATT.push(1088138903);
+    
+    sectionTakenATT.push(108779);
+    periodTakenATT.push(1087798903);
+    
+    sectionTakenATT.push(107667);
+    periodTakenATT.push(1076678745);
+    
+    sectionTakenATT.push(109058);
+    periodTakenATT.push(1090588862);
+    
+    sectionTakenATT.push(107046);
+    periodTakenATT.push(1070468663);
+    
+    sectionTakenATT.push(106327);
+    periodTakenATT.push(1063279665);
+    
+    sectionTakenATT.push(108082);
+    periodTakenATT.push(1080828942);
+    
+    sectionTakenATT.push(110974);
+    periodTakenATT.push(1109748959);
+    
+    sectionTakenATT.push(108121);
+    periodTakenATT.push(1081218941);
+    
+    sectionTakenATT.push(106845);
+    periodTakenATT.push(1068458661);
+    
+    sectionTakenATT.push(108930);
+    periodTakenATT.push(1089308903);
+    
+    sectionTakenATT.push(108794);
+    periodTakenATT.push(1087948904);
+    
+    sectionTakenATT.push(109979);
+    periodTakenATT.push(1099798904);
+    
+    sectionTakenATT.push(111480);
+    periodTakenATT.push(1114808685);
+    
+    sectionTakenATT.push(111480);
+    periodTakenATT.push(1114808686);
+    
+    sectionTakenATT.push(104081);
+    periodTakenATT.push(1040818787);
+    
+    sectionTakenATT.push(104211);
+    periodTakenATT.push(1042118788);
+    
+    sectionTakenATT.push(104086);
+    periodTakenATT.push(1040868787);
+    
+    sectionTakenATT.push(104086);
+    periodTakenATT.push(1040868788);
+    
+    sectionTakenATT.push(104080);
+    periodTakenATT.push(1040808787);
+    
+    sectionTakenATT.push(104080);
+    periodTakenATT.push(1040808789);
+    
+    sectionTakenATT.push(104079);
+    periodTakenATT.push(1040798789);
+    
+    sectionTakenATT.push(107615);
+    periodTakenATT.push(1076158746);
+    
+    sectionTakenATT.push(107530);
+    periodTakenATT.push(1075308746);
+    
+    sectionTakenATT.push(108058);
+    periodTakenATT.push(1080588944);
+    
+    sectionTakenATT.push(106882);
+    periodTakenATT.push(1068828661);
+    
+    sectionTakenATT.push(104140);
+    periodTakenATT.push(1041408789);
+    
+    sectionTakenATT.push(108902);
+    periodTakenATT.push(1089028904);
+    
+    sectionTakenATT.push(107543);
+    periodTakenATT.push(1075438747);
+    
+    sectionTakenATT.push(107760);
+    periodTakenATT.push(1077608746);
+    
+    sectionTakenATT.push(106956);
+    periodTakenATT.push(1069568661);
+    
+    sectionTakenATT.push(107535);
+    periodTakenATT.push(1075358748);
+    
+    sectionTakenATT.push(108119);
+    periodTakenATT.push(1081198945);
+    
+    sectionTakenATT.push(107649);
+    periodTakenATT.push(1076498748);
+    
+    sectionTakenATT.push(110005);
+    periodTakenATT.push(1100058821);
+    
+    sectionTakenATT.push(107663);
+    periodTakenATT.push(1076638745);
+    
+    sectionTakenATT.push(107228);
+    periodTakenATT.push(1072289711);
+    
+    sectionTakenATT.push(108952);
+    periodTakenATT.push(1089528905);
+    
+    sectionTakenATT.push(107288);
+    periodTakenATT.push(1072889709);
+    
+    sectionTakenATT.push(108763);
+    periodTakenATT.push(1087638906);
+    
+    sectionTakenATT.push(108862);
+    periodTakenATT.push(1088628903);
+    
+    sectionTakenATT.push(111344);
+    periodTakenATT.push(1113448821);
+    
+    sectionTakenATT.push(110721);
+    periodTakenATT.push(1107218907);
+    
+    sectionTakenATT.push(110879);
+    periodTakenATT.push(1108798907);
+    
+    sectionTakenATT.push(110129);
+    periodTakenATT.push(1101298820);
+    
+    sectionTakenATT.push(106846);
+    periodTakenATT.push(1068468661);
+    
+    sectionTakenATT.push(108066);
+    periodTakenATT.push(1080668941);
+    
+    sectionTakenATT.push(108047);
+    periodTakenATT.push(1080478945);
+    
+    sectionTakenATT.push(108863);
+    periodTakenATT.push(1088638907);
+    
+    sectionTakenATT.push(108773);
+    periodTakenATT.push(1087738907);
+    
+    sectionTakenATT.push(108691);
+    periodTakenATT.push(1086918907);
+    
+    sectionTakenATT.push(106139);
+    periodTakenATT.push(1061398807);
+    
+    sectionTakenATT.push(106092);
+    periodTakenATT.push(1060928807);
+    
+    sectionTakenATT.push(110086);
+    periodTakenATT.push(1100868925);
+    
+    sectionTakenATT.push(105779);
+    periodTakenATT.push(1057798775);
+    
+    sectionTakenATT.push(110022);
+    periodTakenATT.push(1100228719);
+    
+    sectionTakenATT.push(109340);
+    periodTakenATT.push(1093408625);
+    
+    sectionTakenATT.push(109336);
+    periodTakenATT.push(1093368625);
+    
+    sectionTakenATT.push(105775);
+    periodTakenATT.push(1057758775);
+    
+    sectionTakenATT.push(105776);
+    periodTakenATT.push(1057768776);
+    
+    sectionTakenATT.push(110408);
+    periodTakenATT.push(1104088971);
+    
+    sectionTakenATT.push(104196);
+    periodTakenATT.push(1041968786);
+    
+    sectionTakenATT.push(105943);
+    periodTakenATT.push(1059438776);
+    
+    sectionTakenATT.push(103601);
+    periodTakenATT.push(1036019608);
+    
+    sectionTakenATT.push(107879);
+    periodTakenATT.push(1078798744);
+    
+    sectionTakenATT.push(105668);
+    periodTakenATT.push(1056688645);
+    
+    sectionTakenATT.push(105670);
+    periodTakenATT.push(1056708646);
+    
+    sectionTakenATT.push(110582);
+    periodTakenATT.push(1105828663);
+    
+    sectionTakenATT.push(108645);
+    periodTakenATT.push(1086458818);
+    
+    sectionTakenATT.push(107221);
+    periodTakenATT.push(1072219711);
+    
+    sectionTakenATT.push(107222);
+    periodTakenATT.push(1072229712);
+    
+    sectionTakenATT.push(108106);
+    periodTakenATT.push(1081068942);
+    
+    sectionTakenATT.push(107613);
+    periodTakenATT.push(1076138745);
+    
+    sectionTakenATT.push(107043);
+    periodTakenATT.push(1070438664);
+    
+    sectionTakenATT.push(107879);
+    periodTakenATT.push(1078798745);
+    
+    sectionTakenATT.push(104056);
+    periodTakenATT.push(1040568787);
+    
+    sectionTakenATT.push(110979);
+    periodTakenATT.push(1109798962);
+    
+    sectionTakenATT.push(110975);
+    periodTakenATT.push(1109758961);
+    
+    sectionTakenATT.push(110976);
+    periodTakenATT.push(1109768960);
+    
+    sectionTakenATT.push(104081);
+    periodTakenATT.push(1040818786);
+    
+    sectionTakenATT.push(108887);
+    periodTakenATT.push(1088878904);
+    
+    sectionTakenATT.push(110946);
+    periodTakenATT.push(1109468944);
+    
+    sectionTakenATT.push(104055);
+    periodTakenATT.push(1040558788);
+    
+    sectionTakenATT.push(108693);
+    periodTakenATT.push(1086938905);
+    
+    sectionTakenATT.push(111233);
+    periodTakenATT.push(1112338819);
+    
+    sectionTakenATT.push(111299);
+    periodTakenATT.push(1112998818);
+    
+    sectionTakenATT.push(111297);
+    periodTakenATT.push(1112978820);
+    
+    sectionTakenATT.push(108711);
+    periodTakenATT.push(1087118905);
+    
+    sectionTakenATT.push(110145);
+    periodTakenATT.push(1101458820);
+    
+    sectionTakenATT.push(108801);
+    periodTakenATT.push(1088018905);
+    
+    sectionTakenATT.push(107343);
+    periodTakenATT.push(1073438687);
+    
+    sectionTakenATT.push(107343);
+    periodTakenATT.push(1073439708);
+    
+    sectionTakenATT.push(107803);
+    periodTakenATT.push(1078038718);
+    
+    sectionTakenATT.push(107803);
+    periodTakenATT.push(1078039658);
+    
+    sectionTakenATT.push(107803);
+    periodTakenATT.push(1078039659);
+    
+    sectionTakenATT.push(107803);
+    periodTakenATT.push(1078039663);
+    
+    sectionTakenATT.push(107803);
+    periodTakenATT.push(1078039664);
+    
+    sectionTakenATT.push(110033);
+    periodTakenATT.push(1100338720);
+    
+    sectionTakenATT.push(109357);
+    periodTakenATT.push(1093578626);
+    
+    sectionTakenATT.push(107754);
+    periodTakenATT.push(1077548747);
+    
+    sectionTakenATT.push(109325);
+    periodTakenATT.push(1093258626);
+    
+    sectionTakenATT.push(107537);
+    periodTakenATT.push(1075378748);
+    
+    sectionTakenATT.push(107236);
+    periodTakenATT.push(1072369712);
+    
+    sectionTakenATT.push(108647);
+    periodTakenATT.push(1086478821);
+    
+    sectionTakenATT.push(110935);
+    periodTakenATT.push(1109358945);
+    
+    sectionTakenATT.push(107578);
+    periodTakenATT.push(1075788748);
+    
+    sectionTakenATT.push(110605);
+    periodTakenATT.push(1106058971);
+    
+    sectionTakenATT.push(106422);
+    periodTakenATT.push(1064229666);
+    
+    sectionTakenATT.push(107254);
+    periodTakenATT.push(1072548687);
+    
+    sectionTakenATT.push(107254);
+    periodTakenATT.push(1072549708);
+    
+    sectionTakenATT.push(106870);
+    periodTakenATT.push(1068708661);
+    
+    sectionTakenATT.push(108959);
+    periodTakenATT.push(1089598903);
+    
+    sectionTakenATT.push(108692);
+    periodTakenATT.push(1086928904);
+    
+    sectionTakenATT.push(108831);
+    periodTakenATT.push(1088318906);
+    
+    sectionTakenATT.push(107293);
+    periodTakenATT.push(1072938683);
+    
+    sectionTakenATT.push(107293);
+    periodTakenATT.push(1072938684);
+    
+    sectionTakenATT.push(108770);
+    periodTakenATT.push(1087708907);
+    
+    sectionTakenATT.push(110532);
+    periodTakenATT.push(1105328907);
+    
+    sectionTakenATT.push(108099);
+    periodTakenATT.push(1080998944);
+    
+    sectionTakenATT.push(108083);
+    periodTakenATT.push(1080838943);
+    
+    sectionTakenATT.push(108903);
+    periodTakenATT.push(1089038905);
+    
+    sectionTakenATT.push(110964);
+    periodTakenATT.push(1109648943);
+    
+    sectionTakenATT.push(108904);
+    periodTakenATT.push(1089048905);
+    
+    sectionTakenATT.push(108947);
+    periodTakenATT.push(1089478906);
+    
+    sectionTakenATT.push(108721);
+    periodTakenATT.push(1087218905);
+    
+    sectionTakenATT.push(108729);
+    periodTakenATT.push(1087298906);
+    
+    sectionTakenATT.push(108736);
+    periodTakenATT.push(1087368906);
+    
+    sectionTakenATT.push(108719);
+    periodTakenATT.push(1087198903);
+    
+    sectionTakenATT.push(108916);
+    periodTakenATT.push(1089168907);
+    
+    sectionTakenATT.push(110440);
+    periodTakenATT.push(1104408907);
+    
+    sectionTakenATT.push(110231);
+    periodTakenATT.push(1102318836);
+    
+    sectionTakenATT.push(108087);
+    periodTakenATT.push(1080878941);
+    
+    sectionTakenATT.push(106967);
+    periodTakenATT.push(1069678660);
+    
+    sectionTakenATT.push(105515);
+    periodTakenATT.push(1055158667);
+    
+    sectionTakenATT.push(107851);
+    periodTakenATT.push(1078518861);
+    
+    sectionTakenATT.push(105600);
+    periodTakenATT.push(1056008667);
+    
+    sectionTakenATT.push(109352);
+    periodTakenATT.push(1093528625);
+    
+    sectionTakenATT.push(106857);
+    periodTakenATT.push(1068578660);
+    
+    sectionTakenATT.push(108611);
+    periodTakenATT.push(1086118817);
+    
+    sectionTakenATT.push(110001);
+    periodTakenATT.push(1100018817);
+    
+    sectionTakenATT.push(103575);
+    periodTakenATT.push(1035758743);
+    
+    sectionTakenATT.push(107899);
+    periodTakenATT.push(1078998862);
+    
+    sectionTakenATT.push(110121);
+    periodTakenATT.push(1101218817);
+    
+    sectionTakenATT.push(111346);
+    periodTakenATT.push(1113468817);
+    
+    sectionTakenATT.push(103610);
+    periodTakenATT.push(1036109608);
+    
+    sectionTakenATT.push(105573);
+    periodTakenATT.push(1055738667);
+    
+    sectionTakenATT.push(110579);
+    periodTakenATT.push(1105799608);
+    
+    sectionTakenATT.push(109348);
+    periodTakenATT.push(1093488625);
+    
+    sectionTakenATT.push(106351);
+    periodTakenATT.push(1063519665);
+    
+    sectionTakenATT.push(106335);
+    periodTakenATT.push(1063359665);
+    
+    sectionTakenATT.push(106335);
+    periodTakenATT.push(1063359666);
+    
+    sectionTakenATT.push(105825);
+    periodTakenATT.push(1058258939);
+    
+    sectionTakenATT.push(106145);
+    periodTakenATT.push(1061458806);
+    
+    sectionTakenATT.push(106136);
+    periodTakenATT.push(1061368807);
+    
+    sectionTakenATT.push(103564);
+    periodTakenATT.push(1035648743);
+    
+    sectionTakenATT.push(106130);
+    periodTakenATT.push(1061308806);
+    
+    sectionTakenATT.push(103462);
+    periodTakenATT.push(1034628732);
+    
+    sectionTakenATT.push(103462);
+    periodTakenATT.push(1034628733);
+    
+    sectionTakenATT.push(103462);
+    periodTakenATT.push(1034628734);
+    
+    sectionTakenATT.push(103462);
+    periodTakenATT.push(1034628735);
+    
+    sectionTakenATT.push(103462);
+    periodTakenATT.push(1034628736);
+    
+    sectionTakenATT.push(105830);
+    periodTakenATT.push(1058308940);
+    
+    sectionTakenATT.push(105831);
+    periodTakenATT.push(1058318940);
+    
+    sectionTakenATT.push(110128);
+    periodTakenATT.push(1101288817);
+    
+    sectionTakenATT.push(106881);
+    periodTakenATT.push(1068818660);
+    
+    sectionTakenATT.push(103566);
+    periodTakenATT.push(1035668743);
+    
+    sectionTakenATT.push(105930);
+    periodTakenATT.push(1059308775);
+    
+    sectionTakenATT.push(106190);
+    periodTakenATT.push(1061908806);
+    
+    sectionTakenATT.push(106343);
+    periodTakenATT.push(1063439665);
+    
+    sectionTakenATT.push(105829);
+    periodTakenATT.push(1058298939);
+    
+    sectionTakenATT.push(103600);
+    periodTakenATT.push(1036009608);
+    
+    sectionTakenATT.push(105614);
+    periodTakenATT.push(1056148667);
+    
+    sectionTakenATT.push(107071);
+    periodTakenATT.push(1070718663);
+    
+    sectionTakenATT.push(109239);
+    periodTakenATT.push(1092398625);
+    
+    sectionTakenATT.push(107235);
+    periodTakenATT.push(1072359711);
+    
+    sectionTakenATT.push(108088);
+    periodTakenATT.push(1080888942);
+    
+    sectionTakenATT.push(108049);
+    periodTakenATT.push(1080498942);
+    
+    sectionTakenATT.push(110955);
+    periodTakenATT.push(1109558942);
+    
+    sectionTakenATT.push(107522);
+    periodTakenATT.push(1075228744);
+    
+    sectionTakenATT.push(108613);
+    periodTakenATT.push(1086138818);
+    
+    sectionTakenATT.push(107903);
+    periodTakenATT.push(1079038863);
+    
+    sectionTakenATT.push(108907);
+    periodTakenATT.push(1089078903);
+    
+    sectionTakenATT.push(107507);
+    periodTakenATT.push(1075078745);
+    
+    sectionTakenATT.push(107697);
+    periodTakenATT.push(1076978745);
+    
+    sectionTakenATT.push(107698);
+    periodTakenATT.push(1076988745);
+    
+    sectionTakenATT.push(107721);
+    periodTakenATT.push(1077218745);
+    
+    sectionTakenATT.push(111868);
+    periodTakenATT.push(1118688745);
+    
+    sectionTakenATT.push(111178);
+    periodTakenATT.push(1111788817);
+    
+    sectionTakenATT.push(107656);
+    periodTakenATT.push(1076568745);
+    
+    sectionTakenATT.push(110703);
+    periodTakenATT.push(1107038745);
+    
+    sectionTakenATT.push(107908);
+    periodTakenATT.push(1079088863);
+    
+    sectionTakenATT.push(110024);
+    periodTakenATT.push(1100248719);
+    
+    sectionTakenATT.push(105602);
+    periodTakenATT.push(1056028667);
+    
+    sectionTakenATT.push(107588);
+    periodTakenATT.push(1075888745);
+    
+    sectionTakenATT.push(107621);
+    periodTakenATT.push(1076218745);
+    
+    sectionTakenATT.push(110518);
+    periodTakenATT.push(1105188906);
+    
+    sectionTakenATT.push(103996);
+    periodTakenATT.push(1039968786);
+    
+    sectionTakenATT.push(110523);
+    periodTakenATT.push(1105238903);
+    
+    sectionTakenATT.push(110938);
+    periodTakenATT.push(1109388943);
+    
+    sectionTakenATT.push(109976);
+    periodTakenATT.push(1099768903);
+    
+    sectionTakenATT.push(108764);
+    periodTakenATT.push(1087648904);
+    
+    sectionTakenATT.push(108637);
+    periodTakenATT.push(1086378819);
+    
+    sectionTakenATT.push(104088);
+    periodTakenATT.push(1040888788);
+    
+    sectionTakenATT.push(104099);
+    periodTakenATT.push(1040998788);
+    
+    sectionTakenATT.push(104080);
+    periodTakenATT.push(1040808788);
+    
+    sectionTakenATT.push(104067);
+    periodTakenATT.push(1040678788);
+    
+    sectionTakenATT.push(108095);
+    periodTakenATT.push(1080958943);
+    
+    sectionTakenATT.push(107531);
+    periodTakenATT.push(1075318745);
+    
+    sectionTakenATT.push(107580);
+    periodTakenATT.push(1075808744);
+    
+    sectionTakenATT.push(108698);
+    periodTakenATT.push(1086988904);
+    
+    sectionTakenATT.push(107525);
+    periodTakenATT.push(1075258746);
+    
+    sectionTakenATT.push(107079);
+    periodTakenATT.push(1070798664);
+    
+    sectionTakenATT.push(107082);
+    periodTakenATT.push(1070828665);
+    
+    sectionTakenATT.push(108860);
+    periodTakenATT.push(1088608904);
+    
+    sectionTakenATT.push(107505);
+    periodTakenATT.push(1075058746);
+    
+    sectionTakenATT.push(107735);
+    periodTakenATT.push(1077358746);
+    
+    sectionTakenATT.push(110379);
+    periodTakenATT.push(1103798850);
+    
+    sectionTakenATT.push(103572);
+    periodTakenATT.push(1035728743);
+    
+    sectionTakenATT.push(107332);
+    periodTakenATT.push(1073328681);
+    
+    sectionTakenATT.push(105563);
+    periodTakenATT.push(1055638667);
+    
+    sectionTakenATT.push(105641);
+    periodTakenATT.push(1056418667);
+    
+    sectionTakenATT.push(107844);
+    periodTakenATT.push(1078448860);
+    
+    sectionTakenATT.push(110446);
+    periodTakenATT.push(1104468903);
+    
+    sectionTakenATT.push(110442);
+    periodTakenATT.push(1104428905);
+    
+    sectionTakenATT.push(107576);
+    periodTakenATT.push(1075768747);
+    
+    sectionTakenATT.push(107742);
+    periodTakenATT.push(1077428747);
+    
+    sectionTakenATT.push(107732);
+    periodTakenATT.push(1077328747);
+    
+    sectionTakenATT.push(107734);
+    periodTakenATT.push(1077348747);
+    
+    sectionTakenATT.push(107524);
+    periodTakenATT.push(1075248747);
+    
+    sectionTakenATT.push(104096);
+    periodTakenATT.push(1040968789);
+    
+    sectionTakenATT.push(106336);
+    periodTakenATT.push(1063369666);
+    
+    sectionTakenATT.push(103993);
+    periodTakenATT.push(1039938789);
+    
+    sectionTakenATT.push(106844);
+    periodTakenATT.push(1068448661);
+    
+    sectionTakenATT.push(109093);
+    periodTakenATT.push(1090938864);
+    
+    sectionTakenATT.push(107671);
+    periodTakenATT.push(1076718748);
+    
+    sectionTakenATT.push(108607);
+    periodTakenATT.push(1086078821);
+    
+    sectionTakenATT.push(107678);
+    periodTakenATT.push(1076788748);
+    
+    sectionTakenATT.push(110944);
+    periodTakenATT.push(1109448945);
+    
+    sectionTakenATT.push(108882);
+    periodTakenATT.push(1088828906);
+    
+    sectionTakenATT.push(108920);
+    periodTakenATT.push(1089208903);
+    
+    sectionTakenATT.push(109356);
+    periodTakenATT.push(1093568625);
+    
+    sectionTakenATT.push(110318);
+    periodTakenATT.push(1103188846);
+    
+    sectionTakenATT.push(110458);
+    periodTakenATT.push(1104588846);
+    
+    sectionTakenATT.push(110320);
+    periodTakenATT.push(1103208850);
+    
+    sectionTakenATT.push(109368);
+    periodTakenATT.push(1093688625);
+    
+    sectionTakenATT.push(110616);
+    periodTakenATT.push(1106168850);
+    
+    sectionTakenATT.push(110317);
+    periodTakenATT.push(1103178846);
+    
+    sectionTakenATT.push(108045);
+    periodTakenATT.push(1080458941);
+    
+    sectionTakenATT.push(110936);
+    periodTakenATT.push(1109368941);
+    
+    sectionTakenATT.push(106951);
+    periodTakenATT.push(1069518660);
+    
+    sectionTakenATT.push(111484);
+    periodTakenATT.push(1114848681);
+    
+    sectionTakenATT.push(111484);
+    periodTakenATT.push(1114848682);
+    
+    sectionTakenATT.push(104076);
+    periodTakenATT.push(1040768786);
+    
+    sectionTakenATT.push(107349);
+    periodTakenATT.push(1073498681);
+    
+    sectionTakenATT.push(107349);
+    periodTakenATT.push(1073498682);
+    
+    sectionTakenATT.push(110427);
+    periodTakenATT.push(1104279759);
+    
+    sectionTakenATT.push(106955);
+    periodTakenATT.push(1069558660);
+    
+    sectionTakenATT.push(107854);
+    periodTakenATT.push(1078548861);
+    
+    sectionTakenATT.push(110425);
+    periodTakenATT.push(1104259759);
+    
+    sectionTakenATT.push(107853);
+    periodTakenATT.push(1078538861);
+    
+    sectionTakenATT.push(105608);
+    periodTakenATT.push(1056088667);
+    
+    sectionTakenATT.push(105827);
+    periodTakenATT.push(1058278939);
+    
+    sectionTakenATT.push(107640);
+    periodTakenATT.push(1076408744);
+    
+    sectionTakenATT.push(105929);
+    periodTakenATT.push(1059298775);
+    
+    sectionTakenATT.push(105928);
+    periodTakenATT.push(1059288776);
+    
+    sectionTakenATT.push(105944);
+    periodTakenATT.push(1059448775);
+    
+    sectionTakenATT.push(103570);
+    periodTakenATT.push(1035708743);
+    
+    sectionTakenATT.push(110428);
+    periodTakenATT.push(1104289759);
+    
+    sectionTakenATT.push(108702);
+    periodTakenATT.push(1087028903);
+    
+    sectionTakenATT.push(110884);
+    periodTakenATT.push(1108848903);
+    
+    sectionTakenATT.push(110723);
+    periodTakenATT.push(1107238903);
+    
+    sectionTakenATT.push(110122);
+    periodTakenATT.push(1101228818);
+    
+    sectionTakenATT.push(110516);
+    periodTakenATT.push(1105168905);
+    
+    sectionTakenATT.push(110521);
+    periodTakenATT.push(1105218903);
+    
+    sectionTakenATT.push(110521);
+    periodTakenATT.push(1105218907);
+    
+    sectionTakenATT.push(110524);
+    periodTakenATT.push(1105248904);
+    
+    sectionTakenATT.push(111626);
+    periodTakenATT.push(1116268664);
+    
+    sectionTakenATT.push(107076);
+    periodTakenATT.push(1070768664);
+    
+    sectionTakenATT.push(110951);
+    periodTakenATT.push(1109518943);
+    
+    sectionTakenATT.push(108046);
+    periodTakenATT.push(1080468943);
+    
+    sectionTakenATT.push(108752);
+    periodTakenATT.push(1087528904);
+    
+    sectionTakenATT.push(108114);
+    periodTakenATT.push(1081148943);
+    
+    sectionTakenATT.push(110790);
+    periodTakenATT.push(1107908601);
+    
+    sectionTakenATT.push(110641);
+    periodTakenATT.push(1106418611);
+    
+    sectionTakenATT.push(110089);
+    periodTakenATT.push(1100898928);
+    
+    sectionTakenATT.push(110638);
+    periodTakenATT.push(1106388601);
+    
+    sectionTakenATT.push(105883);
+    periodTakenATT.push(1058838776);
+    
+    sectionTakenATT.push(110948);
+    periodTakenATT.push(1109488943);
+    
+    sectionTakenATT.push(108828);
+    periodTakenATT.push(1088288904);
+    
+    sectionTakenATT.push(108840);
+    periodTakenATT.push(1088408904);
+    
+    sectionTakenATT.push(107297);
+    periodTakenATT.push(1072978685);
+    
+    sectionTakenATT.push(107297);
+    periodTakenATT.push(1072978686);
+    
+    sectionTakenATT.push(108747);
+    periodTakenATT.push(1087478903);
+    
+    sectionTakenATT.push(108948);
+    periodTakenATT.push(1089488904);
+    
+    sectionTakenATT.push(108957);
+    periodTakenATT.push(1089578904);
+    
+    sectionTakenATT.push(108901);
+    periodTakenATT.push(1089018903);
+    
+    sectionTakenATT.push(104081);
+    periodTakenATT.push(1040818789);
+    
+    sectionTakenATT.push(107521);
+    periodTakenATT.push(1075218745);
+    
+    sectionTakenATT.push(107685);
+    periodTakenATT.push(1076858745);
+    
+    sectionTakenATT.push(107705);
+    periodTakenATT.push(1077058745);
+    
+    sectionTakenATT.push(107733);
+    periodTakenATT.push(1077338745);
+    
+    sectionTakenATT.push(111191);
+    periodTakenATT.push(1111918745);
+    
+    sectionTakenATT.push(111274);
+    periodTakenATT.push(1112748745);
+    
+    sectionTakenATT.push(107251);
+    periodTakenATT.push(1072518685);
+    
+    sectionTakenATT.push(107251);
+    periodTakenATT.push(1072518686);
+    
+    sectionTakenATT.push(108898);
+    periodTakenATT.push(1088988903);
+    
+    sectionTakenATT.push(104093);
+    periodTakenATT.push(1040938786);
+    
+    sectionTakenATT.push(111116);
+    periodTakenATT.push(1111168819);
+    
+    sectionTakenATT.push(110136);
+    periodTakenATT.push(1101368819);
+    
+    sectionTakenATT.push(104160);
+    periodTakenATT.push(1041608788);
+    
+    sectionTakenATT.push(111184);
+    periodTakenATT.push(1111848788);
+    
+    sectionTakenATT.push(104067);
+    periodTakenATT.push(1040678787);
+    
+    sectionTakenATT.push(104079);
+    periodTakenATT.push(1040798787);
+    
+    sectionTakenATT.push(108684);
+    periodTakenATT.push(1086848904);
+    
+    sectionTakenATT.push(108925);
+    periodTakenATT.push(1089258903);
+    
+    sectionTakenATT.push(107749);
+    periodTakenATT.push(1077498746);
+    
+    sectionTakenATT.push(110569);
+    periodTakenATT.push(1105698904);
+    
+    sectionTakenATT.push(111117);
+    periodTakenATT.push(1111178904);
+    
+    sectionTakenATT.push(111119);
+    periodTakenATT.push(1111198904);
+    
+    sectionTakenATT.push(107668);
+    periodTakenATT.push(1076688746);
+    
+    sectionTakenATT.push(108712);
+    periodTakenATT.push(1087128903);
+    
+    sectionTakenATT.push(108856);
+    periodTakenATT.push(1088568904);
+    
+    sectionTakenATT.push(108072);
+    periodTakenATT.push(1080728944);
+    
+    sectionTakenATT.push(107285);
+    periodTakenATT.push(1072858685);
+    
+    sectionTakenATT.push(107285);
+    periodTakenATT.push(1072858686);
+    
+    sectionTakenATT.push(107532);
+    periodTakenATT.push(1075328746);
+    
+    sectionTakenATT.push(107092);
+    periodTakenATT.push(1070928665);
+    
+    sectionTakenATT.push(107092);
+    periodTakenATT.push(1070928666);
+    
+    sectionTakenATT.push(108157);
+    periodTakenATT.push(1081578944);
+    
+    sectionTakenATT.push(107329);
+    periodTakenATT.push(1073298681);
+    
+    sectionTakenATT.push(107329);
+    periodTakenATT.push(1073298682);
+    
+    sectionTakenATT.push(108117);
+    periodTakenATT.push(1081178944);
+    
+    sectionTakenATT.push(108081);
+    periodTakenATT.push(1080818944);
+    
+    sectionTakenATT.push(108749);
+    periodTakenATT.push(1087498904);
+    
+    sectionTakenATT.push(110586);
+    periodTakenATT.push(1105868665);
+    
+    sectionTakenATT.push(108845);
+    periodTakenATT.push(1088458905);
+    
+    sectionTakenATT.push(109073);
+    periodTakenATT.push(1090738864);
+    
+    sectionTakenATT.push(108966);
+    periodTakenATT.push(1089668905);
+    
+    sectionTakenATT.push(110311);
+    periodTakenATT.push(1103118763);
+    
+    sectionTakenATT.push(109978);
+    periodTakenATT.push(1099788905);
+    
+    sectionTakenATT.push(108964);
+    periodTakenATT.push(1089648905);
+    
+    sectionTakenATT.push(112069);
+    periodTakenATT.push(1120698905);
+    
+    sectionTakenATT.push(111278);
+    periodTakenATT.push(1112788905);
+    
+    sectionTakenATT.push(108092);
+    periodTakenATT.push(1080928944);
+    
+    sectionTakenATT.push(110939);
+    periodTakenATT.push(1109398944);
+    
+    sectionTakenATT.push(109992);
+    periodTakenATT.push(1099928820);
+    
+    sectionTakenATT.push(107548);
+    periodTakenATT.push(1075488747);
+    
+    sectionTakenATT.push(107564);
+    periodTakenATT.push(1075648747);
+    
+    sectionTakenATT.push(107586);
+    periodTakenATT.push(1075868747);
+    
+    sectionTakenATT.push(107661);
+    periodTakenATT.push(1076618747);
+    
+    sectionTakenATT.push(106417);
+    periodTakenATT.push(1064178718);
+    
+    sectionTakenATT.push(106417);
+    periodTakenATT.push(1064179658);
+    
+    sectionTakenATT.push(106417);
+    periodTakenATT.push(1064179659);
+    
+    sectionTakenATT.push(110090);
+    periodTakenATT.push(1100908719);
+    
+    sectionTakenATT.push(108785);
+    periodTakenATT.push(1087858906);
+    
+    sectionTakenATT.push(108622);
+    periodTakenATT.push(1086228821);
+    
+    sectionTakenATT.push(107250);
+    periodTakenATT.push(1072509709);
+    
+    sectionTakenATT.push(107250);
+    periodTakenATT.push(1072509710);
+    
+    sectionTakenATT.push(109980);
+    periodTakenATT.push(1099808818);
+    
+    sectionTakenATT.push(110791);
+    periodTakenATT.push(1107918611);
+    
+    sectionTakenATT.push(108757);
+    periodTakenATT.push(1087578907);
+    
+    sectionTakenATT.push(109231);
+    periodTakenATT.push(1092318626);
+    
+    sectionTakenATT.push(106417);
+    periodTakenATT.push(1064179663);
+    
+    sectionTakenATT.push(106417);
+    periodTakenATT.push(1064179664);
+    
+    sectionTakenATT.push(108883);
+    periodTakenATT.push(1088838905);
+    
+    sectionTakenATT.push(111631);
+    periodTakenATT.push(1116318664);
+    
+    sectionTakenATT.push(111630);
+    periodTakenATT.push(1116308666);
+    
+    sectionTakenATT.push(107064);
+    periodTakenATT.push(1070648666);
+    
+    sectionTakenATT.push(108918);
+    periodTakenATT.push(1089188905);
+    
+    sectionTakenATT.push(108777);
+    periodTakenATT.push(1087778905);
+    
+    sectionTakenATT.push(107906);
+    periodTakenATT.push(1079068864);
+    
+    sectionTakenATT.push(106858);
+    periodTakenATT.push(1068588661);
+    
+    sectionTakenATT.push(106429);
+    periodTakenATT.push(1064299666);
+    
+    sectionTakenATT.push(107229);
+    periodTakenATT.push(1072299712);
+    
+    sectionTakenATT.push(107775);
+    periodTakenATT.push(1077758748);
+    
+    sectionTakenATT.push(107781);
+    periodTakenATT.push(1077818748);
+    
+    sectionTakenATT.push(108615);
+    periodTakenATT.push(1086158819);
+    
+    sectionTakenATT.push(107522);
+    periodTakenATT.push(1075228745);
+    
+    sectionTakenATT.push(108953);
+    periodTakenATT.push(1089538904);
+    
+    sectionTakenATT.push(108636);
+    periodTakenATT.push(1086368821);
+    
+    sectionTakenATT.push(108962);
+    periodTakenATT.push(1089628906);
+    
+    sectionTakenATT.push(107288);
+    periodTakenATT.push(1072889709);
+    
+    sectionTakenATT.push(107288);
+    periodTakenATT.push(1072889710);
+    
+    sectionTakenATT.push(107288);
+    periodTakenATT.push(1072889710);
+    
+    sectionTakenATT.push(108868);
+    periodTakenATT.push(1088688906);
+    
+    sectionTakenATT.push(108808);
+    periodTakenATT.push(1088088906);
+    
+    sectionTakenATT.push(107555);
+    periodTakenATT.push(1075558747);
+    
+    sectionTakenATT.push(107558);
+    periodTakenATT.push(1075588748);
+    
+    sectionTakenATT.push(110455);
+    periodTakenATT.push(1104558906);
+    
+    sectionTakenATT.push(109990);
+    periodTakenATT.push(1099908821);
+    
+    sectionTakenATT.push(108961);
+    periodTakenATT.push(1089618905);
+    
+    sectionTakenATT.push(107491);
+    periodTakenATT.push(1074918748);
+    
+    sectionTakenATT.push(107560);
+    periodTakenATT.push(1075608748);
+    
+    sectionTakenATT.push(107772);
+    periodTakenATT.push(1077728748);
+    
+    sectionTakenATT.push(110305);
+    periodTakenATT.push(1103058748);
+    
+    sectionTakenATT.push(108689);
+    periodTakenATT.push(1086898906);
+    
+    sectionTakenATT.push(108108);
+    periodTakenATT.push(1081088945);
+    
+    sectionTakenATT.push(110950);
+    periodTakenATT.push(1109508945);
+    
+    sectionTakenATT.push(111228);
+    periodTakenATT.push(1112288748);
+    
+    sectionTakenATT.push(108884);
+    periodTakenATT.push(1088848906);
+    
+    sectionTakenATT.push(106140);
+    periodTakenATT.push(1061408807);
+    
+    sectionTakenATT.push(108907);
+    periodTakenATT.push(1089078907);
+    
+    sectionTakenATT.push(108901);
+    periodTakenATT.push(1089018907);
+    
+    sectionTakenATT.push(111118);
+    periodTakenATT.push(1111188907);
+    
+    sectionTakenATT.push(110723);
+    periodTakenATT.push(1107238907);
+    
+    sectionTakenATT.push(108778);
+    periodTakenATT.push(1087788907);
+    
+    sectionTakenATT.push(110449);
+    periodTakenATT.push(1104498907);
+    
+    sectionTakenATT.push(104060);
+    periodTakenATT.push(1040608786);
+    
+    sectionTakenATT.push(105575);
+    periodTakenATT.push(1055758667);
+    
+    sectionTakenATT.push(105569);
+    periodTakenATT.push(1055698667);
+    
+    sectionTakenATT.push(110004);
+    periodTakenATT.push(1100048817);
+    
+    sectionTakenATT.push(103565);
+    periodTakenATT.push(1035658743);
+    
+    sectionTakenATT.push(107312);
+    periodTakenATT.push(1073128681);
+    
+    sectionTakenATT.push(107312);
+    periodTakenATT.push(1073128682);
+    
+    sectionTakenATT.push(105935);
+    periodTakenATT.push(1059358776);
+    
+    sectionTakenATT.push(108063);
+    periodTakenATT.push(1080638942);
+    
+    sectionTakenATT.push(107055);
+    periodTakenATT.push(1070558663);
+    
+    sectionTakenATT.push(107287);
+    periodTakenATT.push(1072878683);
+    
+    sectionTakenATT.push(107287);
+    periodTakenATT.push(1072878684);
+    
+    sectionTakenATT.push(107316);
+    periodTakenATT.push(1073168683);
+    
+    sectionTakenATT.push(107316);
+    periodTakenATT.push(1073168684);
+    
+    sectionTakenATT.push(109996);
+    periodTakenATT.push(1099968818);
+    
+    sectionTakenATT.push(111918);
+    periodTakenATT.push(1119188818);
+    
+    sectionTakenATT.push(104054);
+    periodTakenATT.push(1040548787);
+    
+    sectionTakenATT.push(107215);
+    periodTakenATT.push(1072159712);
+    
+    sectionTakenATT.push(110432);
+    periodTakenATT.push(1104329759);
+    
+    sectionTakenATT.push(109007);
+    periodTakenATT.push(1090078904);
+    
+    sectionTakenATT.push(107313);
+    periodTakenATT.push(1073138685);
+    
+    sectionTakenATT.push(107313);
+    periodTakenATT.push(1073138686);
+    
+    sectionTakenATT.push(110459);
+    periodTakenATT.push(1104598904);
+    
+    sectionTakenATT.push(106424);
+    periodTakenATT.push(1064248711);
+    
+    sectionTakenATT.push(106424);
+    periodTakenATT.push(1064248712);
+    
+    sectionTakenATT.push(106424);
+    periodTakenATT.push(1064248713);
+    
+    sectionTakenATT.push(106424);
+    periodTakenATT.push(1064248714);
+    
+    sectionTakenATT.push(106424);
+    periodTakenATT.push(1064248715);
+    
+    sectionTakenATT.push(108773);
+    periodTakenATT.push(1087738903);
+    
+    sectionTakenATT.push(106143);
+    periodTakenATT.push(1061438807);
+    
+    sectionTakenATT.push(108908);
+    periodTakenATT.push(1089088904);
+    
+    sectionTakenATT.push(108771);
+    periodTakenATT.push(1087718904);
+    
+    sectionTakenATT.push(107616);
+    periodTakenATT.push(1076168744);
+    
+    sectionTakenATT.push(110133);
+    periodTakenATT.push(1101338819);
+    
+    sectionTakenATT.push(108079);
+    periodTakenATT.push(1080798941);
+    
+    sectionTakenATT.push(108053);
+    periodTakenATT.push(1080538943);
+    
+    sectionTakenATT.push(108694);
+    periodTakenATT.push(1086948904);
+    
+    sectionTakenATT.push(107580);
+    periodTakenATT.push(1075808745);
+    
+    sectionTakenATT.push(107553);
+    periodTakenATT.push(1075538746);
+    
+    sectionTakenATT.push(107544);
+    periodTakenATT.push(1075448745);
+    
+    sectionTakenATT.push(107643);
+    periodTakenATT.push(1076438746);
+    
+    sectionTakenATT.push(104072);
+    periodTakenATT.push(1040728786);
+    
+    sectionTakenATT.push(108103);
+    periodTakenATT.push(1081038944);
+    
+    sectionTakenATT.push(108750);
+    periodTakenATT.push(1087508905);
+    
+    sectionTakenATT.push(110533);
+    periodTakenATT.push(1105338904);
+    
+    sectionTakenATT.push(111374);
+    periodTakenATT.push(1113748819);
+    
+    sectionTakenATT.push(111298);
+    periodTakenATT.push(1112988821);
+    
+    sectionTakenATT.push(111378);
+    periodTakenATT.push(1113788818);
+    
+    sectionTakenATT.push(108861);
+    periodTakenATT.push(1088618905);
+    
+    sectionTakenATT.push(111417);
+    periodTakenATT.push(1114178789);
+    
+    sectionTakenATT.push(107573);
+    periodTakenATT.push(1075738747);
+    
+    sectionTakenATT.push(104094);
+    periodTakenATT.push(1040948789);
+    
+    sectionTakenATT.push(104047);
+    periodTakenATT.push(1040478789);
+    
+    sectionTakenATT.push(111369);
+    periodTakenATT.push(1113698664);
+    
+    sectionTakenATT.push(108648);
+    periodTakenATT.push(1086488820);
+    
+    sectionTakenATT.push(107058);
+    periodTakenATT.push(1070588664);
+    
+    sectionTakenATT.push(108054);
+    periodTakenATT.push(1080548945);
+    
+    sectionTakenATT.push(107545);
+    periodTakenATT.push(1075458745);
+    
+    sectionTakenATT.push(107305);
+    periodTakenATT.push(1073059709);
+    
+    sectionTakenATT.push(107305);
+    periodTakenATT.push(1073059710);
+    
+    sectionTakenATT.push(110531);
+    periodTakenATT.push(1105318906);
+    
+    sectionTakenATT.push(108755);
+    periodTakenATT.push(1087558906);
+    
+    sectionTakenATT.push(107583);
+    periodTakenATT.push(1075838746);
+    
+    sectionTakenATT.push(108810);
+    periodTakenATT.push(1088108906);
+    
+    sectionTakenATT.push(107726);
+    periodTakenATT.push(1077268748);
+    
+    sectionTakenATT.push(110439);
+    periodTakenATT.push(1104398906);
+    
+    sectionTakenATT.push(108072);
+    periodTakenATT.push(1080728943);
+    
+    sectionTakenATT.push(110418);
+    periodTakenATT.push(1104189759);
+    
+    sectionTakenATT.push(108799);
+    periodTakenATT.push(1087998907);
+    
+    sectionTakenATT.push(110568);
+    periodTakenATT.push(1105688907);
+    
+    sectionTakenATT.push(108760);
+    periodTakenATT.push(1087608906);
+    
+    sectionTakenATT.push(110884);
+    periodTakenATT.push(1108848907);
+    
+    sectionTakenATT.push(110142);
+    periodTakenATT.push(1101428821);
+    
+    sectionTakenATT.push(108712);
+    periodTakenATT.push(1087128907);
+    
+    sectionTakenATT.push(108728);
+    periodTakenATT.push(1087288905);
+    
+    sectionTakenATT.push(108716);
+    periodTakenATT.push(1087168906);
+    
+    sectionTakenATT.push(108742);
+    periodTakenATT.push(1087428903);
+    
+    sectionTakenATT.push(109266);
+    periodTakenATT.push(1092668626);
+    
+    sectionTakenATT.push(110031);
+    periodTakenATT.push(1100318720);
+    
+    sectionTakenATT.push(110610);
+    periodTakenATT.push(1106108963);
+    
+    sectionTakenATT.push(110611);
+    periodTakenATT.push(1106118971);
+    
+    sectionTakenATT.push(110017);
+    periodTakenATT.push(1100178719);
+    
+    sectionTakenATT.push(110371);
+    periodTakenATT.push(1103718846);
+    
+    sectionTakenATT.push(110319);
+    periodTakenATT.push(1103198850);
+    
+    sectionTakenATT.push(110207);
+    periodTakenATT.push(1102078836);
+    
+    sectionTakenATT.push(110652);
+    periodTakenATT.push(1106528601);
+    
+    sectionTakenATT.push(110646);
+    periodTakenATT.push(1106468601);
+    
+    sectionTakenATT.push(110588);
+    periodTakenATT.push(1105888963);
+    
+    sectionTakenATT.push(110228);
+    periodTakenATT.push(1102288834);
+    
+    sectionTakenATT.push(110429);
+    periodTakenATT.push(1104299759);
+    
+    sectionTakenATT.push(104114);
+    periodTakenATT.push(1041148786);
+    
+    sectionTakenATT.push(108636);
+    periodTakenATT.push(1086368817);
+    
+    sectionTakenATT.push(106421);
+    periodTakenATT.push(1064219665);
+    
+    sectionTakenATT.push(103577);
+    periodTakenATT.push(1035778743);
+    
+    sectionTakenATT.push(103611);
+    periodTakenATT.push(1036119608);
+    
+    sectionTakenATT.push(110018);
+    periodTakenATT.push(1100188719);
+    
+    sectionTakenATT.push(105889);
+    periodTakenATT.push(1058898775);
+    
+    sectionTakenATT.push(110019);
+    periodTakenATT.push(1100198719);
+    
+    sectionTakenATT.push(110224);
+    periodTakenATT.push(1102248834);
+    
+    sectionTakenATT.push(106943);
+    periodTakenATT.push(1069438660);
+    
+    sectionTakenATT.push(111366);
+    periodTakenATT.push(1113668662);
+    
+    sectionTakenATT.push(106885);
+    periodTakenATT.push(1068858660);
+    
+    sectionTakenATT.push(107309);
+    periodTakenATT.push(1073098681);
+    
+    sectionTakenATT.push(107309);
+    periodTakenATT.push(1073098682);
+    
+    sectionTakenATT.push(106869);
+    periodTakenATT.push(1068698660);
+    
+    sectionTakenATT.push(106861);
+    periodTakenATT.push(1068618660);
+    
+    sectionTakenATT.push(104217);
+    periodTakenATT.push(1042178786);
+    
+    sectionTakenATT.push(110415);
+    periodTakenATT.push(1104159759);
+    
+    sectionTakenATT.push(109344);
+    periodTakenATT.push(1093448625);
+    
+    sectionTakenATT.push(103567);
+    periodTakenATT.push(1035678743);
+    
+    sectionTakenATT.push(111176);
+    periodTakenATT.push(1111768817);
+    
+    sectionTakenATT.push(103605);
+    periodTakenATT.push(1036059608);
+    
+    sectionTakenATT.push(106414);
+    periodTakenATT.push(1064149665);
+    
+    sectionTakenATT.push(103576);
+    periodTakenATT.push(1035768743);
+    
+    sectionTakenATT.push(108734);
+    periodTakenATT.push(1087348903);
+    
+    sectionTakenATT.push(109976);
+    periodTakenATT.push(1099768907);
+    
+    sectionTakenATT.push(110091);
+    periodTakenATT.push(1100918720);
+    
+    sectionTakenATT.push(105833);
+    periodTakenATT.push(1058338940);
+    
+    sectionTakenATT.push(105931);
+    periodTakenATT.push(1059318776);
+    
+    sectionTakenATT.push(109221);
+    periodTakenATT.push(1092218625);
+    
+    sectionTakenATT.push(107300);
+    periodTakenATT.push(1073008681);
+    
+    sectionTakenATT.push(107300);
+    periodTakenATT.push(1073008682);
+    
+    sectionTakenATT.push(108999);
+    periodTakenATT.push(1089998903);
+    
+    sectionTakenATT.push(108916);
+    periodTakenATT.push(1089168903);
+    
+    sectionTakenATT.push(110146);
+    periodTakenATT.push(1101468818);
+    
+    sectionTakenATT.push(110422);
+    periodTakenATT.push(1104229759);
+    
+    sectionTakenATT.push(107676);
+    periodTakenATT.push(1076768745);
+    
+    sectionTakenATT.push(110517);
+    periodTakenATT.push(1105178905);
+    
+    sectionTakenATT.push(110519);
+    periodTakenATT.push(1105198906);
+    
+    sectionTakenATT.push(110522);
+    periodTakenATT.push(1105228903);
+    
+    sectionTakenATT.push(110523);
+    periodTakenATT.push(1105238907);
+    
+    sectionTakenATT.push(111167);
+    periodTakenATT.push(1111678904);
+    
+    sectionTakenATT.push(104079);
+    periodTakenATT.push(1040798788);
+    
+    sectionTakenATT.push(108772);
+    periodTakenATT.push(1087728906);
+    
+    sectionTakenATT.push(106866);
+    periodTakenATT.push(1068668661);
+    
+    sectionTakenATT.push(108836);
+    periodTakenATT.push(1088368907);
+    
+    sectionTakenATT.push(110457);
+    periodTakenATT.push(1104578907);
+    
+    sectionTakenATT.push(108906);
+    periodTakenATT.push(1089068906);
+    
+    sectionTakenATT.push(107292);
+    periodTakenATT.push(1072928687);
+    
+    sectionTakenATT.push(107292);
+    periodTakenATT.push(1072929708);
+    
+    sectionTakenATT.push(109222);
+    periodTakenATT.push(1092228626);
+    
+    sectionTakenATT.push(111188);
+    periodTakenATT.push(1111888820);
+    
+    sectionTakenATT.push(107284);
+    periodTakenATT.push(1072848687);
+    
+    sectionTakenATT.push(107284);
+    periodTakenATT.push(1072849708);
+    
+    sectionTakenATT.push(111916);
+    periodTakenATT.push(1119168789);
+    
+    sectionTakenATT.push(109997);
+    periodTakenATT.push(1099978821);
+    
+    sectionTakenATT.push(108814);
+    periodTakenATT.push(1088148906);
+    
+    sectionTakenATT.push(110443);
+    periodTakenATT.push(1104438906);
+    
+    sectionTakenATT.push(110444);
+    periodTakenATT.push(1104448906);
+    
+    sectionTakenATT.push(108674);
+    periodTakenATT.push(1086748906);
+    
+    sectionTakenATT.push(107691);
+    periodTakenATT.push(1076918748);
+    
+    sectionTakenATT.push(108675);
+    periodTakenATT.push(1086758907);
+    
+    sectionTakenATT.push(110149);
+    periodTakenATT.push(1101498821);
+    
+    sectionTakenATT.push(108930);
+    periodTakenATT.push(1089308907);
+    
+    sectionTakenATT.push(108999);
+    periodTakenATT.push(1089998907);
+    
+    sectionTakenATT.push(109013);
+    periodTakenATT.push(1090138907);
+    
+    sectionTakenATT.push(108666);
+    periodTakenATT.push(1086668907);
+    
+    sectionTakenATT.push(108702);
+    periodTakenATT.push(1087028907);
+    
+    sectionTakenATT.push(106181);
+    periodTakenATT.push(1061818807);
+    
+    sectionTakenATT.push(103613);
+    periodTakenATT.push(1036139608);
+    
+    sectionTakenATT.push(106135);
+    periodTakenATT.push(1061358806);
+    
+    sectionTakenATT.push(106180);
+    periodTakenATT.push(1061808806);
+    
+    sectionTakenATT.push(105938);
+    periodTakenATT.push(1059388775);
+    
+    sectionTakenATT.push(103579);
+    periodTakenATT.push(1035798743);
+    
+    sectionTakenATT.push(110313);
+    periodTakenATT.push(1103138776);
+    
+    sectionTakenATT.push(105832);
+    periodTakenATT.push(1058328940);
+    
+    sectionTakenATT.push(105939);
+    periodTakenATT.push(1059398776);
+    
+    sectionTakenATT.push(107544);
+    periodTakenATT.push(1075448744);
+    
+    sectionTakenATT.push(107507);
+    periodTakenATT.push(1075078744);
+    
+    sectionTakenATT.push(107697);
+    periodTakenATT.push(1076978744);
+    
+    sectionTakenATT.push(107698);
+    periodTakenATT.push(1076988744);
+    
+    sectionTakenATT.push(107721);
+    periodTakenATT.push(1077218744);
+    
+    sectionTakenATT.push(111868);
+    periodTakenATT.push(1118688744);
+    
+    sectionTakenATT.push(111625);
+    periodTakenATT.push(1116258663);
+    
+    sectionTakenATT.push(108111);
+    periodTakenATT.push(1081118942);
+    
+    sectionTakenATT.push(103569);
+    periodTakenATT.push(1035698743);
+    
+    sectionTakenATT.push(110568);
+    periodTakenATT.push(1105688903);
+    
+    sectionTakenATT.push(108824);
+    periodTakenATT.push(1088248903);
+    
+    sectionTakenATT.push(104256);
+    periodTakenATT.push(1042568787);
+    
+    sectionTakenATT.push(110926);
+    periodTakenATT.push(1109268903);
+    
+    sectionTakenATT.push(110532);
+    periodTakenATT.push(1105328903);
+    
+    sectionTakenATT.push(108841);
+    periodTakenATT.push(1088418903);
+    
+    sectionTakenATT.push(104220);
+    periodTakenATT.push(1042208788);
+    
+    sectionTakenATT.push(108832);
+    periodTakenATT.push(1088328905);
+    
+    sectionTakenATT.push(110710);
+    periodTakenATT.push(1107108905);
+    
+    sectionTakenATT.push(109090);
+    periodTakenATT.push(1090908864);
+    
+    sectionTakenATT.push(109012);
+    periodTakenATT.push(1090128905);
+    
+    sectionTakenATT.push(108662);
+    periodTakenATT.push(1086628905);
+    
+    sectionTakenATT.push(108625);
+    periodTakenATT.push(1086258820);
+    
+    sectionTakenATT.push(111347);
+    periodTakenATT.push(1113478820);
+    
+    sectionTakenATT.push(110438);
+    periodTakenATT.push(1104388905);
+    
+    sectionTakenATT.push(110618);
+    periodTakenATT.push(1106188905);
+    
+    sectionTakenATT.push(111171);
+    periodTakenATT.push(1111718820);
+    
+    sectionTakenATT.push(107601);
+    periodTakenATT.push(1076018747);
+    
+    sectionTakenATT.push(107664);
+    periodTakenATT.push(1076648747);
+    
+    sectionTakenATT.push(109110);
+    periodTakenATT.push(1091108865);
+    
+    sectionTakenATT.push(107868);
+    periodTakenATT.push(1078688748);
+    
+    sectionTakenATT.push(106360);
+    periodTakenATT.push(1063609666);
+    
+    sectionTakenATT.push(108085);
+    periodTakenATT.push(1080858945);
+    
+    sectionTakenATT.push(107315);
+    periodTakenATT.push(1073159709);
+    
+    sectionTakenATT.push(107315);
+    periodTakenATT.push(1073159710);
+    
+    sectionTakenATT.push(107280);
+    periodTakenATT.push(1072809709);
+    
+    sectionTakenATT.push(107280);
+    periodTakenATT.push(1072809710);
+    
+    sectionTakenATT.push(109001);
+    periodTakenATT.push(1090018906);
+    
+    sectionTakenATT.push(108665);
+    periodTakenATT.push(1086658906);
+    
+    sectionTakenATT.push(109009);
+    periodTakenATT.push(1090098906);
+    
+    sectionTakenATT.push(111481);
+    periodTakenATT.push(1114819709);
+    
+    sectionTakenATT.push(111481);
+    periodTakenATT.push(1114819710);
+    
+    sectionTakenATT.push(109345);
+    periodTakenATT.push(1093458626);
+    
+    sectionTakenATT.push(109101);
+    periodTakenATT.push(1091018865);
+    
+    sectionTakenATT.push(108905);
+    periodTakenATT.push(1089058904);
+    
+    sectionTakenATT.push(108913);
+    periodTakenATT.push(1089138905);
+    
+    sectionTakenATT.push(108821);
+    periodTakenATT.push(1088218906);
+    
+    sectionTakenATT.push(108789);
+    periodTakenATT.push(1087898905);
+    
+    sectionTakenATT.push(105449);
+    periodTakenATT.push(1054498925);
+    
+    sectionTakenATT.push(105446);
+    periodTakenATT.push(1054468928);
+    
+    sectionTakenATT.push(105420);
+    periodTakenATT.push(1054208925);
+    
+    sectionTakenATT.push(105425);
+    periodTakenATT.push(1054258928);
+    
+    sectionTakenATT.push(110647);
+    periodTakenATT.push(1106478611);
+    
+    sectionTakenATT.push(110407);
+    periodTakenATT.push(1104078963);
+    
+    sectionTakenATT.push(109331);
+    periodTakenATT.push(1093318626);
+    
+    sectionTakenATT.push(109369);
+    periodTakenATT.push(1093698626);
+    
+    sectionTakenATT.push(110383);
+    periodTakenATT.push(1103838850);
+    
+    sectionTakenATT.push(111521);
+    periodTakenATT.push(1115218786);
+    
+    sectionTakenATT.push(107214);
+    periodTakenATT.push(1072149711);
+    
+    sectionTakenATT.push(103990);
+    periodTakenATT.push(1039908786);
+    
+    sectionTakenATT.push(107115);
+    periodTakenATT.push(1071158662);
+    
+    sectionTakenATT.push(107264);
+    periodTakenATT.push(1072648681);
+    
+    sectionTakenATT.push(107264);
+    periodTakenATT.push(1072648682);
+    
+    sectionTakenATT.push(104201);
+    periodTakenATT.push(1042018786);
+    
+    sectionTakenATT.push(110421);
+    periodTakenATT.push(1104219759);
+    
+    sectionTakenATT.push(105525);
+    periodTakenATT.push(1055258667);
+    
+    sectionTakenATT.push(107848);
+    periodTakenATT.push(1078488860);
+    
+    sectionTakenATT.push(107845);
+    periodTakenATT.push(1078458860);
+    
+    sectionTakenATT.push(110416);
+    periodTakenATT.push(1104169759);
+    
+    sectionTakenATT.push(106968);
+    periodTakenATT.push(1069688661);
+    
+    sectionTakenATT.push(108647);
+    periodTakenATT.push(1086478817);
+    
+    sectionTakenATT.push(108622);
+    periodTakenATT.push(1086228817);
+    
+    sectionTakenATT.push(110578);
+    periodTakenATT.push(1105788743);
+    
+    sectionTakenATT.push(110148);
+    periodTakenATT.push(1101488817);
+    
+    sectionTakenATT.push(105618);
+    periodTakenATT.push(1056188667);
+    
+    sectionTakenATT.push(105826);
+    periodTakenATT.push(1058268939);
+    
+    sectionTakenATT.push(110312);
+    periodTakenATT.push(1103128775);
+    
+    sectionTakenATT.push(107646);
+    periodTakenATT.push(1076468744);
+    
+    sectionTakenATT.push(103603);
+    periodTakenATT.push(1036039608);
+    
+    sectionTakenATT.push(105828);
+    periodTakenATT.push(1058288939);
+    
+    sectionTakenATT.push(103568);
+    periodTakenATT.push(1035688743);
+    
+    sectionTakenATT.push(103604);
+    periodTakenATT.push(1036049608);
+    
+    sectionTakenATT.push(110300);
+    periodTakenATT.push(1103008776);
+    
+    sectionTakenATT.push(106959);
+    periodTakenATT.push(1069598660);
+    
+    sectionTakenATT.push(105927);
+    periodTakenATT.push(1059278775);
+    
+    sectionTakenATT.push(107675);
+    periodTakenATT.push(1076758744);
+    
+    sectionTakenATT.push(105834);
+    periodTakenATT.push(1058348940);
+    
+    sectionTakenATT.push(107583);
+    periodTakenATT.push(1075838744);
+    
+    sectionTakenATT.push(107545);
+    periodTakenATT.push(1075458744);
+    
+    sectionTakenATT.push(105823);
+    periodTakenATT.push(1058238939);
+    
+    sectionTakenATT.push(109230);
+    periodTakenATT.push(1092308625);
+    
+    sectionTakenATT.push(106367);
+    periodTakenATT.push(1063679665);
+    
+    sectionTakenATT.push(110937);
+    periodTakenATT.push(1109378942);
+    
+    sectionTakenATT.push(108770);
+    periodTakenATT.push(1087708903);
+    
+    sectionTakenATT.push(104078);
+    periodTakenATT.push(1040788787);
+    
+    sectionTakenATT.push(110721);
+    periodTakenATT.push(1107218903);
+    
+    sectionTakenATT.push(110883);
+    periodTakenATT.push(1108838903);
+    
+    sectionTakenATT.push(110879);
+    periodTakenATT.push(1108798903);
+    
+    sectionTakenATT.push(111118);
+    periodTakenATT.push(1111188903);
+    
+    sectionTakenATT.push(104100);
+    periodTakenATT.push(1041008787);
+    
+    sectionTakenATT.push(103976);
+    periodTakenATT.push(1039768787);
+    
+    sectionTakenATT.push(112071);
+    periodTakenATT.push(1120718903);
+    
+    sectionTakenATT.push(109013);
+    periodTakenATT.push(1090138903);
+    
+    sectionTakenATT.push(108666);
+    periodTakenATT.push(1086668903);
+    
+    sectionTakenATT.push(110457);
+    periodTakenATT.push(1104578903);
+    
+    sectionTakenATT.push(107583);
+    periodTakenATT.push(1075838745);
+    
+    sectionTakenATT.push(107640);
+    periodTakenATT.push(1076408745);
+    
+    sectionTakenATT.push(107843);
+    periodTakenATT.push(1078438860);
+    
+    sectionTakenATT.push(108090);
+    periodTakenATT.push(1080908943);
+    
+    sectionTakenATT.push(108863);
+    periodTakenATT.push(1088638903);
+    
+    sectionTakenATT.push(108872);
+    periodTakenATT.push(1088728904);
+    
+    sectionTakenATT.push(107756);
+    periodTakenATT.push(1077568745);
+    
+    sectionTakenATT.push(108599);
+    periodTakenATT.push(1085998818);
+    
+    sectionTakenATT.push(110941);
+    periodTakenATT.push(1109418941);
+    
+    sectionTakenATT.push(108073);
+    periodTakenATT.push(1080738942);
+    
+    sectionTakenATT.push(107256);
+    periodTakenATT.push(1072568685);
+    
+    sectionTakenATT.push(107256);
+    periodTakenATT.push(1072568686);
+    
+    sectionTakenATT.push(110003);
+    periodTakenATT.push(1100038819);
+    
+    sectionTakenATT.push(107531);
+    periodTakenATT.push(1075318744);
+    
+    sectionTakenATT.push(111343);
+    periodTakenATT.push(1113438819);
+    
+    sectionTakenATT.push(104087);
+    periodTakenATT.push(1040878788);
+    
+    sectionTakenATT.push(108944);
+    periodTakenATT.push(1089448905);
+    
+    sectionTakenATT.push(108923);
+    periodTakenATT.push(1089238905);
+    
+    sectionTakenATT.push(108709);
+    periodTakenATT.push(1087098903);
+    
+    sectionTakenATT.push(110722);
+    periodTakenATT.push(1107228905);
+    
+    sectionTakenATT.push(110876);
+    periodTakenATT.push(1108768905);
+    
+    sectionTakenATT.push(108122);
+    periodTakenATT.push(1081228944);
+    
+    sectionTakenATT.push(108098);
+    periodTakenATT.push(1080988945);
+    
+    sectionTakenATT.push(108096);
+    periodTakenATT.push(1080968942);
+    
+    sectionTakenATT.push(107083);
+    periodTakenATT.push(1070838666);
+    
+    sectionTakenATT.push(109349);
+    periodTakenATT.push(1093498626);
+    
+    sectionTakenATT.push(110924);
+    periodTakenATT.push(1109248905);
+    
+    sectionTakenATT.push(108748);
+    periodTakenATT.push(1087488904);
+    
+    sectionTakenATT.push(110125);
+    periodTakenATT.push(1101258820);
+    
+    sectionTakenATT.push(108683);
+    periodTakenATT.push(1086838905);
+    
+    sectionTakenATT.push(110662);
+    periodTakenATT.push(1106628601);
+    
+    sectionTakenATT.push(110663);
+    periodTakenATT.push(1106638611);
+    
+    sectionTakenATT.push(110023);
+    periodTakenATT.push(1100238719);
+    
+    sectionTakenATT.push(110640);
+    periodTakenATT.push(1106408601);
+    
+    sectionTakenATT.push(110783);
+    periodTakenATT.push(1107838601);
+    
+    sectionTakenATT.push(110604);
+    periodTakenATT.push(1106048963);
+    
+    sectionTakenATT.push(109364);
+    periodTakenATT.push(1093648625);
+    
+    sectionTakenATT.push(110026);
+    periodTakenATT.push(1100268720);
+    
+    sectionTakenATT.push(108105);
+    periodTakenATT.push(1081058941);
+    
+    sectionTakenATT.push(106963);
+    periodTakenATT.push(1069638660);
+    
+    sectionTakenATT.push(110677);
+    periodTakenATT.push(1106778963);
+    
+    sectionTakenATT.push(108154);
+    periodTakenATT.push(1081548941);
+    
+    sectionTakenATT.push(108101);
+    periodTakenATT.push(1081018941);
+    
+    sectionTakenATT.push(106865);
+    periodTakenATT.push(1068658660);
+    
+    sectionTakenATT.push(110666);
+    periodTakenATT.push(1106668963);
+    
+    sectionTakenATT.push(104048);
+    periodTakenATT.push(1040488786);
+    
+    sectionTakenATT.push(105601);
+    periodTakenATT.push(1056018667);
+    
+    sectionTakenATT.push(106982);
+    periodTakenATT.push(1069828660);
+    
+    sectionTakenATT.push(107075);
+    periodTakenATT.push(1070758662);
+    
+    sectionTakenATT.push(110419);
+    periodTakenATT.push(1104199759);
+    
+    sectionTakenATT.push(105523);
+    periodTakenATT.push(1055238667);
+    
+    sectionTakenATT.push(110424);
+    periodTakenATT.push(1104249759);
+    
+    sectionTakenATT.push(110016);
+    periodTakenATT.push(1100168719);
+    
+    sectionTakenATT.push(103415);
+    periodTakenATT.push(1034158732);
+    
+    sectionTakenATT.push(103415);
+    periodTakenATT.push(1034158735);
+    
+    sectionTakenATT.push(103415);
+    periodTakenATT.push(1034158736);
+    
+    sectionTakenATT.push(105936);
+    periodTakenATT.push(1059368775);
+    
+    sectionTakenATT.push(105934);
+    periodTakenATT.push(1059348775);
+    
+    sectionTakenATT.push(106947);
+    periodTakenATT.push(1069478660);
+    
+    sectionTakenATT.push(106428);
+    periodTakenATT.push(1064289665);
+    
+    sectionTakenATT.push(110036);
+    periodTakenATT.push(1100368719);
+    
+    sectionTakenATT.push(105942);
+    periodTakenATT.push(1059428775);
+    
+    sectionTakenATT.push(110034);
+    periodTakenATT.push(1100348720);
+    
+    sectionTakenATT.push(105946);
+    periodTakenATT.push(1059468775);
+    
+    sectionTakenATT.push(109374);
+    periodTakenATT.push(1093748625);
+    
+    sectionTakenATT.push(107267);
+    periodTakenATT.push(1072678683);
+    
+    sectionTakenATT.push(107267);
+    periodTakenATT.push(1072678684);
+    
+    sectionTakenATT.push(109360);
+    periodTakenATT.push(1093608625);
+    
+    sectionTakenATT.push(105926);
+    periodTakenATT.push(1059268776);
+    
+    sectionTakenATT.push(104115);
+    periodTakenATT.push(1041158787);
+    
+    sectionTakenATT.push(107306);
+    periodTakenATT.push(1073068683);
+    
+    sectionTakenATT.push(107306);
+    periodTakenATT.push(1073068684);
+    
+    sectionTakenATT.push(111516);
+    periodTakenATT.push(1115168787);
+    
+    sectionTakenATT.push(107086);
+    periodTakenATT.push(1070868665);
+    
+    sectionTakenATT.push(107086);
+    periodTakenATT.push(1070868666);
+    
+    sectionTakenATT.push(110961);
+    periodTakenATT.push(1109618944);
+    
+    sectionTakenATT.push(107585);
+    periodTakenATT.push(1075858746);
+    
+    sectionTakenATT.push(107074);
+    periodTakenATT.push(1070748665);
+    
+    sectionTakenATT.push(107673);
+    periodTakenATT.push(1076738747);
+    
+    sectionTakenATT.push(108605);
+    periodTakenATT.push(1086058819);
+    
+    sectionTakenATT.push(108604);
+    periodTakenATT.push(1086048820);
+    
+    sectionTakenATT.push(107072);
+    periodTakenATT.push(1070728665);
+    
+    sectionTakenATT.push(109046);
+    periodTakenATT.push(1090468862);
+    
+    sectionTakenATT.push(108672);
+    periodTakenATT.push(1086728905);
+    
+    sectionTakenATT.push(108858);
+    periodTakenATT.push(1088588903);
+    
+    sectionTakenATT.push(109080);
+    periodTakenATT.push(1090808864);
+    
+    sectionTakenATT.push(107341);
+    periodTakenATT.push(1073418687);
+    
+    sectionTakenATT.push(107341);
+    periodTakenATT.push(1073419708);
+    
+    sectionTakenATT.push(107679);
+    periodTakenATT.push(1076798746);
+    
+    sectionTakenATT.push(109096);
+    periodTakenATT.push(1090968865);
+    
+    sectionTakenATT.push(109365);
+    periodTakenATT.push(1093658626);
+    
+    sectionTakenATT.push(106843);
+    periodTakenATT.push(1068438660);
+    
+    sectionTakenATT.push(107783);
+    periodTakenATT.push(1077838748);
+    
+    sectionTakenATT.push(108089);
+    periodTakenATT.push(1080898945);
+    
+    sectionTakenATT.push(106983);
+    periodTakenATT.push(1069838661);
+    
+    sectionTakenATT.push(110301);
+    periodTakenATT.push(1103018906);
+    
+    sectionTakenATT.push(108945);
+    periodTakenATT.push(1089458906);
+    
+    sectionTakenATT.push(107880);
+    periodTakenATT.push(1078808748);
+    
+    sectionTakenATT.push(110087);
+    periodTakenATT.push(1100878928);
+    
+    sectionTakenATT.push(111917);
+    periodTakenATT.push(1119178821);
+    
+    sectionTakenATT.push(108924);
+    periodTakenATT.push(1089248906);
+    
+    sectionTakenATT.push(108718);
+    periodTakenATT.push(1087188905);
+    
+    sectionTakenATT.push(108733);
+    periodTakenATT.push(1087338905);
+    
+    sectionTakenATT.push(111767);
+    periodTakenATT.push(1117678910);
+    
+    sectionTakenATT.push(111768);
+    periodTakenATT.push(1117688910);
+    
+    sectionTakenATT.push(108720);
+    periodTakenATT.push(1087208904);
+    
+    sectionTakenATT.push(108731);
+    periodTakenATT.push(1087318904);
+    
+    sectionTakenATT.push(108737);
+    periodTakenATT.push(1087378904);
+    
+    sectionTakenATT.push(110126);
+    periodTakenATT.push(1101268819);
+    
+    sectionTakenATT.push(111628);
+    periodTakenATT.push(1116288664);
+    
+    sectionTakenATT.push(108920);
+    periodTakenATT.push(1089208907);
+    
+    
+    $j("table#teacherSectionTable tr").each(function()
+    {
+        $j(this).find('th').eq(2).after('<th align="center">Attendance Link</th>');
+        $j(this).find('th').eq(2).after('<th align="center">Attendance Taken?</th>');
+        $j(this).find('td').eq(2).after('<td></td>');
+        
+        strAttendanceLink = $j(this).find("td > a").attr("href");
+        
+        if (strAttendanceLink){
+            sectionID = (strAttendanceLink.substr(strAttendanceLink.indexOf("?") + 11, strAttendanceLink.indexOf("&") - strAttendanceLink.indexOf("=")-1));
+            
+            //Check to see if there's a select box in the current row, meaning there's a multi period section.
+            if ($j(this).find("td > select").attr("id")) {
+                //Multi period attendance, so check all periods
+
+                let periodAttendanceTakenInSection = 0
+                let periodTotalInSection = $j(this).find("td > select > option").length
+
+                //Loop select options and check each period
+                $j(this).find("td > select > option").each(function(){
+                    sectionPeriodID = "" + sectionID + $j(this).val().substr($j(this).val().lastIndexOf("=") + 1)
+
+                    if (periodTakenATT.indexOf(Number(sectionPeriodID)) >= 0) {
+                        periodAttendanceTakenInSection++
+                    }
+                })
+
+                if (periodAttendanceTakenInSection == periodTotalInSection){
+                    //If all done, show green
+                    $j(this).children("td").eq(3).append('<img src="/images/attendancetaken_yes.png" alt="Attendance Taken" title="Attendance Taken">');
+                } else if (periodAttendanceTakenInSection > 0) {
+                    //If some done, show yellow
+                    $j(this).children("td").eq(3).append('<img src="/images/attendancetaken_some.png" alt="Partial Attendance Taken" title="Partial Attendance Taken">');
+                    $j(this).children("td").eq(3).append("<BR>" + periodAttendanceTakenInSection + "/" + periodTotalInSection)
+                } else {
+                    //If none done, show empty circle
+                    $j(this).children("td").eq(3).append('<img src="/images/attendancetaken_no.png" alt="No Attendance Taken" title="No Attendance Taken">');
+                }
+                
+            } else {
+                //Single period attendance, so run a normal check
+                if (sectionTakenATT.indexOf(Number(sectionID))>=0) {
+                  $j(this).children("td").eq(3).append('<img src="/images/attendancetaken_yes.png" alt="Attendance Taken" title="Attendance Taken">');
+                } else {
+                  $j(this).children("td").eq(3).append('<img src="/images/attendancetaken_no.png" alt="No Attendance Taken" title="No Attendance Taken">');
+                }
+            }
+        }
+        else {
+            //No attendance on the current day
+            $j(this).children("td").eq(3).append("<font color='#C0C0C0'>N/A</font>")
+        }
+    });
+});
+</script>
+<!-- Begin AET Test Server Identification Customization -->
+<!-- Author: Adam Larsen <adam@auroraedtech.com> -->
+	<style>
+		
+	</style>
+
+<script>
+$j(document).ready(function(){
+	
+});
+</script>
+<!-- End AET Test Server Identification Customization --></div>
+</div>
+</div>
+<!-- end of content of bounding box -->
+	
+</div>
+<div id="footer">
+	<div id="legal">
+  <p>Copyright &copy; 2005-2023 PowerSchool Group LLC and/or its affiliate(s). All rights reserved.<br/>All trademarks are either owned or licensed by PowerSchool Group LLC and/or its affiliates.</p>
+</div>
+
+</div>
+<!-- End of copyright table -->
+
+
+
+<!-- End of copyright table -->
+
+<script type="text/javascript">
+
+var ccount = 0;
+
+function increment () {
+	ccount++;
+	return ccount;
+};
+
+$j(document).ready(function () {
+	$j('#teacherSectionTable > tbody > tr').each(function() {
+		var nnrowid = $j(this).attr("sectionid");
+		//console.log(nnrowid);
+		var customclassname = $j('#nn'+nnrowid).html();
+		//console.log(customclassname);
+		var needdiv = $j(this).find('td:eq(1) > div').clone();
+		//console.log(needdiv);
+		if (customclassname == null) { 
+		} else {
+			ccount = increment (ccount);
+			//console.log(ccount);
+			$j(this).find('td:eq(1)').html(customclassname + '*');
+			//console.log('Added ' + customclassname);
+			$j(this).find('td:eq(1)').append(needdiv);
+			//console.log('Added PTP Link');
+		};
+	});
+	$j('#sectionnicknames').remove();
+	if (ccount > 0) {
+		$j('.box-round').append('<p>* - indicates custom class name from PowerTeacher Pro or PowerTeacher Gradebook</p>');
+	};
+	
+});
+
+</script>
+
+<div id="sectionnicknames" style="display: none;">
+	<table>
+	
+	</table>
+</div>
+
+</body>
+</html>
+

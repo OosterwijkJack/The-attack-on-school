@@ -1,0 +1,1698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Record Meeting Attendance</title>
+
+    
+<link rel="stylesheet" type="text/css" href="https://psimages.ednet.ns.ca/psimages23_3/scripts/yui/container/assets/skins/sam/container.css" />
+<link rel="stylesheet" type="text/css" href="https://psimages.ednet.ns.ca/psimages23_3/scripts/yui/button/assets/skins/sam/button.css">
+<script type="text/javascript" src="https://psimages.ednet.ns.ca/psimages23_3/scripts/yui/utilities/utilities.js"></script>
+<script src="https://psimages.ednet.ns.ca/psimages23_3/scripts/yui/container/container-min.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://psimages.ednet.ns.ca/psimages23_3/scripts/yui/button/button-min.js"></script>
+
+    
+<style>
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak { display: none !important; }
+</style>
+<style id="psDialogHideTillReady">
+.dialog, .dialogC, .dialogM, .dialogR, .dialogF, .dialogDiv, .dialogDivC, .dialogDivM, .replaceNext { visibility: hidden;}
+</style>
+<link media="screen" rel="stylesheet" href="https://psimages.ednet.ns.ca/psimages23_3/images/css/customization.css"/>
+
+<!-- ServerInstanceId: 854 -->
+<script type='text/javascript'>if(!_messages)var _messages = {};_messages["psx.js.admin_javascript.validate_date.month_1"] = "Month ";_messages["psx.js.admin_javascript.validate_date._doesnt_have_31_days"] = " doesn't have 31 days.";_messages["psx.js.admin_javascript.validate_date._doesnt_have_"] = " doesn't have ";_messages["psx.js.admin_javascript.validate_date.month_must_be_between_1_and_12"] = "Month must be between 1 and 12.";_messages["psx.js.admin_javascript.validate_date.warning_invalid_date"] = "Warning: Invalid Date";_messages["psx.js.admin_javascript.validate_date.date_format_must_be"] = "Date format must be ({0}).";_messages["psx.js.admin_javascript.validate_date.day_must_be_between_1_and_31"] = "Day must be between 1 and 31.";_messages["psx.js.admin_javascript.validate_date._days"] = " days.";_messages["psx.js.admin_javascript.validate_date.february_"] = "February ";if (typeof pss_text != 'function') { function pss_text(key, params, returnKeyIfNotFound) { if (_messages[key] === undefined) { if (returnKeyIfNotFound !== undefined && returnKeyIfNotFound === true) {return key;} else {return 'String key was not found!'; }}if(params == null || params.length == 0) {return _messages[key]; }else { msg = _messages[key]; for ( i = 0; i < params.length; i++) {token = "{"+i+"}"; msg = msg.replace(token, params[i]); }return msg;} } }</script>
+<script type='text/javascript'>if(!_messages)var _messages = {};_messages["psx.common.daynamesmin_tue"] = "Tu";_messages["psx.common.daynamesmin_thu"] = "Th";_messages["psx.common.daynamesmin_sun"] = "Su";_messages["psx.common.daynamesmin_sat"] = "Sa";_messages["psx.common.daynamesshort_fri"] = "Fri";_messages["psx.common.mydata_button_title"] = "MyData Button";_messages["psx.common.staff_search"] = "Staff Search";_messages["psx.common.legend"] = "Legend ";_messages["psx.common.psweblink"] = "PowerSchool.com";_messages["psx.common.daynamesmin_wed"] = "We";_messages["psx.common.term"] = "Term:";_messages["psx.common.daynamesshort_mon"] = "Mon";_messages["psx.common.daynames_fri"] = "Friday";_messages["psx.common.main_menu"] = "Main Menu";_messages["psx.common.daynamesletter_fri"] = "F";_messages["psx.common.school"] = "School:";_messages["psx.common.monthnames_sep"] = "September";_messages["psx.common.daynames_sun"] = "Sunday";_messages["psx.common.daynames_sat"] = "Saturday";_messages["psx.common.daynamesletter_sat"] = "S";_messages["psx.common.monthnames_oct"] = "October";_messages["psx.common.daynamesletter_sun"] = "S";_messages["psx.common.monthnames_nov"] = "November";_messages["psx.common.scheduling_year"] = "Scheduling Year";_messages["psx.common.monthnames_mar"] = "March";_messages["psx.common.monthnames_may"] = "May";_messages["psx.common.capital_email"] = "Email";_messages["psx.common.daynames_mon"] = "Monday";_messages["psx.common.welcome"] = "Welcome,";_messages["psx.common.data_dictionary"] = "Data Dictionary";_messages["psx.common.monthnames_jul"] = "July";_messages["psx.common.monthnames_jun"] = "June";_messages["psx.common.daynamesmin_fri"] = "Fr";_messages["psx.common.daynamesletter_mon"] = "M";_messages["psx.common.monthnames_jan"] = "January";_messages["psx.common.system_help_title"] = "System Help";_messages["psx.common.state_reporting_help_title"] = "State Reporting Help";_messages["psx.common.daynamesmin_mon"] = "Mo";_messages["psx.common.district"] = "District Office";_messages["psx.common.seconds"] = "{0} Seconds";_messages["psx.common.monthnames_feb"] = "February";_messages["psx.common.daynames_wed"] = "Wednesday";_messages["psx.common.monthnames_dec"] = "December";_messages["psx.common.daynamesletter_tue"] = "T";_messages["psx.common.daynamesletter_thu"] = "H";_messages["psx.common.daynamesletter_wed"] = "W";_messages["psx.common.daynames_tue"] = "Tuesday";_messages["psx.common.monthnames_aug"] = "August";_messages["psx.common.monthnames_apr"] = "April";_messages["psx.common.daynames_thu"] = "Thursday";_messages["psx.common.privacy_policy"] = "Privacy Policy";_messages["psx.common.system_help"] = "System Help";_messages["psx.common.school_title"] = "Change School";_messages["psx.common.data_dictionary_title"] = "Data Dictionary";_messages["psx.common.monthnamesshort_dec"] = "Dec";_messages["psx.common.daynamesshort_tue"] = "Tue";_messages["psx.common.daynamesshort_thu"] = "Thu";_messages["psx.common.term_title"] = "Change Term";_messages["psx.common.daynamesshort_sun"] = "Sun";_messages["psx.common.daynamesshort_sat"] = "Sat";_messages["psx.common.monthnamesshort_feb"] = "Feb";_messages["psx.common.refresh_interval"] = "Refresh Interval";_messages["psx.common.powerschool"] = "PowerSchool";_messages["psx.common.student_search"] = "Student Search";_messages["psx.common.daynamesshort_wed"] = "Wed";_messages["psx.common.monthnamesshort_aug"] = "Aug";_messages["psx.common.monthnamesshort_apr"] = "Apr";_messages["psx.common.help_title"] = "Help";_messages["psx.common.provincial_reporting_help_title"] = "Provincial Reporting Help";_messages["psx.common.district_abbreviation"] = "District";_messages["psx.common.sign_out"] = "Sign Out";_messages["psx.common.open_navigation"] = "Open Navigation";_messages["psx.common.email"] = "email";_messages["psx.common.monthnamesshort_sep"] = "Sep";_messages["psx.common.sign_in_title"] = "Sign In";_messages["psx.common.monthnamesshort_mar"] = "Mar";_messages["psx.common.monthnamesshort_may"] = "May";_messages["psx.common.whats_new_title"] = "What's New";_messages["psx.common.monthnamesshort_oct"] = "Oct";_messages["psx.common.loading"] = "Loading...";_messages["psx.common.monthnamesshort_nov"] = "Nov";_messages["psx.common.general.problem"] = "Unable to process the request.  Please contact your system administrator to review logs.";_messages["psx.common.print_title"] = "Print this page";_messages["psx.common.monthnamesshort_jul"] = "Jul";_messages["psx.common.monthnamesshort_jun"] = "Jun";_messages["psx.common.monthnamesshort_jan"] = "Jan";_messages["psx.common.changes_recorded"] = "The changes have been recorded.";_messages["psx.common.daily_bulletin"] = "View Daily Bulletin";_messages["psx.common.sign_out_title"] = "Sign Out";_messages["psx.common.state_reporting_help"] = "State Reporting Help";_messages["psx.common.powerschool_sis"] = "PowerSchool SIS";_messages["psx.common.settings"] = "Settings";_messages["psx.common.provincial_reporting_help"] = "Provincial Reporting Help";_messages["psx.common.sign_in"] = "Sign In";_messages["psx.common.manage_profile"] = "Manage Profile";_messages["psx.common.skip_to_main_content"] = "Skip to main content";_messages["psx.common.minute"] = "{0} Minute";_messages["psx.common.copyright"] = "Copyright &copy; 2005-2023 PowerSchool Group LLC and/or its affiliate(s). All rights reserved.<br/>All trademarks are either owned or licensed by PowerSchool Group LLC and/or its affiliates.";_messages["psx.common.close"] = "Close";_messages["psx.common.stop_refresh"] = "Stop Refresh";_messages["psx.common.help"] = "Help";_messages["psx.common.translate_page_title"] = "Localize Page";_messages["psx.common.whats_new"] = "What's New";_messages["psx.common.guardian_daily_bulletin"] = "View School Bulletin";_messages["psx.common.minutes"] = "{0} Minutes";if (typeof pss_text != 'function') { function pss_text(key, params, returnKeyIfNotFound) { if (_messages[key] === undefined) { if (returnKeyIfNotFound !== undefined && returnKeyIfNotFound === true) {return key;} else {return 'String key was not found!'; }}if(params == null || params.length == 0) {return _messages[key]; }else { msg = _messages[key]; for ( i = 0; i < params.length; i++) {token = "{"+i+"}"; msg = msg.replace(token, params[i]); }return msg;} } }</script>
+<script type='text/javascript'>if(!_messages)var _messages = {};_messages["psx.js.scripts.psbehaviors.closetext"] = "Done";_messages["psx.js.scripts.psbehaviors.off"] = "Off";_messages["psx.js.scripts.psbehaviors.prevtext"] = "Prev";_messages["psx.js.scripts.psbehaviors.currenttext"] = "Today";_messages["psx.js.scripts.psbehaviors.add_issue_comment"] = "Add Issue Comment";_messages["psx.js.scripts.psbehaviors.yes"] = "Yes";_messages["psx.js.scripts.psbehaviors.about_n_characters_left"] = "Approximately {0} characters left";_messages["psx.js.scripts.psbehaviors.on"] = "On";_messages["psx.js.scripts.psbehaviors.or"] = "or";_messages["psx.js.scripts.psbehaviors.no"] = "No";_messages["psx.js.scripts.psbehaviors.noaccess"] = "No Field Access";_messages["psx.js.scripts.psbehaviors.time_entry"] = "Time Entry";_messages["psx.js.scripts.psbehaviors.hide_header"] = "Hide Header";_messages["psx.js.scripts.psbehaviors.added"] = "Added";_messages["psx.js.scripts.psbehaviors.change_date"] = "Change Date";_messages["psx.js.scripts.psbehaviors.hide_main_menu"] = "Hide Main Menu";_messages["psx.js.scripts.psbehaviors.wizprevious"] = "Previous";_messages["psx.js.scripts.psbehaviors.recording_start"] = "Start Recording";_messages["psx.js.scripts.psbehaviors.recording_stop"] = "Finish Recording";_messages["psx.js.scripts.psbehaviors.confirm_delete"] = "Confirm Delete";_messages["psx.js.scripts.psbehaviors.icons"] = "Icons";_messages["psx.js.scripts.psbehaviors.cancel"] = "Cancel";_messages["psx.js.scripts.psbehaviors.time_entry_x"] = "Time Entry ({0})";_messages["psx.js.scripts.psbehaviors.recording_cancel"] = "Cancel Recording";_messages["psx.js.scripts.psbehaviors.show_header"] = "Show Header";_messages["psx.js.scripts.psbehaviors.interval_thirty"] = "30 minute interval";_messages["psx.js.scripts.psbehaviors.restore_selections_school_and_term"] = "Restore Selection(s), School and Term";_messages["psx.js.scripts.psbehaviors.interval_hour"] = "hour only interval";_messages["psx.js.scripts.psbehaviors.time_icon"] = "Time Entry Icon";_messages["psx.js.scripts.psbehaviors.deleted"] = "Deleted";_messages["psx.js.scripts.psbehaviors.date_entry"] = "Date Entry";_messages["psx.js.scripts.psbehaviors.nexttext"] = "Next";_messages["psx.js.scripts.psbehaviors.show_main_menu"] = "Show Main Menu";_messages["psx.js.scripts.psbehaviors.report_an_issue"] = "Report an Issue";_messages["psx.js.scripts.psbehaviors.legend"] = "Legend";_messages["psx.js.scripts.psbehaviors.selected"] = "Selected";_messages["psx.js.scripts.psbehaviors.no_match_found"] = "No match found";_messages["psx.js.scripts.psbehaviors.reload_last_page"] = "Reload Last Page";_messages["psx.js.scripts.psbehaviors.would_you_like_to_reload_the_last_page_you_were_viewing"] = "Your session timed out due to inactivity. Would you like to restore your previous session and reload the last page you were viewing?";_messages["psx.js.scripts.psbehaviors.n_characters_left"] = "{0} characters left";_messages["psx.js.scripts.psbehaviors.main_navigation"] = "Main Navigation";_messages["psx.js.scripts.psbehaviors.deleted_xx"] = "Deleted: {0}";_messages["psx.js.scripts.psbehaviors.wizstep"] = "Step";_messages["psx.js.scripts.psbehaviors.confirmbanner.schoolstaff_removed"] = "The previously selected staff member was successfully removed from this school.";_messages["psx.js.scripts.psbehaviors.required"] = "Required Field";_messages["psx.js.scripts.psbehaviors.delete"] = "Delete";_messages["psx.js.scripts.psbehaviors.confirm"] = "Confirm ";_messages["psx.js.scripts.psbehaviors.added_xx"] = "Added: {0}";_messages["psx.js.scripts.psbehaviors.wiznext"] = "Next";_messages["psx.js.scripts.psbehaviors.interval_five"] = "5 minute interval";_messages["psx.js.scripts.psbehaviors.asterisk"] = "An asterisk indicates that classes for the term are hidden from parents/students in the PowerSchool Student and Parent portal and PowerSchool Mobile app.";_messages["psx.js.scripts.psbehaviors.calendar_icon"] = "Date Entry Icon";_messages["psx.js.scripts.psbehaviors.enrollment_alert"] = "The student you are attempting to enroll has an existing record in the district. Click OK, then proceed to transfer the student to your school if necessary.";_messages["psx.js.scripts.psbehaviors.would_you_like_to_restore_your_selections_school_and_term"] = "Your session timed out due to inactivity. Would you like to restore your previous session and return to the last used school, term, student and/or teacher selection?";_messages["psx.js.scripts.psbehaviors.interval_fifteen"] = "15 minute interval";_messages["psx.js.scripts.psbehaviors.indicator"] = "Possible duplicate student";_messages["psx.js.scripts.psbehaviors.send_report"] = "Report Issue";if (typeof pss_text != 'function') { function pss_text(key, params, returnKeyIfNotFound) { if (_messages[key] === undefined) { if (returnKeyIfNotFound !== undefined && returnKeyIfNotFound === true) {return key;} else {return 'String key was not found!'; }}if(params == null || params.length == 0) {return _messages[key]; }else { msg = _messages[key]; for ( i = 0; i < params.length; i++) {token = "{"+i+"}"; msg = msg.replace(token, params[i]); }return msg;} } }</script>
+
+<script>localStorage.setItem('pds-app-switcher-iframe-switch', 'production-ca');</script>
+<script type="text/javascript">
+	var HTMLImports = {
+		IMPORT_LINK_TYPE: 'prev',
+		flags: {}
+	};
+	Object.defineProperties(HTMLImports, {'IMPORT_LINK_TYPE': { get: function() {return 'prev';}}});
+</script>
+
+<!-- * * * * * * * * * * PDS Setup * * * * * * * * * * -->
+
+
+	<!-- CSS Files -->
+	<link rel="stylesheet" type="text/css" href="https://assets.powerschool.com/pds/31.0.0/css/tippy.css"/>
+	<link rel="stylesheet" type="text/css" href="https://assets.powerschool.com/pds/31.0.0/css/ckeditor-style-overrides.css"/>
+	<link rel="stylesheet" type="text/css" href="https://assets.powerschool.com/pds/31.0.0/css/pds-scope.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://assets.powerschool.com/pds/31.0.0/css/individual-styles/pds-base-non-breaking.min.css"/>
+
+	<link rel="stylesheet" type="text/css" href="https://assets.powerschool.com/pds/31.0.0/css/polymer-component-styles/pds-app-nav-styles.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://assets.powerschool.com/pds/31.0.0/css/polymer-component-styles/pds-app-switcher-styles.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://assets.powerschool.com/pds/31.0.0/css/polymer-component-styles/pds-help-menu-styles.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://assets.powerschool.com/pds/31.0.0/css/polymer-component-styles/pds-img-styles.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://assets.powerschool.com/pds/31.0.0/css/polymer-component-styles/pds-overlay-dropdown-styles.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://assets.powerschool.com/pds/31.0.0/css/polymer-component-styles/pds-user-menu-styles.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://assets.powerschool.com/pds/31.0.0/css/polymer-component-styles/pds-user-avatar-styles.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://assets.powerschool.com/pds/31.0.0/css/polymer-component-styles/pds-checkbox-widget-styles.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://assets.powerschool.com/pds/31.0.0/css/polymer-component-styles/pds-global-search-styles.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://assets.powerschool.com/pds/31.0.0/css/polymer-component-styles/pds-dialog-styles.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://assets.powerschool.com/pds/31.0.0/css/polymer-component-styles/pds-multi-select-widget-styles.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://assets.powerschool.com/pds/31.0.0/css/polymer-component-styles/pds-text-widget-styles.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://assets.powerschool.com/pds/31.0.0/css/polymer-component-styles/pds-tooltip-styles.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://assets.powerschool.com/pds/31.0.0/css/polymer-component-styles/pds-messages-widget-styles.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://assets.powerschool.com/pds/31.0.0/css/polymer-component-styles/pds-pop-over-styles.min.css"/>
+
+	<!-- JS Files -->
+	<script src="https://assets.powerschool.com/pds/31.0.0/js/powerschool-design-system-toolkit-bundled.min.js"></script>
+
+	<!-- HTML Files -->
+	<link rel="prev" href="https://assets.powerschool.com/pds/31.0.0/html/individual-polymer-components/pds-icon.html"/>
+	<link rel="prev" href="https://assets.powerschool.com/pds/31.0.0/html/individual-polymer-components/pds-app-nav.html">
+	<link rel="prev" href="https://assets.powerschool.com/pds/31.0.0/html/individual-polymer-components/pds-app-switcher.html"/>
+	<link rel="prev" href="https://assets.powerschool.com/pds/31.0.0/html/individual-polymer-components/pds-help-menu.html"/>
+	<link rel="prev" href="https://assets.powerschool.com/pds/31.0.0/html/individual-polymer-components/pds-img.html"/>
+	<link rel="prev" href="https://assets.powerschool.com/pds/31.0.0/html/individual-polymer-components/pds-overlay-dropdown.html"/>
+	<link rel="prev" href="https://assets.powerschool.com/pds/31.0.0/html/individual-polymer-components/pds-user-avatar.html"/>
+	<link rel="prev" href="https://assets.powerschool.com/pds/31.0.0/html/individual-polymer-components/pds-user-menu.html"/>
+	<link rel="prev" href="https://assets.powerschool.com/pds/31.0.0/html/individual-polymer-components/pds-checkbox-widget.html"/>
+	<link rel="prev" href="https://assets.powerschool.com/pds/31.0.0/html/individual-polymer-components/pds-global-search.html"/>
+	<link rel="prev" href="https://assets.powerschool.com/pds/31.0.0/html/individual-polymer-components/pds-dialog.html"/>
+	<link rel="prev" href="https://assets.powerschool.com/pds/31.0.0/html/individual-polymer-components/pds-multi-select-widget.html"/>
+	<link rel="prev" href="https://assets.powerschool.com/pds/31.0.0/html/individual-polymer-components/pds-dynamic-select.html"/>
+	<link rel="prev" href="https://assets.powerschool.com/pds/31.0.0/html/individual-polymer-components/pds-text-widget.html"/>
+	<link rel="prev" href="https://assets.powerschool.com/pds/31.0.0/html/individual-polymer-components/pds-tooltip.html"/>
+	<link rel="prev" href="https://assets.powerschool.com/pds/31.0.0/html/individual-polymer-components/pds-messages-widget.html"/>
+	<link rel="prev" href="https://assets.powerschool.com/pds/31.0.0/html/individual-polymer-components/pds-pop-over.html"/>
+	<link rel="prev" href="https://assets.powerschool.com/pds/31.0.0/html/individual-polymer-components/pds-file-picker-widget.html"/>
+	<link rel="prev" href="https://assets.powerschool.com/pds/31.0.0/html/individual-polymer-components/pds-confirm-dialog.html"/>
+
+
+
+
+
+<script>
+
+	if (window.powerSchoolDesignSystemToolkit == null) {
+		let linkElements = document.querySelectorAll("link[href^='https://assets.powerschool.com'");
+		for (let i = 0; i < linkElements.length; i++) {
+			let element = linkElements[i];
+			if (element.href.indexOf('31.0.0') > -1) {
+				element.href = element.href.replace('https://assets.powerschool.com/pds/31.0.0', 'https://psimages.ednet.ns.ca/psimages23_3/scripts/pds');
+			} else {
+				element.href = element.href.replace('https://assets.powerschool.com/pds', 'https://psimages.ednet.ns.ca/psimages23_3/scripts/pds/css');
+			}
+		}
+		document.write('<script src="https://psimages.ednet.ns.ca/psimages23_3/scripts/pds/js/powerschool-design-system-toolkit-bundled.min.js">\x3C/script>')
+	}
+	document.addEventListener('pdsMessageKeysInitEvent', (event) => {
+		event.detail.add({
+			'global|Close': 'Close',
+			'pds|app nav|Close Navigation Menu': 'Close Navigation Menu',
+			'pds|app nav|Open Navigation Menu': 'Open Navigation Menu',
+			'pds|app nav|Toggle User Menu': 'Toggle User Menu',
+			'pds|app switcher|Open user menu': 'Open user menu',
+			'pds|common|Required': 'required',
+			'pds|dialog|Escape Message': 'Escape Message',
+			'pds|file picker widget|Choose...': 'Choose...',
+			'pds|global-search|No Results Found': 'No Results Found',
+			'pds|global-search|Search': 'Search',
+			'pds|global-search|Try your search again.': 'Try your search again.',
+			'pds|messaging|Dismiss Message': 'Dismiss Message',
+			'pds|multi select|Select': 'Select',
+			'pds|popover|Backwards From First Element': 'Backwards From First Element',
+			'pds|popover|Forwards From Last Element': 'Forwards From Last Element',
+			'pds|search|Search': 'Search',
+			'pds|user-menu|User Menu Options': 'User Menu Options',
+		});
+	});
+
+</script>
+<!-- * * * * * * * * * * End PDS Setup * * * * * * * * * * -->
+
+<script src="https://psimages.ednet.ns.ca/psimages23_3/scripts/angular/runtime.f7b14dd2056633c9.js" type="module" crossorigin="anonymous"></script><script src="https://psimages.ednet.ns.ca/psimages23_3/scripts/angular/polyfills.e45730ed7cd4d02f.js" type="module" crossorigin="anonymous"></script><script src="https://psimages.ednet.ns.ca/psimages23_3/scripts/angular/scripts.d1e578ae79d13307.js" ></script><script src="https://psimages.ednet.ns.ca/psimages23_3/scripts/angular/main.6a92b7d211cd7592.js" type="module" crossorigin="anonymous"></script>
+
+
+	<script src="https://psimages.ednet.ns.ca/psimages23_3/scripts/jquery-3.6.1/jquery-3.6.1.min.js"></script>
+	<script src="https://psimages.ednet.ns.ca/psimages23_3/scripts/jquery-3.6.1/jquery-migrate-3.4.0.min.js"></script>
+	<script src="https://psimages.ednet.ns.ca/psimages23_3/scripts/jquery-migrate-ps.js"></script>
+	<script src="https://psimages.ednet.ns.ca/psimages23_3/scripts/jquery-ui-1.13.2.custom.min.js"></script>
+    <script src="https://psimages.ednet.ns.ca/psimages23_3/scripts/requirejs/require.js"></script>
+
+
+<script type="text/javascript" >
+  var feedbackEnabled = false;
+  var recordingActivated = false;
+</script>
+<script src="https://psimages.ednet.ns.ca/psimages23_3/scripts/psDialog.js"></script>
+<script type="text/javascript">
+/**
+ * Need to configure require js before psbehaviors.
+ */
+require.config({
+        waitSeconds: 0,
+    	baseUrl: "https://psimages.ednet.ns.ca/psimages23_3/scripts/",
+    	paths: {
+    		'handlebars':                'handlebars/require-handlebars.1.0.0.rc3',
+    		'json2':                     'handlebars/json2',
+    		'hbs':                       'hbs/0.4.0/hbs',
+    		'underscore':                'underscore/underscore-'+'min'+'-1.8.3',
+    		'backbone':                  'backbone/backbone-'+'min'+'-0.9.10',
+    		'jquery.cookie':             'jquery.cookie',
+    		'psDateValidate':            'psDateValidate',
+    		'psDateWidget':              'psDateWidget',
+    		'psDirtyStateController':    'psDirtyStateController',
+    		'psFormValidate':            'psFormValidate',
+    		'psNumWidget':               'psNumWidget',
+    		'psReloader/psReloader-min': 'psReloader/psReloader-min',
+    		'psRequired':                'psRequired',
+    		'psTextWidget':              'psTextWidget',
+    		'psValidationFunctions':     'psValidationFunctions',
+            'angular':                   'lib/angular/angular.min',
+            'angular-cookies':           'lib/angular/angular-cookies.min',
+            'angular-route':             'lib/angular/angular-route.min',
+            'angular-sanitize':          'lib/angular/angular-sanitize.min',
+            'angular-translate':         'lib/angular/angular-translate.min',
+            'angular-messages':          'lib/angular/angular-messages.min',
+            'angular-aria':              'lib/angular/angular-aria.min',
+            'angular-resource':      	 'lib/angular/angular-resource.min',
+            'encoding':               	 'lib/textencoder/encoding',
+            'filesaver':                 'lib/filesaver/FileSaver.min'
+        },
+
+        hbs: {
+            disableI18n: true
+        },
+
+        shim: {
+            'underscore': {
+                exports: '_'
+            },
+            'backbone': {
+                exports: 'Backbone',
+                deps: ['underscore']
+            },
+            'angular': {
+                exports: 'angular'
+            },
+            'angular-translate':{
+                deps: ['angular']
+            },
+            'angular-sanitize':{
+                deps: ['angular']
+            },
+            'angular-route':{
+                deps: ['angular']
+            },
+            'angular-cookies':{
+                deps: ['angular']
+            },
+            'angular-messages':{
+                deps: ['angular']
+            },
+            'angular-aria':{
+                deps: ['angular']
+            },
+            'angular-resource': {
+                deps: ['angular']
+            }
+        },
+
+        map: {
+            '*': {
+                'Handlebars': 'handlebars'
+            }
+        },
+        priority: [
+              'angular'
+        ]    });
+define('jquery', function () {
+	return jQuery;
+});
+define('jquery-ui', ['jquery'], function($) {
+	return $.ui;
+});
+</script>
+
+<script src="https://psimages.ednet.ns.ca/psimages23_3/scripts/psbehaviors.js"></script>
+<script src="https://psimages.ednet.ns.ca/psimages23_3/scripts/helpLinksMenu.js"></script>
+<script src="https://psimages.ednet.ns.ca/psimages23_3/scripts/keep-alive.js"></script>
+
+
+<!-- Frame type=none --><meta id="keep-alive-config" content="30"/>
+
+<script type="text/javascript">
+(function() {
+	let getCookie = function(cname) {
+		let name = cname + "=";
+		let decodedCookie = decodeURIComponent(document.cookie);
+		let ca = decodedCookie.split(';');
+		for (let i = 0; i < ca.length; i++) {
+			let c = ca[i];
+			while (c.charAt(0) == ' ') {
+				c = c.substring(1);
+			}
+			if (c.indexOf(name) == 0) {
+				return c.substring(name.length, c.length);
+			}
+		}
+		return "";
+	}
+	window.debugConsole = {
+		log: function(...message) {
+			if (getCookie("js-debug") === "true") {
+				console.log(...message);
+			}
+		},
+		debug: function(...message) {
+			if (getCookie("js-debug") === "true") {
+				console.debug(...message);
+			}
+		},
+		error: function(...message) {
+			if (getCookie("js-debug") === "true") {
+				console.error(...message);
+			}
+		},
+		info: function(...message) {
+			if (getCookie("js-debug") === "true") {
+				console.info(...message);
+			}
+		},
+		warn: function(...message) {
+			if (getCookie("js-debug") === "true") {
+				console.warn(...message);
+			}
+		}
+	}
+})();
+
+/**
+ * Set the page's locale via a request_locale URL parameter. If there is already a URL parameter by
+ * this name, then substitute it with the passed-in locale. NOTE: This function will actually cause the page
+ * to be re-submitted with the new locale, so it really should not be used with pages submitted via POST
+ * requests (if there are any, which I hope there are not).
+ * @param locale the locale to set (e.g. en_US)
+ */
+function setPageLocale (locale) {
+  var c=String (window.location);
+  var rlpos = c.indexOf("request_locale=");
+  var afterPart = "";
+  if (rlpos > 0) {
+    var afterBegin = c.indexOf("&", rlpos);
+    if (afterBegin > 0) {
+      afterPart = c.substring(afterBegin);
+    }
+    c = c.substring(0, rlpos-1);
+  }
+  var s=(c.indexOf('?') > 0 ? '&' : '?');
+  var np = c + s + 'request_locale=' + locale + afterPart;
+  window.location = np;
+}
+
+function get_locale() {
+  return "en_US";
+}
+
+function checkForPTMURL() {
+	if ($j && $j.cookie && $j.cookie('PTM_URL')!=null
+		&& window.location!=$j.cookie('PTM_URL')
+		&& !window.location.href.match("/teachers/pw.html") ) {
+			var path = $j.cookie('PTM_URL');
+			$j.cookie('PTM_URL',null, { path: '/', expires: -1 });
+			window.location.replace(path);
+	}
+}
+
+
+if(typeof pss_text!='function'){
+function pss_text(key, params, returnKeyIfNotFound) {
+	if (_messages[key] === undefined)
+	{
+		if (returnKeyIfNotFound !== undefined && returnKeyIfNotFound === true) {
+			return key;
+		} else {
+			return "String key was not found!";
+		}
+	}
+	if(params == null || params.length == 0)
+	{
+  		return _messages[key];
+	}
+	else
+	{
+		msg = _messages[key];
+		for ( i = 0; i < params.length; i++)
+		{
+			token = "{"+i+"}";
+			msg = msg.replace(token, params[i]);
+		}
+		return msg;
+	}
+}
+}
+
+function get_localized_date(d, fmt) {
+   if (fmt === "mmdd") return ("" + ( (d.getMonth()+1) < 10 ? '0' + (d.getMonth() + 1) : (d.getMonth() + 1 ) ) + "/" + (d.getDate() < 10 ? '0' + d.getDate() : d.getDate() ) + "");
+   return ("" + ( (d.getMonth()+1) < 10 ? '0' + (d.getMonth() + 1) : (d.getMonth() + 1 ) ) + "/" + (d.getDate() < 10 ? '0' + d.getDate() : d.getDate() ) + "/" + d.getFullYear() + "");
+}
+
+
+// Format is a formatting object
+// number is number object
+function formatNumber(format, number)
+{
+	var ds = format.ds; // decimal separator
+	var result = "";
+
+	if (isNaN(number) == true)
+	{
+		return number
+	}
+	else
+	{
+		result = number.toString();
+		result = result.replace(".",ds);
+		return result;
+	}
+}
+
+function localizeNumber(number)
+{
+	return formatNumber(get_numeric_format(), number);
+}
+
+function deLocalizeNumber(number) {
+	return removeNumberFormat(get_numeric_format(), number);
+}
+
+function removeNumberFormat(format, number) {
+	// IE does not like instantiating RegExp objects with empty values, so we have to
+	// check for valid values in the grouping separator before using it in a RegExp.
+	var gsNotBlank = (format.gs == "." || format.gs == "," || format.gs == " ");
+	number = number.toString();
+	// We also want to check that only valid characters are present.
+	var regexString = "^" + format.regex + "$";
+	var validNumber = new RegExp(regexString, "g");
+	if (number != "" && number.match(validNumber) != null) {
+		if (gsNotBlank) {
+			var gs = new RegExp("\\"+format.gs, "g");
+			number = number.replace(gs, "")
+		}
+		var ds = new RegExp("\\"+format.ds, "g"); //The decimal separator is not expected to be empty
+		number = parseFloat(number.replace(ds, "."));
+	} else {
+		return null;
+	}
+	return (isNaN(number)) ? null : number;
+}
+
+function localizeCurrency(number)
+{
+	return formatNumber(get_currency_format(), number);
+}
+
+<!-- This function return a json object with numeric formatting info -->
+function get_numeric_format() {
+   return  { format: '#,##0.#########', 
+ size: '3', 
+ gs: ',', 
+ ds: '.', 
+ regex: '([-]?(([0-9]{1,3}(,[0-9]{3})*(\\.[0-9]+)?|\\.[0-9]+)|([0-9]*(\\.[0-9]+)?)))' }; 
+;
+}
+
+<!-- This function return a json object with currency formating info -->
+function get_currency_format() {
+   return  { format: '#,##0.00', 
+ size: '3', 
+ gs: ',', 
+ ds: '.', 
+ regex: '([-]?(([0-9]{1,3}(,[0-9]{3})*(\\.[0-9]+)?|\\.[0-9]+)|([0-9]*(\\.[0-9]+)?)))' }; 
+;
+}
+
+<!-- This function return date format in machine readable form -->
+function get_short_date_format() {
+   return "M/d/yy";
+}
+<!-- This function return date format in machine readable form -->
+function get_date_format() {
+   return "MM/dd/yyyy";
+}
+
+<!-- This function return date format in human readable form -->
+function get_date_text(){
+  	return "MM/DD/YYYY";
+}
+<!-- This function return date format in human readable form -->
+function get_short_date_text(){
+	return "MM/DD/YY";
+}
+
+<!-- This function return time format in machine readable form without seconds-->
+function get_HHMMTime_format() {
+   return "hh:mm a";
+}
+
+<!-- This function return time format in machine readable form with seconds-->
+function get_HHMMSSTime_format() {
+   return "hh:mm:ss a";
+}
+
+<!-- This function return ante/post meridian in machine readable form -->
+function get_AMPM(ampm) {
+	if(ampm == "am")
+   		return "AM";
+   	else
+   		return "PM";
+}
+
+if(!_messages) var _messages = {};
+/**
+ * Get texts from the server based on a prefix.
+ * @param prefix the prefix to use
+ * @param onlyIfNotPresent (optional) if passed, check to see if message is present yet; only fetch the
+ *   texts from the server if this key is not present
+ */
+function pss_get_texts(prefix, onlyIfNotPresent) {
+  if (onlyIfNotPresent && _messages[onlyIfNotPresent]) return;
+
+  jQuery.ajax ({async: false,
+    url:'/getMessages.action',
+    data:{prefix: prefix, locale: get_locale()},
+    dataType:'json',
+    success: function (msgs) {
+      jQuery.each(msgs, function (key, value) {
+        _messages[key] = value;
+      });
+    }
+  });
+}
+
+function alertwindow (directory, alerttype, frn) {
+	w = window.open("/"+directory+"/alerts/"+alerttype+"alert.html?frn="+frn, "alert", "toolbar=no,location=no,directories=no,status=no,scrollbars=yes,resizable=yes,width=350,height=250");
+}
+
+function helpwindow (url) {
+	w = window.open(url, "help", "toolbar=no,location=no,directories=no,status=no,scrollbars=yes,resizable=yes,width=570,height=500");
+}
+
+function helptext (text) {
+	window.status = text;
+	return true;
+}
+
+function openSpecialWeighting(opener) {
+var path = "";
+if (opener == "admin"){
+		path = "/admin/students/specialweighting.html";
+	}else if (opener == "parent"){
+		path = "/guardian/specialweighting.html";
+	}else if (opener == "teacher"){
+		path = "/teachers/studentpages/specialweighting.html";
+	}
+	window.open(path, 'Weighting', 'width=500,height=425,menu=no,toolbar=no,location=no,scrollbars=yes');
+
+}
+
+function openScaleTranslation() {
+	var path="/admin/stdconversiontable/scaletranslation.html";
+	window.open(path, 'Scale_Translation', 'width=500,height=425,menu=no,toolbar=no,location=no,scrollbars=yes,resizable=1');
+}
+
+function alertcommentwindow(studentid, sectionid, asmtid) {
+	window.open("scorecomment.html?ac=scorecomment&studentid=" + studentid + "&sectionid=" + sectionid + "&asmtid=" + asmtid, "Score", "toolbar=no,location=no,directories=no,status=no,scrollbars=yes,resizable=yes,width=480,height=480");
+}
+
+function feedbackwindow () {
+	window.showModalDialog('/getFeedback.action','send_feedback','dialogWidth:640px; dialogHeight:500px; scroll:no;');
+}
+
+function $(id) {
+	return document.getElementById(id);
+}
+
+//line breaks are 2 chracters on the backend (\r\n)
+//IE treats them as 2 already but FF and Safari treat them
+//as one (\n only). This will ensure all browsers are counting line
+//breaks as 2
+// This function is duplicated in muliple locations. Updating one requires
+// updating all of them. They are located under
+// web_root/wildcards/commonscripts.txt
+// web_root/scripts/commonscripts.js
+// sis/web/srv/views/psxdecorators/commonscripts.ftl
+function realLength(str) {
+	if (!str)
+		return 0;
+
+	//replace \r with empty string (this will only be matched on IE)
+	var temp = str.replace(/\r/g, "");
+
+	//find all occurances of newlines (\n)
+	var lns = temp.match(/\n/g);
+
+	if (lns)
+		//if we had any newlines, do this hokie pokie to consistently count them as two
+		return temp.length + lns.length;
+	else
+		//else no newlines, we can just use the strings actual length
+		return str.length;
+}
+
+
+// trim function that truncates off the end of stringCopy until the string is less than
+// maxlimit. Treats any new line (\n or \r\n) as two characters when trimmed
+// off the end.
+// stringCount should be calcuated by the function realLength. The value is either the
+// length of stringCopy in chracters if isUnicode == false, or the length in bytes
+// if isUnicode == true.
+// This function is duplicated in muliple locations. Updating one requires
+// updating all of them. They are located under
+// web_root/wildcards/commonscripts.txt
+// web_root/scripts/commonscripts.js
+// sis/web/srv/views/psxdecorators/commonscripts.ftl
+function trimToSize (stringCopy, stringCount, maxlimit, isUnicode) {
+
+	var last_char;
+	var secondToLast_char;
+	var curval = stringCopy;
+	var unicodeEscaped;
+	var unicodeCharLength;
+	for (; stringCount > maxlimit; ) {
+		//get the last char in the string
+		last_char = curval.charAt(curval.length-1);
+		if (last_char == '\n') {
+			//check if the second to last is a \r and yank that too
+			secondToLast_char = curval.charAt(curval.length-2);
+
+			if (secondToLast_char == '\r') {
+				curval = curval.substring(0, curval.length-2);
+			}
+			else {
+				curval = curval.substring(0, curval.length-1);
+			}
+			//line breaks need to be handled as 2 characters
+			stringCount = stringCount - 2;
+		}
+		else {
+			//character, pull it
+			//figure out how many units to decriment the count by
+			if (isUnicode) {
+				unicodeEscaped = unescape( encodeURIComponent( last_char ) );
+				unicodeCharLength = unicodeEscaped.length;
+				stringCount = stringCount - unicodeCharLength;
+			}
+			else {
+				stringCount = stringCount - 1;
+			}
+
+
+			curval = curval.substring(0, curval.length-1);
+		}
+
+	}
+	// All done, field data is cut down to size. Save it.
+	return curval;
+
+
+}
+
+// This function is duplicated in muliple locations. Updating one requires
+// updating all of them. They are located under
+// web_root/wildcards/commonscripts.txt
+// web_root/scripts/commonscripts.js
+// sis/web/srv/views/psxdecorators/commonscripts.ftl
+function maxlength( field, maxlimit, leftCountSpan ) {
+	var ret = true;
+	var scrollDown = false;
+	var characterCount = realLength(field.value);
+	var stringCopy;
+	var isUnicode;
+	var hasChanged = false;
+
+	// Check max field length. Now modified to also take Oracle 4000B limit into account.
+    if ( characterCount > maxlimit ) {
+      	stringCopy = field.value;
+      	isUnicode = false;
+      	field.value = trimToSize (stringCopy, characterCount, maxlimit, isUnicode);
+
+		characterCount = realLength(field.value); //update the charCount since we've altered the string
+        scrollDown = true;
+        ret = false;
+        hasChanged = true;
+    }
+
+    var utf8 = unescape( encodeURIComponent( field.value ) );
+    var unicodeCharacterCount = realLength(utf8);
+    if (unicodeCharacterCount > 4000) {
+      stringCopy = field.value;
+      isUnicode = true;
+      var maxBytes = 4000;
+      field.value = trimToSize(stringCopy, unicodeCharacterCount, maxBytes, isUnicode);
+
+      characterCount = realLength(field.value); //update the charCount since we've altered the string
+      utf8 = unescape( encodeURIComponent( field.value ) );
+      unicodeCharacterCount = realLength(utf8); //update the unicodeCharCount since we've altered the string
+      ret = false;
+      scrollDown = true;
+      hasChanged = true;
+    }
+
+    if (scrollDown) {
+        field.scrollTop = field.scrollHeight;
+    }
+
+    // Find # left if caller wants to know
+	if (leftCountSpan) {
+	    var left1 = maxlimit - characterCount;
+		var left2 = 4000 - unicodeCharacterCount;
+		var left = (left1 < left2 ? left1 : left2);
+
+		$j("#"+leftCountSpan).html(left);
+    }
+
+    if(hasChanged) {
+        $j(field).trigger('change');
+    }
+    return ret;
+}
+
+function noNumbers(e) {
+    var keynum, keychar, numcheck;
+    if(window.event) keynum = e.keyCode; // IE
+    else if(e.which) keynum = e.which; // Netscape/Firefox/Opera
+    keychar = String.fromCharCode(keynum);
+    numcheck = /\d/;
+    return !numcheck.test(keychar);
+}
+
+function onlyNumbers(e) {
+    return !noNumbers(e);
+}
+
+function decodeText(text) {
+	return $j("<div/>").html(text).text();
+}
+
+var changeHistoryPayload = null;
+/**
+ * Creates the change history payload object if it doesn't already exist. Otherwise, it updates the existing object's context.
+ */
+function createOrUpdateChangeHistoryPayload(context) {
+	if (changeHistoryPayload !== null) {
+		changeHistoryPayload.context = context;
+	} else {
+	    changeHistoryPayload = {
+	        context: context,
+	        columns: []
+	    };
+	    $j(document).ready( function() {
+	        subscribeDialog("change_history");
+	    });
+	}
+}
+
+/**
+ * Adds or replaces a key column on a payload object. If the table name and column match one that is already present,
+ * the existing value is replaced.
+ */
+function setChangeHistoryColumn(tableName, columnName, value) {
+	if (changeHistoryPayload !== null && tableName && columnName) {
+		var list = changeHistoryPayload.columns;
+		if (list && Array.isArray(list)) {
+			var doAdd = true;
+			for (var i = 0; i < list.length; i++) {
+				var next = list[i];
+				if (next.table_name.toUpperCase() === tableName.toUpperCase() && next.column_name.toUpperCase() == columnName.toUpperCase()) {
+					next.column_value = value;
+					doAdd = false;
+					break;
+				}
+			}
+			if (doAdd) {
+				list.push({
+					table_name: tableName,
+					column_name: columnName,
+					column_value: value
+				});
+			}
+		}
+	}
+}
+
+/**
+ * Adds or replaces a set of options to be used to set a key column value. The column must first be created using setChangeHistoryColumn. Note that the column value will be made null.
+ * tableName: The table name of the corresponding key column.
+ * columnName: The column name of the corresponding key column.
+ * label: The label to display in the UI for the select list. Localization should be done before passing in.
+ * options: Array of options to display. Each object should have a name (for display) and value (for posting).
+ * copyToColumns: Option array of arrays on which the selected value should be copied. Each array should have a column_name and column_value that corresponds to another key column.
+ */
+function addChangeHistoryColumnOptions(tableName, columnName, label, options, copyToColumns) {
+	if (changeHistoryPayload !== null && tableName && columnName && options) {
+		var list = changeHistoryPayload.columns;
+		if (list && Array.isArray(list)) {
+			for (var i = 0; i < list.length; i++) {
+				var next = list[i];
+				if (next.table_name.toUpperCase() === tableName.toUpperCase() && next.column_name.toUpperCase() == columnName.toUpperCase()) {
+					next.column_value = null;
+					next.column_option_label = label || columnName;
+					next.column_options = options;
+					next.copy_to_columns = copyToColumns;
+					break;
+				}
+			}
+		}
+	}
+}
+
+</script>
+
+<script type="application/x-javascript">
+addEventListener("load", function() {
+	setTimeout(function() {
+		hideURLbar();
+		adjustFrameStyles();
+	}, 0);
+	enableScreenReader();
+}, false);
+
+function adjustFrameStyles() {
+	var containerFrame = document.querySelector('#container-frame');
+	if (containerFrame && containerFrame.classList.contains('pds')) {
+		var containerFrameMenu = document.querySelector('#container-frame-menu');
+		if (containerFrameMenu) {
+			document.body.classList.add('noScroll', 'backgroundAdjusted');
+			var contentMain = document.querySelector('#content-main');
+			if (contentMain) {
+				contentMain.classList.add('autoScroll');
+			}
+		}
+	}
+}
+
+function hideURLbar() {
+	window.scrollTo(0,1);
+	var appNav = document.querySelector('pds-app-nav');
+	if (appNav) {
+		document.getElementById('content-main').scrollTop = 0;
+	}
+}
+//code block to enable screen reader when any action error occurs
+function enableScreenReader(){
+require(['underscore'], function (_) {
+setTimeout(function(){
+    if(jQuery(".feedback-alert").is(":visible")){
+    jQuery(".feedback-alert li").attr("role","alert");
+    jQuery(".feedback-alert li").attr("aria-live","polite");
+    }
+},0);
+});
+}
+</script>
+
+<!-- iPhone Scripts introduced for parent access -->
+<script type='text/javascript'>if(!_messages)var _messages = {};_messages["psx.js.admin_javascript.validate_date.month_1"] = "Month ";_messages["psx.js.admin_javascript.validate_date._doesnt_have_31_days"] = " doesn't have 31 days.";_messages["psx.js.admin_javascript.validate_date._doesnt_have_"] = " doesn't have ";_messages["psx.js.admin_javascript.validate_date.month_must_be_between_1_and_12"] = "Month must be between 1 and 12.";_messages["psx.js.admin_javascript.validate_date.warning_invalid_date"] = "Warning: Invalid Date";_messages["psx.js.admin_javascript.validate_date.date_format_must_be"] = "Date format must be ({0}).";_messages["psx.js.admin_javascript.validate_date.day_must_be_between_1_and_31"] = "Day must be between 1 and 31.";_messages["psx.js.admin_javascript.validate_date._days"] = " days.";_messages["psx.js.admin_javascript.validate_date.february_"] = "February ";if (typeof pss_text != 'function') { function pss_text(key, params, returnKeyIfNotFound) { if (_messages[key] === undefined) { if (returnKeyIfNotFound !== undefined && returnKeyIfNotFound === true) {return key;} else {return 'String key was not found!'; }}if(params == null || params.length == 0) {return _messages[key]; }else { msg = _messages[key]; for ( i = 0; i < params.length; i++) {token = "{"+i+"}"; msg = msg.replace(token, params[i]); }return msg;} } }</script>
+<script language="JavaScript" type="text/javascript" src="/admin/JavaScript/validate_date.js"></script>
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192" />
+<link rel="icon" type="image/png" href="/android-chrome-512x512.png" sizes="512x512" />
+<link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/favicon-128.png" sizes="128x128" />
+
+<meta name="application-name" content="PowerSchool"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/mstile-310x310.png" />
+<link rel="shortcut icon" href="/favicon.ico" >
+
+
+
+
+
+
+
+
+    <script language="javascript">
+
+        $j(document).ready(function(){
+			
+            <!--Set alignment of icons to text-bottom for the alerts so they show up in the middle of the row.-->
+            $j('#attendance-table img[src*="https://psimages.ednet.ns.ca/psimages23_3/images/alert_"]').css('vertical-align', 'text-bottom');
+
+            <!-- Remove extra padding and margins -->
+            $j('#id_btn_show_multiple_sections').css('margin',  '0');
+            $j('#id_btn_show_section').css('margin', '0');
+
+            //Set the col width
+            var maxChildren = 0;
+            var studentRows = $j('.studentrow');
+            $j.each(studentRows, function(i,v) {
+                var myKids = $j(v).children().length;
+                maxChildren = Math.max(maxChildren, myKids);
+            });
+
+            var percentCols = [30, 10, 0];
+            var totalPercent = 0;
+            $j.each(percentCols, function(i, item) {
+                totalPercent += item;
+            });
+            var totalNumberOfCols = maxChildren-1-3;
+            var maxPercent = parseInt((100 - totalPercent) / totalNumberOfCols);
+
+            if (totalNumberOfCols > 1) {
+                for (var i=3; i<maxChildren-1; i++) {
+                    var myPercent = Math.min(maxPercent, 15);
+                    percentCols.push(myPercent);
+                    totalPercent += myPercent;
+                }
+                percentCols.push(parseInt(100 - totalPercent));
+            }
+
+            var colGroup = $j('#attendance-table-colgroup');
+            $j.each(percentCols, function(i, item) {
+                var myCol = $j('<col/>');
+                if (item != -1) {
+                    myCol.css('width', item + '%');
+                }
+                colGroup.append(myCol);
+            });
+            <!--Duplicate the submit button on the bottom of the page and add an identical one on the top    -->
+            var row = $j('#bottom-submit-button-row');
+            if (row) {
+                var cloned = row.clone();
+                cloned.children(":first").attr('id', 'btnSubmit-top-row');
+                var parent = $j('#id_top_submit_col');
+                parent.append(cloned.children(":first"));
+
+                var button = $j('#btnSubmit-top-row');
+                var position = button.position();
+                var width = button.outerWidth();
+                var buttonRow = $j('#bottom-submit-button-row');
+            }
+
+            initDropdownWidget();
+			
+				groupByTrack.init();
+			
+        });
+
+        function formHandler(newLoc) {
+            // find the default selected index
+            var defaultSelectedIndex;
+            for (var i=0;i<newLoc.options.length;i++) {
+                if (newLoc.options[i].defaultSelected) {
+                    defaultSelectedIndex = i;
+                    break;
+                }
+            }
+
+            // ignore nested event
+            if (newLoc.selectedIndex == defaultSelectedIndex) {
+                return;
+            }
+            // get the target URL
+            var URL = newLoc.options[newLoc.selectedIndex].value;
+
+            // reset the selected value in case there is dirty data and the user chooses to stay
+            newLoc.selectedIndex = defaultSelectedIndex;
+
+            // change the window location
+            if(URL!="") {
+                window.location.href = URL;
+            }
+        }
+
+		pss_get_texts('psx.ftl.teachers.attendancegrid.savepromptmessage');
+		var _proceedwarning=pss_text('psx.ftl.teachers.attendancegrid.savepromptmessage');
+
+		pss_get_texts('psx.html.teachers.classattendance.');
+		var _ok=pss_text('psx.html.teachers.classattendance.ok');
+		var _cancel=pss_text('psx.html.teachers.classattendance.cancel');
+		var _close=pss_text('psx.html.teachers.classattendance.close');
+		var _readOnlyTitle=pss_text('psx.html.teachers.classattendance.readOnlyCommentTitle');
+		var _editableTitle=pss_text('psx.html.teachers.classattendance.editableCommentTitle');
+		var _track=pss_text('psx.html.teachers.classattendance.track');
+		var _noTrackAssigned=pss_text('psx.html.teachers.classattendance.no_track_assigned');
+		var _fill=pss_text('psx.html.teachers.classattendance.fill_code');
+
+    </script>
+
+    <link href="https://psimages.ednet.ns.ca/psimages23_3/images/css/screen.css" rel="stylesheet" media="screen">
+    <link href="https://psimages.ednet.ns.ca/psimages23_3/images/css/print.css" rel="stylesheet" media="print">
+    <script language="JavaScript" type="text/javascript" src="https://psimages.ednet.ns.ca/psimages23_3/scripts/att-singleday-min.js"></script>
+	
+	<script language="JavaScript" type="text/javascript" src="https://psimages.ednet.ns.ca/psimages23_3/scripts/att-group-by-track.js"></script>
+	<style>
+		tr.groupHeader {
+			background-color: #D1EEFF;
+		}
+		tr.groupHeader h3 {
+			margin: 5px 0;
+			border-bottom: none;
+		}
+		tr.groupHeader td {
+			padding: 0;
+		}
+		tr.groupHeader td button {
+			padding: 5px 10px;
+			margin-top: 5px;
+			margin-inline-start: 5px;
+		}
+
+	</style>
+	
+</head>
+
+<body>
+
+
+<!-- start of shell for entire page  -->
+<div id="container" class="group">
+<!-- start of shell for entire page  -->
+<!-- logo, school, term, logoff, help -->
+<div id="header" class="group">
+	 <ul id="tools">
+	    <li id="userName" title="Substitute for Alphonso, Joanna
+ (Last Sign In:&nbsp;11/24/2023 at 08:09 AM ended normally. 142.134.64.172)">Welcome, <span>Substitute for Joanna Alphonso</span></li>
+        <li><a href="https://docs.powerschool.com/PSHTS/23.3" target="_blank" id="btnHelp" title="Help" accesskey="?">Help</a></li>
+         <li><a href="~loff" id="btnLogout" target="_top" title="Sign Out" accesskey="l">Sign Out</a></li>       
+     </ul>
+    <div id="branding-powerschool">
+    	<a href="/subs/home.html"></a>
+    </div>
+	<div id="currentscope">
+        School:
+            <span id="schoolText">Park View Education Centre</span>
+        Term:
+            <span id="termText">23-24 Semester 1</span>
+    </div>
+	<div id="cust-content-header"></div>
+</div>
+<!--logo, school, term, logoff, help -->
+<div id="usercontext-bar">
+<div id="breadcrumbs" role="navigation">
+<!--Breadcrumbs in page, close in admin-navigation wc-->
+
+</div><!--end BC tag-->
+	<ul id="tools2">
+		<li class="icon-btn-print"><a href="javascript:window.print()"  id="btnPrint" title="Print">&nbsp;</a></li>
+   </ul>
+</div>
+<!-- start of main menu and content -->
+<div id="content" class="group">
+<!-- start gel tabs navigation -->
+<div id="nav-main" role="navigation">
+  <h2>Navigation</h2>
+  <ul>
+	  <li><a href="/subs/home.html" id="navHome" title="Start Page">Start Page</a></li>
+	  <li><a href="/subs/bulletin_popup.html" class="dialogM" id="navBulletin" title="View Daily Bulletin">View Daily Bulletin</a></li>
+  </ul>
+  <div id="cust-leftnav-footer">
+<ul>
+	<li id="liSMMessageSenderAdmin"><a href="/admin/messagesender/msgsndr.html" id="navSMMessageSenderAdmin" title="Message Sender">Message Sender</a></li>
+</ul>
+
+<script>
+	var liMessageSenderAdmin = document.getElementById("liSMMessageSenderAdmin");
+
+	if (liMessageSenderAdmin != null) {
+		var pathname = window.location.pathname; // returns path only        
+		if (pathname.toLowerCase().indexOf("/admin/home.html") == 0) {
+			var ul = document.getElementById("left_nav_functions");        
+			if (ul != null) 
+			 	// Move to "Functions" section
+				ul.appendChild(liMessageSenderAdmin);
+		} else 
+			// Hide
+			liMessageSenderAdmin.style.display = "none";
+	}
+</script></div>
+</div>
+<div id="content-main">
+<!--start of content-main-->
+
+
+<style type="text/css">
+    fieldset.divColumns > div.button-box {
+        padding: 1.7em 0 0;
+        position: absolute;
+        inset-inline-end: 22px;
+    }
+    tr[id^=sectionheader_] {
+        padding: 0;
+    }
+    tr[id^=sectionheader_] td.cvDemarcation {
+        padding: 0;
+        border-inline-end: unset;
+    }
+    tr[id^=sectionheader_] td.cvDemarcation h2 {
+        margin: 0;
+        border-bottom: none;
+        background-color: #B7D7E6;
+        padding: 5px;
+    }
+    .comment-icon {
+        width: 18px;
+        height: 18px;
+        text-indent: -99999px;
+        overflow: hidden;
+        padding-inline-start: 4px;
+    }
+</style>
+
+
+    <h1>Record Meeting Attendance: AFRICAN CANADIAN STUDIES 11 - 1(W1,W2),2(T1,T2),3(M1,M2),4(Th1,Th2),5(W1,W2)<br></h1>
+
+    <div class="hide" id="id_div_savewarning">You have unsaved changes</div>
+
+    <!-- start of tabs -->
+    <ul class="tabs" id="nav-secondary" >
+        <li class="selected"><a>Single Day</a></li>
+        <li>
+            <a href="/subs/seatingchartcontainer.action?sectionId=108668#classtoolsmode">
+                Seating Chart
+            </a>
+        </li>
+    </ul>
+    <!-- end of tabs -->
+<form action="home.html" method="POST" data-ng-cloak>
+
+<fieldset class="divColumns" data-module-name="powerSchoolModule" data-require-path="components/shared/index">
+    <div>
+        <label>Attendance Code</label>
+        <SELECT CLASS="att-select-source" aria-labelledby="attendanceCodeLabel"  NAME="att_attcodelist"><OPTION VALUE=""> (Present)<OPTION VALUE="L">L (Late)<OPTION VALUE="LE">LE (Leave Early)<OPTION VALUE="A">A (Absent)</SELECT>
+    </div>
+	<div class="">
+        <label>Classes</label>
+        <a id="id_btn_show_multiple_sections" title="Show Multiple Sections" class="button" aria-labelledby="classesLabel" href="classattendance.html?sectionid=108668&frn=003108759&att_period=2&att_date=11/24/2023&Att_Mode_Code=ATT_ModeMeeting&pagetype=MultiMeeting&ATT_Source_Code=Teacher&Period_ID=8904&urllrn=&page=&pageContext=">Show Multiple Sections</a>
+    </div>
+    
+        <pss-user-pref-switch
+            data-name="group-by-track"
+            data-value="" data-true-value="1" data-false-value="0"
+            data-label="Group By Track"
+            data-callback-function-name="toggleGroupByTrack"
+            data-local-state="true">
+        </pss-user-pref-switch>
+    
+            <div class="button-box"><span id="id_top_submit_col"></span></div>
+    </fieldset>
+
+    <div class="box-round" id="box-round">
+
+        <!-- Start of shaded content table -->
+        <table border=0 cellpadding=2 cellspacing=0 width="100%" id="attendance-table">
+            <colgroup id="attendance-table-colgroup"></colgroup>
+            <tr>
+                <th class="table-element-text-align-start" class="cvDemarcation">Students</th>
+                <th class="table-element-text-align-start"></th>
+                <th></th>
+                <!--Sets the columnspan cospan variable-->
+                
+                <th class="table-element-text-align-start" colspan=2 align="center">
+                    &nbsp;Attendance: Friday, November 24, 2023
+                </th>
+            </tr>
+
+            
+            <tr class="studentrow" id="ccid_970464"> <td class="cvDemarcation">Amos, Noah McIsaac</td> <td></td> <td>&nbsp;</td><td align="left"><input type="text" name="NEW2023112400000089040000000970464000004977000610000000000" value="" size="10" attdate="11/24/2023" attint="0" onFocus="sa(this)"><input type="hidden"  name="COM2023112400000089040000000970464000004977000610000000000" value=""></td> <td><input type="hidden" id="null_970464" name="studentTrack" value="null"></td> </tr><tr class="studentrow" id="ccid_973802"> <td class="cvDemarcation">Brown, Kiersten Jonayah Anne</td> <td></td> <td>&nbsp;</td><td align="left">MR - Medical Reason<span style="display:none"  id="COM2023112400000089040000000973802000001663700610006366859">Mom called, recovering from dental surgery, nf.</span></td> <td><input type="hidden" id="null_973802" name="studentTrack" value="null"></td> </tr><tr class="studentrow" id="ccid_1021940"> <td class="cvDemarcation">Burgoyne, Shyanne Amelia</td> <td></td> <td>&nbsp;</td><td align="left"><input type="text" name="MOD2023112400000089040000001021940000001653100610006366861" value="A" size="10" attdate="11/24/2023" attint="0" onFocus="sa(this)"><input type="hidden"  name="COM2023112400000089040000001021940000001653100610006366861" value=""></td> <td><input type="hidden" id="null_1021940" name="studentTrack" value="null"></td> </tr><tr class="studentrow" id="ccid_974871"> <td class="cvDemarcation">Corman, Tanika Mataya</td> <td></td> <td>&nbsp;</td><td align="left"><input type="text" name="NEW2023112400000089040000000974871000001722700610000000000" value="" size="10" attdate="11/24/2023" attint="0" onFocus="sa(this)"><input type="hidden"  name="COM2023112400000089040000000974871000001722700610000000000" value=""></td> <td><input type="hidden" id="null_974871" name="studentTrack" value="null"></td> </tr><tr class="studentrow" id="ccid_970632"> <td class="cvDemarcation">Creaser, Autumn Aaliyah</td> <td></td> <td>&nbsp;</td><td align="left"><input type="text" name="NEW2023112400000089040000000970632000001664300610000000000" value="" size="10" attdate="11/24/2023" attint="0" onFocus="sa(this)"><input type="hidden"  name="COM2023112400000089040000000970632000001664300610000000000" value=""></td> <td><input type="hidden" id="null_970632" name="studentTrack" value="null"></td> </tr><tr class="studentrow" id="ccid_972893"> <td class="cvDemarcation">Culbert, Chelsea Raegan</td> <td></td> <td>&nbsp;</td><td align="left"><input type="text" name="NEW2023112400000089040000000972893000001567800610000000000" value="" size="10" attdate="11/24/2023" attint="0" onFocus="sa(this)"><input type="hidden"  name="COM2023112400000089040000000972893000001567800610000000000" value=""></td> <td><input type="hidden" id="null_972893" name="studentTrack" value="null"></td> </tr><tr class="studentrow" id="ccid_972745"> <td class="cvDemarcation">Dowe, Sophie Xuena Mia</td> <td></td> <td>&nbsp;</td><td align="left"><input type="text" name="NEW2023112400000089040000000972745000001567100610000000000" value="" size="10" attdate="11/24/2023" attint="0" onFocus="sa(this)"><input type="hidden"  name="COM2023112400000089040000000972745000001567100610000000000" value=""></td> <td><input type="hidden" id="null_972745" name="studentTrack" value="null"></td> </tr><tr class="studentrow" id="ccid_974925"> <td class="cvDemarcation">Ernst, Abigail Lynn</td> <td></td> <td>&nbsp;</td><td align="left"><input type="text" name="NEW2023112400000089040000000974925000002225800610000000000" value="" size="10" attdate="11/24/2023" attint="0" onFocus="sa(this)"><input type="hidden"  name="COM2023112400000089040000000974925000002225800610000000000" value=""></td> <td><input type="hidden" id="null_974925" name="studentTrack" value="null"></td> </tr><tr class="studentrow" id="ccid_973075"> <td class="cvDemarcation">Fisk, Sophie Draayer</td> <td></td> <td>&nbsp;</td><td align="left">MR - Medical Reason<span style="display:none"  id="COM2023112400000089040000000973075000001572400610006366735">Mom called, sick, nf.</span></td> <td><input type="hidden" id="null_973075" name="studentTrack" value="null"></td> </tr><tr class="studentrow" id="ccid_972188"> <td class="cvDemarcation">Fraser, Julia Jade Marie</td> <td></td> <td>&nbsp;</td><td align="left"><input type="text" name="NEW2023112400000089040000000972188000001450300610000000000" value="" size="10" attdate="11/24/2023" attint="0" onFocus="sa(this)"><input type="hidden"  name="COM2023112400000089040000000972188000001450300610000000000" value=""></td> <td><input type="hidden" id="null_972188" name="studentTrack" value="null"></td> </tr><tr class="studentrow" id="ccid_972053"> <td class="cvDemarcation">Gow, Ophelia Rachel</td> <td></td> <td>&nbsp;</td><td align="left"><input type="text" name="NEW2023112400000089040000000972053000001555500610000000000" value="" size="10" attdate="11/24/2023" attint="0" onFocus="sa(this)"><input type="hidden"  name="COM2023112400000089040000000972053000001555500610000000000" value=""></td> <td><input type="hidden" id="null_972053" name="studentTrack" value="null"></td> </tr><tr class="studentrow" id="ccid_1023819"> <td class="cvDemarcation">Grant, Caitlin Amara</td> <td></td> <td>&nbsp;</td><td align="left"><input type="text" name="NEW2023112400000089040000001023819000001156000610000000000" value="" size="10" attdate="11/24/2023" attint="0" onFocus="sa(this)"><input type="hidden"  name="COM2023112400000089040000001023819000001156000610000000000" value=""></td> <td><input type="hidden" id="null_1023819" name="studentTrack" value="null"></td> </tr><tr class="studentrow" id="ccid_970477"> <td class="cvDemarcation">Grevatt, Ty Alexander</td> <td></td> <td>&nbsp;</td><td align="left"><input type="text" name="MOD2023112400000089040000000970477000001651000610006366857" value="A" size="10" attdate="11/24/2023" attint="0" onFocus="sa(this)"><input type="hidden"  name="COM2023112400000089040000000970477000001651000610006366857" value=""></td> <td><input type="hidden" id="null_970477" name="studentTrack" value="null"></td> </tr><tr class="studentrow" id="ccid_971910"> <td class="cvDemarcation">Hannam, Ashley Elizabeth Ann</td> <td></td> <td>&nbsp;</td><td align="left">MR - Medical Reason<span style="display:none"  id="COM2023112400000089040000000971910000001516100610006366728">Mom called, sick, nf.</span></td> <td><input type="hidden" id="null_971910" name="studentTrack" value="null"></td> </tr><tr class="studentrow" id="ccid_1001079"> <td class="cvDemarcation">Hebb, Zach Jayden</td> <td></td> <td>&nbsp;</td><td align="left"><input type="text" name="NEW2023112400000089040000001001079000001166000610000000000" value="" size="10" attdate="11/24/2023" attint="0" onFocus="sa(this)"><input type="hidden"  name="COM2023112400000089040000001001079000001166000610000000000" value=""></td> <td><input type="hidden" id="null_1001079" name="studentTrack" value="null"></td> </tr><tr class="studentrow" id="ccid_974505"> <td class="cvDemarcation">Hughes, Jack Jack Louis</td> <td></td> <td>&nbsp;</td><td align="left"><input type="text" name="NEW2023112400000089040000000974505000001696100610000000000" value="" size="10" attdate="11/24/2023" attint="0" onFocus="sa(this)"><input type="hidden"  name="COM2023112400000089040000000974505000001696100610000000000" value=""></td> <td><input type="hidden" id="null_974505" name="studentTrack" value="null"></td> </tr><tr class="studentrow" id="ccid_970220"> <td class="cvDemarcation">Isner, Wyatt Owen</td> <td></td> <td>&nbsp;</td><td align="left"><input type="text" name="NEW2023112400000089040000000970220000004180100610000000000" value="" size="10" attdate="11/24/2023" attint="0" onFocus="sa(this)"><input type="hidden"  name="COM2023112400000089040000000970220000004180100610000000000" value=""></td> <td><input type="hidden" id="null_970220" name="studentTrack" value="null"></td> </tr><tr class="studentrow" id="ccid_973979"> <td class="cvDemarcation">Jarvis, Adele Louise Sponagle</td> <td></td> <td>&nbsp;</td><td align="left"><input type="text" name="NEW2023112400000089040000000973979000001665100610000000000" value="" size="10" attdate="11/24/2023" attint="0" onFocus="sa(this)"><input type="hidden"  name="COM2023112400000089040000000973979000001665100610000000000" value=""></td> <td><input type="hidden" id="null_973979" name="studentTrack" value="null"></td> </tr><tr class="studentrow" id="ccid_973315"> <td class="cvDemarcation">Kenny, Ava Kazuri Hope</td> <td></td> <td>&nbsp;</td><td align="left"><input type="text" name="NEW2023112400000089040000000973315000004500100610000000000" value="" size="10" attdate="11/24/2023" attint="0" onFocus="sa(this)"><input type="hidden"  name="COM2023112400000089040000000973315000004500100610000000000" value=""></td> <td><input type="hidden" id="null_973315" name="studentTrack" value="null"></td> </tr><tr class="studentrow" id="ccid_1019334"> <td class="cvDemarcation">Kilburn, Ellie Maritz</td> <td></td> <td>&nbsp;</td><td align="left"><input type="text" name="NEW2023112400000089040000001019334000005475100610000000000" value="" size="10" attdate="11/24/2023" attint="0" onFocus="sa(this)"><input type="hidden"  name="COM2023112400000089040000001019334000005475100610000000000" value=""></td> <td><input type="hidden" id="null_1019334" name="studentTrack" value="null"></td> </tr><tr class="studentrow" id="ccid_973427"> <td class="cvDemarcation">Langille, Summer Angel Christine</td> <td></td> <td>&nbsp;</td><td align="left"><input type="text" name="NEW2023112400000089040000000973427000001641700610000000000" value="" size="10" attdate="11/24/2023" attint="0" onFocus="sa(this)"><input type="hidden"  name="COM2023112400000089040000000973427000001641700610000000000" value=""></td> <td><input type="hidden" id="null_973427" name="studentTrack" value="null"></td> </tr><tr class="studentrow" id="ccid_973085"> <td class="cvDemarcation">Oosterwijk, Jack Benjamin</td> <td></td> <td>&nbsp;</td><td align="left"><input type="text" name="NEW2023112400000089040000000973085000001572700610000000000" value="" size="10" attdate="11/24/2023" attint="0" onFocus="sa(this)"><input type="hidden"  name="COM2023112400000089040000000973085000001572700610000000000" value=""></td> <td><input type="hidden" id="null_973085" name="studentTrack" value="null"></td> </tr><tr class="studentrow" id="ccid_970803"> <td class="cvDemarcation">Parris, Lu</td> <td></td> <td>&nbsp;</td><td align="left"><input type="text" name="NEW2023112400000089040000000970803000001666000610000000000" value="" size="10" attdate="11/24/2023" attint="0" onFocus="sa(this)"><input type="hidden"  name="COM2023112400000089040000000970803000001666000610000000000" value=""></td> <td><input type="hidden" id="null_970803" name="studentTrack" value="null"></td> </tr><tr class="studentrow" id="ccid_973581"> <td class="cvDemarcation">Rodenhiser, Hailey Grace</td> <td></td> <td>&nbsp;</td><td align="left"><input type="text" name="NEW2023112400000089040000000973581000001650200610000000000" value="" size="10" attdate="11/24/2023" attint="0" onFocus="sa(this)"><input type="hidden"  name="COM2023112400000089040000000973581000001650200610000000000" value=""></td> <td><input type="hidden" id="null_973581" name="studentTrack" value="null"></td> </tr><tr class="studentrow" id="ccid_1020895"> <td class="cvDemarcation">Rowe, Elijah James Malone</td> <td></td> <td>&nbsp;</td><td align="left"><input type="text" name="NEW2023112400000089040000001020895000004981700610000000000" value="" size="10" attdate="11/24/2023" attint="0" onFocus="sa(this)"><input type="hidden"  name="COM2023112400000089040000001020895000004981700610000000000" value=""></td> <td><input type="hidden" id="null_1020895" name="studentTrack" value="null"></td> </tr><tr class="studentrow" id="ccid_1017447"> <td class="cvDemarcation">Smith, Fiona Lin Shea</td> <td></td> <td>&nbsp;</td><td align="left"><input type="text" name="NEW2023112400000089040000001017447000001645500610000000000" value="" size="10" attdate="11/24/2023" attint="0" onFocus="sa(this)"><input type="hidden"  name="COM2023112400000089040000001017447000001645500610000000000" value=""></td> <td><input type="hidden" id="null_1017447" name="studentTrack" value="null"></td> </tr><tr class="studentrow" id="ccid_970941"> <td class="cvDemarcation">Smith, Lucas John Alexander</td> <td></td> <td>&nbsp;</td><td align="left"><input type="text" name="NEW2023112400000089040000000970941000001666500610000000000" value="" size="10" attdate="11/24/2023" attint="0" onFocus="sa(this)"><input type="hidden"  name="COM2023112400000089040000000970941000001666500610000000000" value=""></td> <td><input type="hidden" id="null_970941" name="studentTrack" value="null"></td> </tr><tr class="studentrow" id="ccid_1018320"> <td class="cvDemarcation">Smith, Nevaeh Faye</td> <td></td> <td>&nbsp;</td><td align="left"><input type="text" name="NEW2023112400000089040000001018320000001605600610000000000" value="" size="10" attdate="11/24/2023" attint="0" onFocus="sa(this)"><input type="hidden"  name="COM2023112400000089040000001018320000001605600610000000000" value=""></td> <td><input type="hidden" id="null_1018320" name="studentTrack" value="null"></td> </tr><tr class="studentrow" id="ccid_1016409"> <td class="cvDemarcation">Trujillo Robles, Emiliano Antonio</td> <td></td> <td>&nbsp;</td><td align="left"><input type="text" name="NEW2023112400000089040000001016409000006195800610000000000" value="" size="10" attdate="11/24/2023" attint="0" onFocus="sa(this)"><input type="hidden"  name="COM2023112400000089040000001016409000006195800610000000000" value=""></td> <td><input type="hidden" id="null_1016409" name="studentTrack" value="null"></td> </tr><tr class="studentrow" id="ccid_1004893"> <td class="cvDemarcation">Weagle, Austin Christopher David</td> <td></td> <td>&nbsp;</td><td align="left"><input type="text" name="MOD2023112400000089040000001004893000001641900610006366858" value="A" size="10" attdate="11/24/2023" attint="0" onFocus="sa(this)"><input type="hidden"  name="COM2023112400000089040000001004893000001641900610006366858" value=""></td> <td><input type="hidden" id="null_1004893" name="studentTrack" value="null"></td> </tr><tr class="studentrow" id="ccid_1017430"> <td class="cvDemarcation">Whynot-Dowse, Lexie Lauryn</td> <td></td> <td>&nbsp;</td><td align="left"><input type="text" name="MOD2023112400000089040000001017430000001572600610006366860" value="A" size="10" attdate="11/24/2023" attint="0" onFocus="sa(this)"><input type="hidden"  name="COM2023112400000089040000001017430000001572600610006366860" value=""></td> <td><input type="hidden" id="null_1017430" name="studentTrack" value="null"></td> </tr>
+            
+
+            
+			</tbody>
+        </table>
+
+    <input type="hidden" name="savecomments" id="savecomments" value="0">
+    <input type="hidden" name="Att_Mode_Code" value="ATT_ModeMeeting">
+
+    
+    <input type="hidden" name="Start_date" value="11/24/2023">
+    <input type="hidden" name="end_date" value="11/24/2023">
+    <input type="hidden" name="sectionid" id="sectionid" value="108668">
+
+    <!-- ESC-155-158 : Add in the URL value pairs as post values to make them accessible in successive pages -->
+
+    <input type="hidden" name="period_id" id="period_id" value="8904">
+    <input type="hidden" name="att_period" value="2">
+
+    <!-- End ESC-155-158 -->
+
+    <input type="hidden" name="ATT_Source_Code" value="Teacher">
+    <input type="hidden" name="ac" value="ATT_RecordMeetingTeacher">
+
+    <!-- Split to separate file because no nested if tags -->
+    
+
+    <div class="button-row" id="bottom-submit-button-row" style="padding-inline-end: 0;padding-inline-start: 0;">
+        <button type="submit" id="btnSubmit" name="btnSubmit">Submit</button>
+
+    </div>
+    
+
+    </div>
+    <div id="legend">
+        <h3>Legend </h3>
+        <p>
+            <img src="https://psimages.ednet.ns.ca/psimages23_3/images/notinsession.gif" width="7" height="7"> - Not enrolled
+        </p>
+    </div>
+
+</form>
+<!-- End of shaded content table -->
+<div id="dialog-comments" class="psDialog" title="Edit Comments"></div>
+
+	<div id="cust-content-footer"><script type="text/javascript">
+   $j(function() {
+       
+            // Build Javascript array of cc.id and student preferred name custom field
+        var array = [
+         
+        { "sid": "16510", "id": "970477", "preferred_name": "Ty"},
+         
+        { "sid": "11683", "id": "979046", "preferred_name": "Ava"},
+         
+        { "sid": "54712", "id": "970879", "preferred_name": "Kyrie"},
+         
+        { "sid": "62456", "id": "972023", "preferred_name": "Noah"},
+         
+        { "sid": "15726", "id": "1017430", "preferred_name": "Lexie"},
+         
+        { "sid": "49817", "id": "1020895", "preferred_name": "Elijah"},
+         
+        { "sid": "60152", "id": "971684", "preferred_name": "Aidan"},
+         
+        { "sid": "17227", "id": "974871", "preferred_name": "Tanika"},
+         
+        { "sid": "15161", "id": "971910", "preferred_name": "Ashley"},
+         
+        { "sid": "16859", "id": "974342", "preferred_name": "Morgan"},
+         
+        { "sid": "15682", "id": "969985", "preferred_name": "Camilla"},
+         
+        { "sid": "17407", "id": "1021405", "preferred_name": "Meg"},
+         
+        { "sid": "11637", "id": "1016420", "preferred_name": "Zachary"},
+         
+        { "sid": "16419", "id": "1004893", "preferred_name": "Austin"},
+         
+        { "sid": "14555", "id": "972354", "preferred_name": "Paige"},
+         
+        { "sid": "11517", "id": "973360", "preferred_name": "Kaitlyn"},
+         
+        { "sid": "11560", "id": "972676", "preferred_name": "Caitlin"},
+         
+        { "sid": "61204", "id": "971709", "preferred_name": "Lucien"},
+         
+        { "sid": "31624", "id": "972659", "preferred_name": "Kaylee"},
+         
+        { "sid": "16637", "id": "973802", "preferred_name": "Kiersten"},
+         
+        { "sid": "22258", "id": "974925", "preferred_name": "Abigail"},
+         
+        { "sid": "11660", "id": "1001079", "preferred_name": "Zach"},
+         
+        { "sid": "15555", "id": "972053", "preferred_name": "Ophelia"},
+         
+        { "sid": "16965", "id": "974520", "preferred_name": "Jordin"},
+         
+        { "sid": "16961", "id": "974505", "preferred_name": "Jack"},
+         
+        { "sid": "15727", "id": "973085", "preferred_name": "Jack"},
+         
+        { "sid": "15671", "id": "972745", "preferred_name": "Sophie"},
+         
+        { "sid": "16417", "id": "973427", "preferred_name": "Summer"},
+         
+        { "sid": "41801", "id": "970220", "preferred_name": "Wyatt"},
+         
+        { "sid": "16972", "id": "971280", "preferred_name": "Ellie"},
+         
+        { "sid": "15172", "id": "971918", "preferred_name": "Hope"},
+         
+        { "sid": "16651", "id": "973979", "preferred_name": "Adele"},
+         
+        { "sid": "54751", "id": "1019334", "preferred_name": "Ellie"},
+         
+        { "sid": "11564", "id": "973526", "preferred_name": "Maya"},
+         
+        { "sid": "16643", "id": "970632", "preferred_name": "Autumn"},
+         
+        { "sid": "16531", "id": "1021940", "preferred_name": "Shyanne"},
+         
+        { "sid": "49770", "id": "970464", "preferred_name": "Noah"},
+         
+        { "sid": "16367", "id": "1004911", "preferred_name": "Emma"},
+         
+        { "sid": "49910", "id": "973684", "preferred_name": "Mason"},
+         
+        { "sid": "49817", "id": "1018477", "preferred_name": "Elijah"},
+         
+        { "sid": "15732", "id": "973229", "preferred_name": "Landon"},
+         
+        { "sid": "49603", "id": "995473", "preferred_name": "Laura"},
+         
+        { "sid": "21956", "id": "974921", "preferred_name": "David"},
+         
+        { "sid": "11560", "id": "1023819", "preferred_name": "Caitlin"},
+         
+        { "sid": "16056", "id": "1018320", "preferred_name": "Nevaeh"},
+         
+        { "sid": "31619", "id": "972650", "preferred_name": "Kai"},
+         
+        { "sid": "16503", "id": "970376", "preferred_name": "Mora"},
+         
+        { "sid": "15724", "id": "973075", "preferred_name": "Sophie"},
+         
+        { "sid": "56854", "id": "1020892", "preferred_name": "Trinity"},
+         
+        { "sid": "6928", "id": "979019", "preferred_name": "Gracie"},
+         
+        { "sid": "15726", "id": "1017430", "preferred_name": "Lexie"},
+         
+        { "sid": "49817", "id": "1020895", "preferred_name": "Elijah"},
+         
+        { "sid": "16502", "id": "973581", "preferred_name": "Hailey"},
+         
+        { "sid": "16510", "id": "970477", "preferred_name": "Ty"},
+         
+        { "sid": "17227", "id": "974871", "preferred_name": "Tanika"},
+         
+        { "sid": "15161", "id": "971910", "preferred_name": "Ashley"},
+         
+        { "sid": "16419", "id": "1004893", "preferred_name": "Austin"},
+         
+        { "sid": "15678", "id": "972893", "preferred_name": "Chelsea"},
+         
+        { "sid": "11660", "id": "1001079", "preferred_name": "Zach"},
+         
+        { "sid": "16637", "id": "973802", "preferred_name": "Kiersten"},
+         
+        { "sid": "22258", "id": "974925", "preferred_name": "Abigail"},
+         
+        { "sid": "15555", "id": "972053", "preferred_name": "Ophelia"},
+         
+        { "sid": "45001", "id": "973315", "preferred_name": "Ava"},
+         
+        { "sid": "54751", "id": "1019334", "preferred_name": "Ellie"},
+         
+        { "sid": "61958", "id": "1016409", "preferred_name": "Emiliano Antonio"},
+         
+        { "sid": "15727", "id": "973085", "preferred_name": "Jack"},
+         
+        { "sid": "41801", "id": "970220", "preferred_name": "Wyatt"},
+         
+        { "sid": "16651", "id": "973979", "preferred_name": "Adele"},
+         
+        { "sid": "16961", "id": "974505", "preferred_name": "Jack"},
+         
+        { "sid": "15671", "id": "972745", "preferred_name": "Sophie"},
+         
+        { "sid": "16417", "id": "973427", "preferred_name": "Summer"},
+         
+        { "sid": "16531", "id": "1021940", "preferred_name": "Shyanne"},
+         
+        { "sid": "16643", "id": "970632", "preferred_name": "Autumn"},
+         
+        { "sid": "14503", "id": "972188", "preferred_name": "Julia"},
+         
+        { "sid": "49770", "id": "970464", "preferred_name": "Noah"},
+         
+        { "sid": "11560", "id": "1023819", "preferred_name": "Caitlin"},
+         
+        { "sid": "16455", "id": "1017447", "preferred_name": "Fiona"},
+         
+        { "sid": "16660", "id": "970803", "preferred_name": "Lu"},
+         
+        { "sid": "16665", "id": "970941", "preferred_name": "Lucas"},
+         
+        { "sid": "16056", "id": "1018320", "preferred_name": "Nevaeh"},
+         
+        { "sid": "15724", "id": "973075", "preferred_name": "Sophie"},
+         
+        { "sid": "17101", "id": "1005485", "preferred_name": "Abbigail"},
+         
+        { "sid": "60004", "id": "1005488", "preferred_name": "Sosuke"},
+         
+        { "sid": "49770", "id": "1005492", "preferred_name": "Noah"},
+         
+        { "sid": "58453", "id": "1005496", "preferred_name": "Volkan"},
+         
+        { "sid": "15652", "id": "1005498", "preferred_name": "Isaac"},
+         
+        { "sid": "17437", "id": "1005500", "preferred_name": "Abby"},
+         
+        { "sid": "45153", "id": "1005502", "preferred_name": "Joud"},
+         
+        { "sid": "11683", "id": "979046", "preferred_name": "Ava"},
+         
+        { "sid": "54712", "id": "970879", "preferred_name": "Kyrie"},
+         
+        { "sid": "62456", "id": "972023", "preferred_name": "Noah"},
+         
+        { "sid": "24457", "id": "972286", "preferred_name": "Sophie"},
+         
+        { "sid": "49817", "id": "973681", "preferred_name": "Elijah"},
+         
+        { "sid": "36852", "id": "972973", "preferred_name": "Abigail"},
+         
+        { "sid": "16904", "id": "1016249", "preferred_name": "Hudson"},
+         
+        { "sid": "63060", "id": "995725", "preferred_name": "Sofia"},
+         
+        { "sid": "11681", "id": "970896", "preferred_name": "Calley"},
+         
+        { "sid": "11575", "id": "1022280", "preferred_name": "Amy"},
+         
+        { "sid": "57611", "id": "1025155", "preferred_name": "Rowan"},
+         
+        { "sid": "61865", "id": "1021044", "preferred_name": "Giulio"},
+         
+        { "sid": "11631", "id": "973719", "preferred_name": "Peyton"},
+         
+        { "sid": "11453", "id": "973197", "preferred_name": "Hannah"},
+         
+        { "sid": "15726", "id": "1017430", "preferred_name": "Lexie"},
+         
+        { "sid": "49817", "id": "1020895", "preferred_name": "Elijah"},
+         
+        { "sid": "16502", "id": "973581", "preferred_name": "Hailey"},
+         
+        { "sid": "16510", "id": "970477", "preferred_name": "Ty"},
+         
+        { "sid": "61853", "id": "1016247", "preferred_name": "Lam"},
+         
+        { "sid": "62456", "id": "1021357", "preferred_name": "Noah"},
+         
+        { "sid": "15684", "id": "969990", "preferred_name": "Nolan"},
+         
+        { "sid": "16649", "id": "970778", "preferred_name": "Mitchell"},
+         
+        { "sid": "16757", "id": "974315", "preferred_name": "Kyra"},
+         
+        { "sid": "17442", "id": "1005493", "preferred_name": "Janelle"},
+         
+        { "sid": "11637", "id": "1016420", "preferred_name": "Zachary"},
+         
+        { "sid": "16859", "id": "974342", "preferred_name": "Morgan"},
+         
+        { "sid": "17407", "id": "1021405", "preferred_name": "Meg"},
+         
+        { "sid": "15682", "id": "969985", "preferred_name": "Camilla"},
+         
+        { "sid": "14555", "id": "972354", "preferred_name": "Paige"},
+         
+        { "sid": "60152", "id": "971684", "preferred_name": "Aidan"},
+         
+        { "sid": "20081", "id": "974725", "preferred_name": "Hannah"},
+         
+        { "sid": "58513", "id": "971376", "preferred_name": "Cameron"},
+         
+        { "sid": "16638", "id": "970624", "preferred_name": "Preston"},
+         
+        { "sid": "17227", "id": "974871", "preferred_name": "Tanika"},
+         
+        { "sid": "15161", "id": "971910", "preferred_name": "Ashley"},
+         
+        { "sid": "16419", "id": "1004893", "preferred_name": "Austin"},
+         
+        { "sid": "15678", "id": "972893", "preferred_name": "Chelsea"},
+         
+        { "sid": "17407", "id": "1021404", "preferred_name": "Meg"},
+         
+        { "sid": "15714", "id": "973055", "preferred_name": "Paddon"},
+         
+        { "sid": "57862", "id": "974589", "preferred_name": "Gavin Taylor"},
+         
+        { "sid": "15154", "id": "972368", "preferred_name": "Zayne"},
+         
+        { "sid": "16543", "id": "1005484", "preferred_name": "Jordan"},
+         
+        { "sid": "16635", "id": "1005490", "preferred_name": "Sophia"},
+         
+        { "sid": "27664", "id": "1005491", "preferred_name": "Emma"},
+         
+        { "sid": "61204", "id": "971709", "preferred_name": "Lucien"},
+         
+        { "sid": "31540", "id": "971994", "preferred_name": "Abigail"},
+         
+        { "sid": "11560", "id": "972676", "preferred_name": "Caitlin"},
+         
+        { "sid": "11517", "id": "973360", "preferred_name": "Kaitlyn"},
+         
+        { "sid": "52307", "id": "1025021", "preferred_name": "William"},
+         
+        { "sid": "27152", "id": "972296", "preferred_name": "Leah"},
+         
+        { "sid": "16646", "id": "970770", "preferred_name": "Aidan"},
+         
+        { "sid": "45054", "id": "970317", "preferred_name": "Aselin"},
+         
+        { "sid": "14504", "id": "972191", "preferred_name": "Jorja"},
+         
+        { "sid": "16659", "id": "974144", "preferred_name": "Maddy"},
+         
+        { "sid": "17802", "id": "972217", "preferred_name": "Zachary"},
+         
+        { "sid": "14508", "id": "971743", "preferred_name": "Lily"},
+         
+        { "sid": "16810", "id": "1009483", "preferred_name": "Brad"},
+         
+        { "sid": "31624", "id": "972659", "preferred_name": "Kaylee"},
+         
+        { "sid": "57918", "id": "971347", "preferred_name": "Emma"},
+         
+        { "sid": "15711", "id": "973047", "preferred_name": "Akira"},
+         
+        { "sid": "40301", "id": "970206", "preferred_name": "Gus"},
+         
+        { "sid": "11654", "id": "973031", "preferred_name": "Camryn"},
+         
+        { "sid": "16965", "id": "974520", "preferred_name": "Jordin"},
+         
+        { "sid": "45001", "id": "1017045", "preferred_name": "Ava"},
+         
+        { "sid": "36852", "id": "972974", "preferred_name": "Abigail"},
+         
+        { "sid": "11599", "id": "972847", "preferred_name": "Makaliegh"},
+         
+        { "sid": "11791", "id": "974661", "preferred_name": "Shelby"},
+         
+        { "sid": "11660", "id": "1001079", "preferred_name": "Zach"},
+         
+        { "sid": "16637", "id": "973802", "preferred_name": "Kiersten"},
+         
+        { "sid": "22258", "id": "974925", "preferred_name": "Abigail"},
+         
+        { "sid": "15555", "id": "972053", "preferred_name": "Ophelia"},
+         
+        { "sid": "45001", "id": "973315", "preferred_name": "Ava"},
+         
+        { "sid": "16110", "id": "970265", "preferred_name": "Elliott"},
+         
+        { "sid": "15172", "id": "971918", "preferred_name": "Hope"},
+         
+        { "sid": "58404", "id": "971366", "preferred_name": "Melody"},
+         
+        { "sid": "60152", "id": "971683", "preferred_name": "Aidan"},
+         
+        { "sid": "11704", "id": "1019018", "preferred_name": "Noah"},
+         
+        { "sid": "11651", "id": "1017052", "preferred_name": "Parker"},
+         
+        { "sid": "16972", "id": "971280", "preferred_name": "Ellie"},
+         
+        { "sid": "16657", "id": "1019897", "preferred_name": "Wilby"},
+         
+        { "sid": "11652", "id": "973899", "preferred_name": "Caoimhe"},
+         
+        { "sid": "8554", "id": "973183", "preferred_name": "Hannah Baxter"},
+         
+        { "sid": "54751", "id": "1019334", "preferred_name": "Ellie"},
+         
+        { "sid": "61958", "id": "1016409", "preferred_name": "Emiliano Antonio"},
+         
+        { "sid": "15727", "id": "973085", "preferred_name": "Jack"},
+         
+        { "sid": "41801", "id": "970220", "preferred_name": "Wyatt"},
+         
+        { "sid": "16651", "id": "973979", "preferred_name": "Adele"},
+         
+        { "sid": "16961", "id": "974505", "preferred_name": "Jack"},
+         
+        { "sid": "15671", "id": "972745", "preferred_name": "Sophie"},
+         
+        { "sid": "16417", "id": "973427", "preferred_name": "Summer"},
+         
+        { "sid": "20403", "id": "1021677", "preferred_name": "Ava"},
+         
+        { "sid": "53963", "id": "1024914", "preferred_name": "Alanna"},
+         
+        { "sid": "57752", "id": "974577", "preferred_name": "Freya"},
+         
+        { "sid": "57003", "id": "1005494", "preferred_name": "Tabitha"},
+         
+        { "sid": "60009", "id": "1005497", "preferred_name": "Akira"},
+         
+        { "sid": "16809", "id": "1005499", "preferred_name": "Owen"},
+         
+        { "sid": "49910", "id": "973684", "preferred_name": "Mason"},
+         
+        { "sid": "16624", "id": "970605", "preferred_name": "Tao"},
+         
+        { "sid": "61305", "id": "1014055", "preferred_name": "Spencer"},
+         
+        { "sid": "16367", "id": "1004911", "preferred_name": "Emma"},
+         
+        { "sid": "11564", "id": "973526", "preferred_name": "Maya"},
+         
+        { "sid": "58552", "id": "974765", "preferred_name": "Olivia"},
+         
+        { "sid": "53405", "id": "970692", "preferred_name": "Olivia"},
+         
+        { "sid": "62607", "id": "984526", "preferred_name": "Trang"},
+         
+        { "sid": "16531", "id": "1021940", "preferred_name": "Shyanne"},
+         
+        { "sid": "16643", "id": "970632", "preferred_name": "Autumn"},
+         
+        { "sid": "14503", "id": "972188", "preferred_name": "Julia"},
+         
+        { "sid": "49770", "id": "970464", "preferred_name": "Noah"},
+         
+        { "sid": "16506", "id": "1025037", "preferred_name": "Selwyn"},
+         
+        { "sid": "16975", "id": "974688", "preferred_name": "Nathaniel"},
+         
+        { "sid": "49603", "id": "995473", "preferred_name": "Laura"},
+         
+        { "sid": "15732", "id": "973229", "preferred_name": "Landon"},
+         
+        { "sid": "16660", "id": "970806", "preferred_name": "Lu"},
+         
+        { "sid": "31630", "id": "972803", "preferred_name": "Menique"},
+         
+        { "sid": "45310", "id": "1019894", "preferred_name": "Yewon"},
+         
+        { "sid": "49817", "id": "1018477", "preferred_name": "Elijah"},
+         
+        { "sid": "21956", "id": "974921", "preferred_name": "David"},
+         
+        { "sid": "16957", "id": "971112", "preferred_name": "Ava"},
+         
+        { "sid": "41801", "id": "1016425", "preferred_name": "Wyatt"},
+         
+        { "sid": "11632", "id": "973723", "preferred_name": "Willo"},
+         
+        { "sid": "16659", "id": "974147", "preferred_name": "Maddy"},
+         
+        { "sid": "11560", "id": "1023819", "preferred_name": "Caitlin"},
+         
+        { "sid": "16455", "id": "1017447", "preferred_name": "Fiona"},
+         
+        { "sid": "16660", "id": "970803", "preferred_name": "Lu"},
+         
+        { "sid": "16665", "id": "970941", "preferred_name": "Lucas"},
+         
+        { "sid": "15152", "id": "971757", "preferred_name": "Aiden"},
+         
+        { "sid": "27553", "id": "971836", "preferred_name": "Sydney"},
+         
+        { "sid": "16977", "id": "974691", "preferred_name": "Gordon"},
+         
+        { "sid": "11597", "id": "1005483", "preferred_name": "Benjamin"},
+         
+        { "sid": "15685", "id": "1005487", "preferred_name": "Nevaeh"},
+         
+        { "sid": "16506", "id": "1005489", "preferred_name": "Selwyn"},
+         
+        { "sid": "57862", "id": "1005495", "preferred_name": "Gavin Taylor"},
+         
+        { "sid": "56854", "id": "1020892", "preferred_name": "Trinity"},
+         
+        { "sid": "16503", "id": "970376", "preferred_name": "Mora"},
+         
+        { "sid": "6928", "id": "979019", "preferred_name": "Gracie"},
+         
+        { "sid": "14552", "id": "971749", "preferred_name": "Grace"},
+         
+        { "sid": "62257", "id": "972312", "preferred_name": "Milena-Marie"},
+         
+        { "sid": "31619", "id": "972650", "preferred_name": "Kai"},
+         
+        { "sid": "11925", "id": "1020400", "preferred_name": "Ava"},
+         
+        { "sid": "61867", "id": "1016491", "preferred_name": "Pietro Giuseppe"},
+         
+        { "sid": "11627", "id": "1020409", "preferred_name": "Cheyenne"},
+         
+        { "sid": "16056", "id": "1018320", "preferred_name": "Nevaeh"},
+         
+        { "sid": "15724", "id": "973075", "preferred_name": "Sophie"},
+         
+        { "sid": "15718", "id": "973065", "preferred_name": "Landyn"},
+         
+        { "sid": "17437", "id": "974894", "preferred_name": "Abby"},
+        
+        {"sid": "", "id": "", "preferred_name": ""}
+        ];
+        array.pop();
+     
+        // populate the preferred name table based on array data
+            
+        $j.each(array, function(key, obj) {
+            $j("#attendance-table tr td:nth-child(2)").each(function() {
+                if(obj["id"] == $j(this).attr("id"))
+                    {
+                        $j(this).html(obj["preferred_name"]);
+                    }     
+            }); 
+               
+        // Add student images to the table   
+               
+        $j("#attendance-table tr td:nth-child(1)").each(function() {
+                if("p"+obj["id"] == $j(this).attr("id"))
+                    {
+                        $j(this).find("img").attr("src", "/subs/stpnormal/" + obj["sid"] + "ph.jpeg");
+                        //$j(this).html("<img src='/subs/stpnormal/" + obj["sid"] + "ph.jpeg' height='60px' width='50px' onerror='this.src='/images/error.png''></img>");
+                    }
+  
+            });    
+        });
+            
+    });
+</script>
+
+<!-- Begin AET Test Server Identification Customization -->
+<!-- Author: Adam Larsen <adam@auroraedtech.com> -->
+	<style>
+		
+	</style>
+
+<script>
+$j(document).ready(function(){
+	
+});
+</script>
+<!-- End AET Test Server Identification Customization --></div>
+</div>
+</div>
+<!-- end of content of bounding box -->
+	
+</div>
+<div id="footer">
+	<div id="legal">
+  <p>Copyright &copy; 2005-2023 PowerSchool Group LLC and/or its affiliate(s). All rights reserved.<br/>All trademarks are either owned or licensed by PowerSchool Group LLC and/or its affiliates.</p>
+</div>
+
+</div>
+<!-- End of copyright table -->
+
+
+
+
+</body>
+</html>
