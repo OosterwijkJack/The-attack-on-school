@@ -8,25 +8,6 @@ import os
 
 from dataclasses import dataclass
 
-"""
-Program is almost perfect unforunatley I am an impulisve thinker and didnt think twice when setting up a proxy
-essentially im retarded and could of literally downloaded proton vpn to get away with it but I wanted to be fancy and use a stupid little free
-proxy which arent even safe in the first place and are slower also they almost never work.
-
-PROTON VPN
-
-Im very dissapointed in myself. I havent learned a single lesson as I would do it again if I could. All that I have learned is my brain is not as
-good as I thought it was. Everyone makes mistakes but this is just stupid and dissapointing. Nothing about this was impressive if I got caught. 
-
-No point in robbing a bank if you got caught (slighty different situaion but point is clear). 
-
-Why would I make an assumption that the proxy would just immediatley work in the code if I activated it on my system.
-I aways extesnivley test program but not in time when it really mattered. I am now suspended for 5 days which I dont care it dosent affect me.
-My pride is just hurt because I got caught doing a cool thing in a stupid way.
-
-Also the whole idea of the program was testing my abilities and staying anonymous is a big part of it. I could of used this as an oppertunity 
-to learn proxy chains (proxys connecting to other proxies before connecting to the actual request).
-"""
 
 login_url = r"https://sisssrsb.ednet.ns.ca/subs/home.html" # subsitute portal
 main_url = r"https://sisssrsb.ednet.ns.ca"
