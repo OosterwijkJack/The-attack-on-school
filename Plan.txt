@@ -96,5 +96,3 @@ MOD means they are currnet absent (could also mean late or left early idk yet)
 COM would be the comment under their absence (could possibly make this say something cheeky)
 Lots of information is inside of the url, student names/ids is within page source (label = tr).
 
-note ideas:
-Where the fuck my blunt? Where the fuck my cup? Where the fuck my reefer?
